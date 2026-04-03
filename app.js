@@ -1,4 +1,4 @@
-const tabs = [
+﻿const tabs = [
   { id: "pokemon", label: "Pokemon" },
   { id: "moves", label: "Moves" },
   { id: "abilities", label: "Abilities" },
@@ -139,7 +139,7 @@ function typeChip(type) {
 }
 
 function moveNames(ids) {
-  return ids
+  return (ids || [])
     .map((id) => state.data.movesById.get(id))
     .filter(Boolean)
     .map((move) => move.name);
@@ -155,6 +155,11 @@ function escapeHtml(value) {
 
 function navButton(tab, id, label) {
   return `<button class="chip nav-chip" data-nav-tab="${tab}" data-nav-id="${id}">${escapeHtml(label)}</button>`;
+}
+
+function setDetailHtml(html, options = {}) {
+  els.detail.className = options.empty ? "detail empty-state" : "detail";
+  els.detail.innerHTML = html;
 }
 
 function renderList(entries) {
@@ -181,9 +186,9 @@ function renderList(entries) {
     let sub = "";
     if (state.tab === "pokemon") sub = (entry.types || []).join(" / ");
     if (state.tab === "moves") sub = entry.description?.replace(/\n/g, " ") || [entry.type, entry.category].filter(Boolean).join(" • ");
-    if (state.tab === "abilities") sub = entry.description || `${entry.speciesIds.length} linked species`;
+    if (state.tab === "abilities") sub = entry.description || `${(entry.speciesIds || []).length} linked species`;
     if (state.tab === "items") sub = entry.description || [entry.pocket?.replace("POCKET_", ""), entry.price ? `${entry.price}$` : ""].filter(Boolean).join(" • ");
-    if (state.tab === "trainers") sub = `${entry.class || "Trainer"} • ${entry.pokemon.length} mon`;
+    if (state.tab === "trainers") sub = `${entry.class || "Trainer"} • ${(entry.pokemon || []).length} mon`;
 
     button.innerHTML = `${icon}<div><div class="list-item-title">${entry.name ?? entry.idToken}</div><div class="list-item-sub">${sub}</div></div><div class="muted">ID: ${id}</div>`;
     button.addEventListener("click", () => {
@@ -195,23 +200,32 @@ function renderList(entries) {
 }
 
 function renderPokemonDetail(entry) {
-  const abilityCards = entry.abilities
-    .map(
-      (ability) => `
-        <div class="detail-card">
-          <h4>#${ability.id} ${ability.name}</h4>
-          <p>${ability.description || "No description available."}</p>
-        </div>
-      `,
-    )
-    .join("");
+  const abilities = Array.isArray(entry.abilities) ? entry.abilities : [];
+  const evolutions = Array.isArray(entry.evolutions) ? entry.evolutions : [];
+  const teachable = entry.teachable || { all: [], tmhm: [], tutor: [], special: [] };
+  const moveLevels = Array.isArray(entry.moveLevels) ? entry.moveLevels : [];
+  const eggMoves = Array.isArray(entry.eggMoves) ? entry.eggMoves : [];
+  const types = Array.isArray(entry.types) ? entry.types : [];
 
-  const evoCards = entry.evolutions.length
-    ? entry.evolutions
+  const abilityCards = abilities.length
+    ? abilities
+        .map(
+          (ability) => `
+            <div class="detail-card">
+              <h4>ID: ${ability.id} ${ability.name}</h4>
+              <p>${ability.description || "No description available."}</p>
+            </div>
+          `,
+        )
+        .join("")
+    : `<div class="detail-card"><h4>No abilities</h4><p>No linked abilities in the current snapshot.</p></div>`;
+
+  const evoCards = evolutions.length
+    ? evolutions
         .map(
           (evo) => `
             <div class="detail-card">
-              <h4>${evo.targetName || `#${evo.targetSpecies}`}</h4>
+              <h4>${evo.targetName || `ID: ${evo.targetSpecies}`}</h4>
               <p>${evo.label}</p>
             </div>
           `,
@@ -220,10 +234,10 @@ function renderPokemonDetail(entry) {
     : `<div class="detail-card"><h4>No evolutions</h4><p>This entry has no forward evolutions in the current snapshot.</p></div>`;
 
   const teachableGroups = [
-    { title: "TM / HM", ids: entry.teachable.tmhm },
-    { title: "Tutor", ids: entry.teachable.tutor },
-    { title: "Other Teachables", ids: entry.teachable.special },
-    { title: "Egg Moves", ids: entry.eggMoves },
+    { title: "TM / HM", ids: teachable.tmhm || [] },
+    { title: "Tutor", ids: teachable.tutor || [] },
+    { title: "Other Teachables", ids: teachable.special || [] },
+    { title: "Egg Moves", ids: eggMoves },
   ];
 
   const teachableHtml = teachableGroups
@@ -242,134 +256,126 @@ function renderPokemonDetail(entry) {
     })
     .join("");
 
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${entry.name}</h2>
-          <p>ID: ${entry.id} • ${entry.token}</p>
-        </div>
-        ${entry.icon ? `<div class="pokemon-icon-zoom"><img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" /></div>` : ""}
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${entry.name}</h2>
+        <p>ID: ${entry.id} • ${entry.token}</p>
       </div>
+      ${entry.icon ? `<div class="pokemon-icon-zoom"><img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" /></div>` : ""}
+    </div>
 
-      <div class="chip-row" style="margin-top:18px;">${entry.types.map(typeChip).join("")}</div>
+    <div class="chip-row" style="margin-top:18px;">${types.map(typeChip).join("")}</div>
 
-      <div class="detail-grid">
-        <div class="detail-box"><span class="muted">BST</span><strong>${entry.bst ?? "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Weight</span><strong>${entry.weight ? `${entry.weight} kg` : "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Learnset Levels</span><strong>${entry.moveLevels.length}</strong></div>
-        <div class="detail-box"><span class="muted">Teachables</span><strong>${entry.teachable.all.length}</strong></div>
-      </div>
+    <div class="detail-grid">
+      <div class="detail-box"><span class="muted">BST</span><strong>${entry.bst ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Weight</span><strong>${entry.weight ? `${entry.weight} kg` : "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Learnset Levels</span><strong>${moveLevels.length}</strong></div>
+      <div class="detail-box"><span class="muted">Teachables</span><strong>${(teachable.all || []).length}</strong></div>
+    </div>
 
-      <div class="detail-section">
-        <h3>Abilities</h3>
-        <div class="detail-section-list">${abilityCards}</div>
-      </div>
+    <div class="detail-section">
+      <h3>Abilities</h3>
+      <div class="detail-section-list">${abilityCards}</div>
+    </div>
 
-      <div class="detail-section">
-        <h3>Evolutions</h3>
-        <div class="detail-section-list">${evoCards}</div>
-      </div>
+    <div class="detail-section">
+      <h3>Evolutions</h3>
+      <div class="detail-section-list">${evoCards}</div>
+    </div>
 
-      <div class="detail-section">
-        <h3>Learnset Levels</h3>
-        <div class="chip-row">
-          ${
-            entry.moveLevels.length
-              ? entry.moveLevels.map((level) => `<span class="chip">Lv ${level}</span>`).join("")
-              : `<span class="chip">No level data</span>`
-          }
-        </div>
-      </div>
-
-      <div class="detail-section">
-        <h3>Teachables / Egg</h3>
-        <div class="detail-section-list">${teachableHtml}</div>
+    <div class="detail-section">
+      <h3>Learnset Levels</h3>
+      <div class="chip-row">
+        ${
+          moveLevels.length
+            ? moveLevels.map((level) => `<span class="chip">Lv ${level}</span>`).join("")
+            : `<span class="chip">No level data</span>`
+        }
       </div>
     </div>
-  `;
+
+    <div class="detail-section">
+      <h3>Teachables / Egg</h3>
+      <div class="detail-section-list">${teachableHtml}</div>
+    </div>
+  `);
 }
 
 function renderMoveDetail(entry) {
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${entry.name}</h2>
-          <p>ID: ${entry.id} • ${entry.type} • ${entry.category}</p>
-        </div>
-      </div>
-      <div class="chip-row">
-        ${entry.type ? typeChip(entry.type) : ""}
-        ${entry.category ? `<span class="chip">${entry.category}</span>` : ""}
-        ${entry.priority ? `<span class="chip">Priority ${entry.priority}</span>` : ""}
-      </div>
-      <div class="detail-grid">
-        <div class="detail-box"><span class="muted">Power</span><strong>${entry.power ?? "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Accuracy</span><strong>${entry.accuracy ?? "-"}</strong></div>
-        <div class="detail-box"><span class="muted">PP</span><strong>${entry.pp ?? "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Target</span><strong>${entry.target ? entry.target.replace("TARGET_", "") : "-"}</strong></div>
-      </div>
-      <div class="detail-section">
-        <h3>Description</h3>
-        <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${entry.name}</h2>
+        <p>ID: ${entry.id} • ${entry.type} • ${entry.category}</p>
       </div>
     </div>
-  `;
+    <div class="chip-row">
+      ${entry.type ? typeChip(entry.type) : ""}
+      ${entry.category ? `<span class="chip">${entry.category}</span>` : ""}
+      ${entry.priority ? `<span class="chip">Priority ${entry.priority}</span>` : ""}
+    </div>
+    <div class="detail-grid">
+      <div class="detail-box"><span class="muted">Power</span><strong>${entry.power ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Accuracy</span><strong>${entry.accuracy ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">PP</span><strong>${entry.pp ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Target</span><strong>${entry.target ? entry.target.replace("TARGET_", "") : "-"}</strong></div>
+    </div>
+    <div class="detail-section">
+      <h3>Description</h3>
+      <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
+    </div>
+  `);
 }
 
 function renderAbilityDetail(entry) {
-  const species = entry.speciesIds.map((id) => state.data.speciesById.get(id)).filter(Boolean);
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${entry.name}</h2>
-          <p>ID: ${entry.id} • ${species.length} linked species</p>
-        </div>
-      </div>
-      <div class="detail-section">
-        <h3>Description</h3>
-        <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
-      </div>
-      <div class="detail-section">
-        <h3>Pokemon Using This Ability</h3>
-        <div class="chip-row">${species.map((pokemon) => `<span class="chip">${pokemon.name}</span>`).join("") || `<span class="chip">No linked species</span>`}</div>
+  const species = (entry.speciesIds || []).map((id) => state.data.speciesById.get(id)).filter(Boolean);
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${entry.name}</h2>
+        <p>ID: ${entry.id} • ${species.length} linked species</p>
       </div>
     </div>
-  `;
+    <div class="detail-section">
+      <h3>Description</h3>
+      <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
+    </div>
+    <div class="detail-section">
+      <h3>Pokemon Using This Ability</h3>
+      <div class="chip-row">${species.map((pokemon) => navButton("pokemon", pokemon.id, pokemon.name)).join("") || `<span class="chip">No linked species</span>`}</div>
+    </div>
+  `);
 }
 
 function renderItemDetail(entry) {
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${entry.name}</h2>
-          <p>ID: ${entry.id} • ${entry.token}</p>
-        </div>
-      </div>
-      <div class="detail-grid">
-        <div class="detail-box"><span class="muted">Pocket</span><strong>${entry.pocket ? entry.pocket.replace("POCKET_", "") : "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Price</span><strong>${entry.price || "-"}</strong></div>
-      </div>
-      <div class="detail-section">
-        <h3>Description</h3>
-        <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${entry.name}</h2>
+        <p>ID: ${entry.id} • ${entry.token}</p>
       </div>
     </div>
-  `;
+    <div class="detail-grid">
+      <div class="detail-box"><span class="muted">Pocket</span><strong>${entry.pocket ? entry.pocket.replace("POCKET_", "") : "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Price</span><strong>${entry.price || "-"}</strong></div>
+    </div>
+    <div class="detail-section">
+      <h3>Description</h3>
+      <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
+    </div>
+  `);
 }
 
 function renderTrainerDetail(entry) {
-  const party = entry.pokemon
+  const party = (entry.pokemon || [])
     .map(
       (mon) => `
         <div class="detail-card trainer-mon">
           <h4>${mon.speciesId ? navButton("pokemon", mon.speciesId, mon.speciesName) : escapeHtml(mon.speciesName)}${mon.level ? ` • Lv ${mon.level}` : ""}</h4>
           <p>${escapeHtml([mon.ability, mon.item].filter(Boolean).join(" • ") || "No extra metadata")}</p>
           ${
-            mon.moves.length
+            (mon.moves || []).length
               ? `<ul class="plain-list">${mon.moves.map((move) => `<li>${escapeHtml(move)}</li>`).join("")}</ul>`
               : ""
           }
@@ -378,66 +384,60 @@ function renderTrainerDetail(entry) {
     )
     .join("");
 
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${entry.name || entry.idToken}</h2>
-          <p>ID: ${entry.idToken} • ${entry.class || "Trainer"}</p>
-        </div>
-      </div>
-      <div class="detail-grid">
-        <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Gender</span><strong>${entry.gender || "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Battle Type</span><strong>${entry.battleType || "-"}</strong></div>
-        <div class="detail-box"><span class="muted">Party Size</span><strong>${entry.pokemon.length}</strong></div>
-      </div>
-      <div class="detail-section">
-        <h3>Trainer Items</h3>
-        <div class="chip-row">
-          ${
-            entry.items.length
-              ? entry.items
-                  .map((item) => {
-                    const itemId = state.data.itemIdByName.get(String(item).toLowerCase());
-                    return itemId ? navButton("items", itemId, item) : `<span class="chip">${escapeHtml(item)}</span>`;
-                  })
-                  .join("")
-              : `<span class="chip">No trainer items</span>`
-          }
-        </div>
-      </div>
-      <div class="detail-section">
-        <h3>Party Snapshot</h3>
-        <div class="trainer-party">${party || `<div class="detail-card"><p>No party data available.</p></div>`}</div>
+  const trainerItems = (entry.items || []).length
+    ? entry.items
+        .map((item) => {
+          const itemId = state.data.itemIdByName.get(String(item).toLowerCase());
+          return itemId ? navButton("items", itemId, item) : `<span class="chip">${escapeHtml(item)}</span>`;
+        })
+        .join("")
+    : `<span class="chip">No trainer items</span>`;
+
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${entry.name || entry.idToken}</h2>
+        <p>ID: ${entry.idToken} • ${entry.class || "Trainer"}</p>
       </div>
     </div>
-  `;
+    <div class="detail-grid">
+      <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Gender</span><strong>${entry.gender || "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Battle Type</span><strong>${entry.battleType || "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Party Size</span><strong>${(entry.pokemon || []).length}</strong></div>
+    </div>
+    <div class="detail-section">
+      <h3>Trainer Items</h3>
+      <div class="chip-row">${trainerItems}</div>
+    </div>
+    <div class="detail-section">
+      <h3>Party Snapshot</h3>
+      <div class="trainer-party">${party || `<div class="detail-card"><p>No party data available.</p></div>`}</div>
+    </div>
+  `);
 }
 
 function renderRulesDetail() {
-  els.detail.innerHTML = `
-    <div class="detail">
-      <div class="detail-hero">
-        <div class="detail-title">
-          <h2>${state.data.project.title}</h2>
-          <p>${state.data.project.subtitle}</p>
-        </div>
-      </div>
-      <div class="detail-section">
-        ${state.data.project.sections
-          .map(
-            (section) => `
-              <div class="detail-card">
-                <h4>${section.title}</h4>
-                <ul class="rules-list">${section.items.map((item) => `<li>${item}</li>`).join("")}</ul>
-              </div>
-            `,
-          )
-          .join("")}
+  setDetailHtml(`
+    <div class="detail-hero">
+      <div class="detail-title">
+        <h2>${state.data.project.title}</h2>
+        <p>${state.data.project.subtitle}</p>
       </div>
     </div>
-  `;
+    <div class="detail-section">
+      ${state.data.project.sections
+        .map(
+          (section) => `
+            <div class="detail-card">
+              <h4>${section.title}</h4>
+              <ul class="rules-list">${section.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+            </div>
+          `,
+        )
+        .join("")}
+    </div>
+  `);
 }
 
 function renderDetail(entries) {
@@ -448,7 +448,7 @@ function renderDetail(entries) {
 
   const entry = entries.find((item) => String(item.id ?? item.idToken) === String(state.selectedId));
   if (!entry) {
-    els.detail.innerHTML = `<div class="detail empty-state"><h2>No selection</h2><p>Choose an entry from the list.</p></div>`;
+    setDetailHtml(`<h2>No selection</h2><p>Choose an entry from the list.</p>`, { empty: true });
     return;
   }
 
@@ -490,5 +490,5 @@ async function init() {
 
 init().catch((error) => {
   console.error(error);
-  els.detail.innerHTML = `<div class="detail empty-state"><h2>Data load failed</h2><p>Open the console for details.</p></div>`;
+  setDetailHtml(`<h2>Data load failed</h2><p>Open the console for details.</p>`, { empty: true });
 });
