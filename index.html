@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PokeInfoTools</title>
+    <meta
+      name="description"
+      content="Minimal dark lookup site for Flawzo IronMon data: Pokemon, moves, abilities, items, teachables, trainers, and rules."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Flawzo Testing Toolbox</p>
+          <h1>PokeInfoTools</h1>
+          <p class="subtitle">
+            GitHub Pages lookup for Pokemon, moves, abilities, items, teachables, trainer snapshot, and project rules.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-card">
+            <span class="meta-label">Data Profile</span>
+            <strong>Gen 6</strong>
+          </div>
+          <div class="meta-card">
+            <span class="meta-label">Visual</span>
+            <strong>Dark / Minimal</strong>
+          </div>
+        </div>
+      </header>
+
+      <section class="toolbar">
+        <div class="search-wrap">
+          <input id="search" type="search" placeholder="Search by name, id, type, ability, item, trainer..." />
+        </div>
+        <nav class="tabs" id="tabs"></nav>
+      </section>
+
+      <section class="stats-strip" id="stats-strip"></section>
+
+      <main class="main-grid">
+        <section class="list-panel">
+          <div class="list-head">
+            <h2 id="list-title">Pokemon</h2>
+            <span id="list-count" class="muted"></span>
+          </div>
+          <div id="list" class="list"></div>
+        </section>
+
+        <section class="detail-panel">
+          <div id="detail" class="detail empty-state">
+            <h2>Loading data...</h2>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
