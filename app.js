@@ -1,4 +1,4 @@
-﻿const tabs = [
+const tabs = [
   { id: "pokemon", label: "Pokemon" },
   { id: "moves", label: "Moves" },
   { id: "abilities", label: "Abilities" },
@@ -67,19 +67,18 @@ function resetVisibleCount() {
   state.visibleCount = getListBatchSize();
 }
 
-function scrollDetailIntoView() {
-  if (!isMobileLayout()) return;
-  requestAnimationFrame(() => {
-    els.detailPanel?.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+function setDetailPanelVisibility(isVisible) {
+  els.detailPanel.classList.toggle("mobile-hidden", !isVisible);
 }
 
 function selectEntry(id, options = {}) {
-  state.selectedId = id;
-  render();
-  if (options.scrollMobile) {
-    scrollDetailIntoView();
+  const sameSelection = String(state.selectedId) === String(id);
+  if (isMobileLayout() && state.tab !== "rules" && sameSelection && !options.forceOpen) {
+    state.selectedId = null;
+  } else {
+    state.selectedId = id;
   }
+  render();
 }
 
 function buildIndexes(data) {
@@ -163,9 +162,21 @@ function ensureSelection(entries) {
     return;
   }
   const hasCurrent = entries.some((entry) => String(entry.id ?? entry.idToken) === String(state.selectedId));
-  if (!hasCurrent) {
-    state.selectedId = entries[0].id ?? entries[0].idToken;
+  if (hasCurrent) {
+    return;
   }
+  if (isMobileLayout()) {
+    state.selectedId = null;
+    return;
+  }
+  state.selectedId = entries[0].id ?? entries[0].idToken;
+}
+
+function ensureSelectedVisible(entries) {
+  if (state.selectedId == null) return;
+  const selectedIndex = entries.findIndex((entry) => String(entry.id ?? entry.idToken) === String(state.selectedId));
+  if (selectedIndex === -1) return;
+  state.visibleCount = Math.max(state.visibleCount, selectedIndex + 1, getListBatchSize());
 }
 
 function typeChip(type) {
@@ -197,63 +208,7 @@ function setDetailHtml(html, options = {}) {
   els.detail.innerHTML = html;
 }
 
-function renderList(entries) {
-  els.listTitle.textContent = tabs.find((tab) => tab.id === state.tab)?.label ?? state.tab;
-
-  if (state.tab === "rules") {
-    els.listCount.textContent = "Snapshot";
-    els.list.innerHTML = `<div class="detail-card"><strong>${state.data.project.title}</strong><p>${state.data.project.subtitle}</p></div>`;
-    return;
-  }
-
-  const visibleEntries = entries.slice(0, state.visibleCount);
-  els.listCount.textContent = visibleEntries.length < entries.length ? `${entries.length} entries • ${visibleEntries.length} shown` : `${entries.length} entries`;
-
-  if (!entries.length) {
-    els.list.innerHTML = `<div class="detail-card"><strong>No results</strong><p>Try a broader search.</p></div>`;
-    return;
-  }
-
-  els.list.innerHTML = "";
-  for (const entry of visibleEntries) {
-    const id = entry.id ?? entry.idToken;
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = `list-item${String(state.selectedId) === String(id) ? " active" : ""}`;
-
-    const icon =
-      state.tab === "pokemon" && entry.icon
-        ? `<img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" loading="lazy" decoding="async" />`
-        : `<div></div>`;
-
-    let sub = "";
-    if (state.tab === "pokemon") sub = (entry.types || []).join(" / ");
-    if (state.tab === "moves") sub = entry.description?.replace(/\n/g, " ") || [entry.type, entry.category].filter(Boolean).join(" • ");
-    if (state.tab === "abilities") sub = entry.description || `${(entry.speciesIds || []).length} linked species`;
-    if (state.tab === "items") sub = entry.description || [entry.pocket?.replace("POCKET_", ""), entry.price ? `${entry.price}$` : ""].filter(Boolean).join(" • ");
-    if (state.tab === "trainers") sub = `${entry.class || "Trainer"} • ${(entry.pokemon || []).length} mon`;
-
-    button.innerHTML = `${icon}<div><div class="list-item-title">${entry.name ?? entry.idToken}</div><div class="list-item-sub">${sub}</div></div><div class="muted">ID: ${id}</div>`;
-    button.addEventListener("click", () => {
-      selectEntry(id, { scrollMobile: true });
-    });
-    els.list.appendChild(button);
-  }
-
-  if (visibleEntries.length < entries.length) {
-    const moreButton = document.createElement("button");
-    moreButton.type = "button";
-    moreButton.className = "show-more";
-    moreButton.textContent = `Show ${Math.min(getListBatchSize(), entries.length - visibleEntries.length)} more`;
-    moreButton.addEventListener("click", () => {
-      state.visibleCount += getListBatchSize();
-      render();
-    });
-    els.list.appendChild(moreButton);
-  }
-}
-
-function renderPokemonDetail(entry) {
+function buildPokemonDetail(entry) {
   const abilities = Array.isArray(entry.abilities) ? entry.abilities : [];
   const evolutions = Array.isArray(entry.evolutions) ? entry.evolutions : [];
   const teachable = entry.teachable || { all: [], tmhm: [], tutor: [], special: [] };
@@ -310,7 +265,7 @@ function renderPokemonDetail(entry) {
     })
     .join("");
 
-  setDetailHtml(`
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name}</h2>
@@ -353,11 +308,11 @@ function renderPokemonDetail(entry) {
       <h3>Teachables / Egg</h3>
       <div class="detail-section-list">${teachableHtml}</div>
     </div>
-  `);
+  `;
 }
 
-function renderMoveDetail(entry) {
-  setDetailHtml(`
+function buildMoveDetail(entry) {
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name}</h2>
@@ -379,12 +334,12 @@ function renderMoveDetail(entry) {
       <h3>Description</h3>
       <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
     </div>
-  `);
+  `;
 }
 
-function renderAbilityDetail(entry) {
+function buildAbilityDetail(entry) {
   const species = (entry.speciesIds || []).map((id) => state.data.speciesById.get(id)).filter(Boolean);
-  setDetailHtml(`
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name}</h2>
@@ -399,11 +354,11 @@ function renderAbilityDetail(entry) {
       <h3>Pokemon Using This Ability</h3>
       <div class="chip-row">${species.map((pokemon) => navButton("pokemon", pokemon.id, pokemon.name)).join("") || `<span class="chip">No linked species</span>`}</div>
     </div>
-  `);
+  `;
 }
 
-function renderItemDetail(entry) {
-  setDetailHtml(`
+function buildItemDetail(entry) {
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name}</h2>
@@ -418,10 +373,10 @@ function renderItemDetail(entry) {
       <h3>Description</h3>
       <div class="detail-card"><p>${entry.description || "No description available."}</p></div>
     </div>
-  `);
+  `;
 }
 
-function renderTrainerDetail(entry) {
+function buildTrainerDetail(entry) {
   const party = (entry.pokemon || [])
     .map(
       (mon) => `
@@ -447,7 +402,7 @@ function renderTrainerDetail(entry) {
         .join("")
     : `<span class="chip">No trainer items</span>`;
 
-  setDetailHtml(`
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name || entry.idToken}</h2>
@@ -468,11 +423,11 @@ function renderTrainerDetail(entry) {
       <h3>Party Snapshot</h3>
       <div class="trainer-party">${party || `<div class="detail-card"><p>No party data available.</p></div>`}</div>
     </div>
-  `);
+  `;
 }
 
-function renderRulesDetail() {
-  setDetailHtml(`
+function buildRulesDetail() {
+  return `
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${state.data.project.title}</h2>
@@ -491,26 +446,103 @@ function renderRulesDetail() {
         )
         .join("")}
     </div>
-  `);
+  `;
+}
+
+function buildDetailHtml(entry) {
+  if (state.tab === "pokemon") return buildPokemonDetail(entry);
+  if (state.tab === "moves") return buildMoveDetail(entry);
+  if (state.tab === "abilities") return buildAbilityDetail(entry);
+  if (state.tab === "items") return buildItemDetail(entry);
+  if (state.tab === "trainers") return buildTrainerDetail(entry);
+  return "";
+}
+
+function renderList(entries) {
+  els.listTitle.textContent = tabs.find((tab) => tab.id === state.tab)?.label ?? state.tab;
+
+  if (state.tab === "rules") {
+    els.listCount.textContent = "Snapshot";
+    els.list.innerHTML = `<div class="detail-card"><strong>${state.data.project.title}</strong><p>${state.data.project.subtitle}</p></div>`;
+    return;
+  }
+
+  const visibleEntries = entries.slice(0, state.visibleCount);
+  els.listCount.textContent = visibleEntries.length < entries.length ? `${entries.length} entries • ${visibleEntries.length} shown` : `${entries.length} entries`;
+
+  if (!entries.length) {
+    els.list.innerHTML = `<div class="detail-card"><strong>No results</strong><p>Try a broader search.</p></div>`;
+    return;
+  }
+
+  els.list.innerHTML = "";
+  for (const entry of visibleEntries) {
+    const id = entry.id ?? entry.idToken;
+    const isSelected = String(state.selectedId) === String(id);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `list-item${isSelected ? " active" : ""}`;
+
+    const icon =
+      state.tab === "pokemon" && entry.icon
+        ? `<img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" loading="lazy" decoding="async" />`
+        : `<div></div>`;
+
+    let sub = "";
+    if (state.tab === "pokemon") sub = (entry.types || []).join(" / ");
+    if (state.tab === "moves") sub = entry.description?.replace(/\n/g, " ") || [entry.type, entry.category].filter(Boolean).join(" • ");
+    if (state.tab === "abilities") sub = entry.description || `${(entry.speciesIds || []).length} linked species`;
+    if (state.tab === "items") sub = entry.description || [entry.pocket?.replace("POCKET_", ""), entry.price ? `${entry.price}$` : ""].filter(Boolean).join(" • ");
+    if (state.tab === "trainers") sub = `${entry.class || "Trainer"} • ${(entry.pokemon || []).length} mon`;
+
+    button.innerHTML = `${icon}<div><div class="list-item-title">${entry.name ?? entry.idToken}</div><div class="list-item-sub">${sub}</div></div><div class="muted">ID: ${id}</div>`;
+    button.addEventListener("click", () => {
+      selectEntry(id);
+    });
+    els.list.appendChild(button);
+
+    if (isMobileLayout() && isSelected) {
+      const inlineDetail = document.createElement("div");
+      inlineDetail.className = "inline-detail";
+      inlineDetail.innerHTML = buildDetailHtml(entry);
+      els.list.appendChild(inlineDetail);
+    }
+  }
+
+  if (visibleEntries.length < entries.length) {
+    const moreButton = document.createElement("button");
+    moreButton.type = "button";
+    moreButton.className = "show-more";
+    moreButton.textContent = `Show ${Math.min(getListBatchSize(), entries.length - visibleEntries.length)} more`;
+    moreButton.addEventListener("click", () => {
+      state.visibleCount += getListBatchSize();
+      render();
+    });
+    els.list.appendChild(moreButton);
+  }
 }
 
 function renderDetail(entries) {
   if (state.tab === "rules") {
-    renderRulesDetail();
+    setDetailPanelVisibility(true);
+    setDetailHtml(buildRulesDetail());
     return;
   }
 
+  if (isMobileLayout()) {
+    setDetailPanelVisibility(false);
+    setDetailHtml("", { empty: false });
+    return;
+  }
+
+  setDetailPanelVisibility(true);
   const entry = entries.find((item) => String(item.id ?? item.idToken) === String(state.selectedId));
   if (!entry) {
     setDetailHtml(`<h2>No selection</h2><p>Choose an entry from the list.</p>`, { empty: true });
     return;
   }
 
-  if (state.tab === "pokemon") renderPokemonDetail(entry);
-  if (state.tab === "moves") renderMoveDetail(entry);
-  if (state.tab === "abilities") renderAbilityDetail(entry);
-  if (state.tab === "items") renderItemDetail(entry);
-  if (state.tab === "trainers") renderTrainerDetail(entry);
+  setDetailHtml(buildDetailHtml(entry));
 }
 
 function render() {
@@ -518,6 +550,7 @@ function render() {
   renderStats();
   const entries = getEntriesForTab();
   ensureSelection(entries);
+  ensureSelectedVisible(entries);
   renderList(entries);
   renderDetail(entries);
 }
@@ -532,12 +565,10 @@ async function init() {
     const button = event.target.closest("[data-nav-tab][data-nav-id]");
     if (!button) return;
     state.tab = button.dataset.navTab;
-    state.selectedId = button.dataset.navId;
     state.query = "";
     resetVisibleCount();
     els.search.value = "";
-    render();
-    scrollDetailIntoView();
+    selectEntry(button.dataset.navId, { forceOpen: true });
   });
 
   els.search.addEventListener("input", (event) => {
@@ -548,6 +579,7 @@ async function init() {
 
   window.addEventListener("resize", () => {
     state.visibleCount = Math.max(state.visibleCount, getListBatchSize());
+    render();
   });
 
   render();
@@ -555,5 +587,6 @@ async function init() {
 
 init().catch((error) => {
   console.error(error);
+  setDetailPanelVisibility(true);
   setDetailHtml(`<h2>Data load failed</h2><p>Open the console for details.</p>`, { empty: true });
 });

@@ -240,6 +240,14 @@ input[type="search"]::placeholder {
   background: rgba(117, 217, 255, 0.08);
 }
 
+.inline-detail {
+  padding: 18px;
+  margin-top: -2px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
 .pokemon-icon {
   width: 32px;
   height: 32px;
@@ -347,6 +355,10 @@ input[type="search"]::placeholder {
     grid-template-columns: 1fr;
   }
 
+  .detail-panel.mobile-hidden {
+    display: none;
+  }
+
   .hero {
     flex-direction: column;
   }
@@ -384,5 +396,9 @@ input[type="search"]::placeholder {
 
   .list-item > .muted {
     grid-column: 2;
+  }
+
+  .inline-detail {
+    padding: 16px;
   }
 }
