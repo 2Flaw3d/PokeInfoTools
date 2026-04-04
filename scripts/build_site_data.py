@@ -135,6 +135,15 @@ def parse_move_array_file(path: Path) -> dict[str, list[str]]:
     return arrays
 
 
+def parse_tmhm_move_lists(path: Path) -> tuple[list[str], list[str]]:
+    text = read_text(path)
+    tm_match = re.search(r"#define FOREACH_TM\(F\)\s*\\(.*?)#define FOREACH_HM\(F\)", text, re.DOTALL)
+    hm_match = re.search(r"#define FOREACH_HM\(F\)\s*\\(.*?)#define FOREACH_TMHM\(F\)", text, re.DOTALL)
+    tm_tokens = re.findall(r"F\(([A-Z0-9_]+)\)", tm_match.group(1)) if tm_match else []
+    hm_tokens = re.findall(r"F\(([A-Z0-9_]+)\)", hm_match.group(1)) if hm_match else []
+    return tm_tokens, hm_tokens
+
+
 def parse_showdown_trainers(
     path: Path,
     species_id_by_name: dict[str, int],
@@ -403,23 +412,68 @@ def build_site_data(expansion_root: Path, tracker_root: Path) -> dict:
             "priority": safe_resolve_numeric(export_mod, fields.get("priority", "")) or 0,
         }
 
+    tmhm_define_path = expansion_root / "include" / "constants" / "tms_hms.h"
+    tm_move_names, hm_move_names = parse_tmhm_move_lists(tmhm_define_path)
+
+    tmhm_machine_info: dict[str, dict] = {}
+    for number, move_name in enumerate(tm_move_names, start=1):
+        move_token = f"MOVE_{move_name}"
+        tmhm_machine_info[f"ITEM_TM_{move_name}"] = {
+            "numericToken": f"ITEM_TM{number:02d}",
+            "machineType": "TM",
+            "machineNumber": number,
+            "moveId": move_constants.get(move_token),
+            "moveName": humanize_token(move_token, "MOVE_"),
+        }
+    for number, move_name in enumerate(hm_move_names, start=1):
+        move_token = f"MOVE_{move_name}"
+        tmhm_machine_info[f"ITEM_HM_{move_name}"] = {
+            "numericToken": f"ITEM_HM{number:02d}",
+            "machineType": "HM",
+            "machineNumber": number,
+            "moveId": move_constants.get(move_token),
+            "moveName": humanize_token(move_token, "MOVE_"),
+        }
+
     items_text = read_text(expansion_root / "src" / "data" / "items.h")
     named_item_strings = export_mod.parse_named_string_constants(items_text)
     item_blocks = export_mod.parse_indexed_initializer_entries(items_text, "ITEM_")
     items: list[dict] = []
     item_name_by_id: dict[int, str] = {}
     for token, block in item_blocks.items():
+        machine_info = tmhm_machine_info.get(token)
         item_id = item_constants.get(token)
+        if item_id is None and machine_info is not None:
+            item_id = item_constants.get(machine_info["numericToken"])
         if item_id is None or item_id <= 0:
             continue
         fields = export_mod.parse_top_level_designated_fields(block)
+        machine_type = None
+        machine_number = None
+        move_id = None
+        move_name = None
+        item_token = token
+        token_match = re.fullmatch(r"ITEM_(TM|HM)(\d{2,3})", token)
+        if machine_info is not None:
+            item_token = machine_info["numericToken"]
+            machine_type = machine_info["machineType"]
+            machine_number = machine_info["machineNumber"]
+            move_id = machine_info["moveId"]
+            move_name = machine_info["moveName"]
+        elif token_match:
+            machine_type = token_match.group(1)
+            machine_number = int(token_match.group(2))
         item = {
             "id": item_id,
-            "token": token,
+            "token": item_token,
             "name": export_mod.resolve_string_field(fields.get("name", ""), named_item_strings) or humanize_token(token, "ITEM_"),
             "description": export_mod.resolve_string_field(fields.get("description", ""), named_item_strings) or "",
             "pocket": safe_extract_identifier(export_mod, fields.get("pocket", ""), "POCKET_"),
             "price": safe_resolve_numeric(export_mod, fields.get("price", "")) or 0,
+            "machineType": machine_type,
+            "machineNumber": machine_number,
+            "moveId": move_id,
+            "moveName": move_name,
         }
         items.append(item)
         item_name_by_id[item_id] = item["name"]
@@ -444,7 +498,7 @@ def build_site_data(expansion_root: Path, tracker_root: Path) -> dict:
     egg_arrays = parse_move_array_file(expansion_root / "src" / "data" / "pokemon" / "egg_moves.h")
     teachable_text = read_text(expansion_root / "src" / "data" / "pokemon" / "teachable_learnsets.h")
 
-    tmhm_text = read_text(expansion_root / "include" / "constants" / "tms_hms.h")
+    tmhm_text = read_text(tmhm_define_path)
     tmhm_tokens = {f"MOVE_{token}" for token in re.findall(r"F\(([A-Z0-9_]+)\)", tmhm_text)}
     tutor_tokens = parse_token_list_from_comment_block(
         teachable_text,

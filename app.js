@@ -141,7 +141,10 @@ function getEntriesForTab() {
   }
   if (state.tab === "items") {
     return state.data.items.filter((entry) =>
-      [entry.id, entry.name, entry.description, entry.pocket].join(" ").toLowerCase().includes(query),
+      [entry.id, entry.name, entry.description, entry.pocket, entry.token, entry.moveName, entry.machineType, entry.machineNumber]
+        .join(" ")
+        .toLowerCase()
+        .includes(query),
     );
   }
   if (state.tab === "trainers") {
