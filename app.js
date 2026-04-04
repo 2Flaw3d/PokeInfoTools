@@ -28,10 +28,15 @@ const typeColors = {
   Fairy: "#ffbde2",
 };
 
+const MOBILE_BREAKPOINT = 1040;
+const LIST_BATCH_DESKTOP = 120;
+const LIST_BATCH_MOBILE = 48;
+
 const els = {
   tabs: document.getElementById("tabs"),
   list: document.getElementById("list"),
   detail: document.getElementById("detail"),
+  detailPanel: document.getElementById("detail-panel"),
   listTitle: document.getElementById("list-title"),
   listCount: document.getElementById("list-count"),
   search: document.getElementById("search"),
@@ -43,10 +48,38 @@ const state = {
   tab: "pokemon",
   query: "",
   selectedId: null,
+  visibleCount: 0,
 };
 
 function byId(entries) {
   return new Map(entries.map((entry) => [entry.id, entry]));
+}
+
+function isMobileLayout() {
+  return window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT}px)`).matches;
+}
+
+function getListBatchSize() {
+  return isMobileLayout() ? LIST_BATCH_MOBILE : LIST_BATCH_DESKTOP;
+}
+
+function resetVisibleCount() {
+  state.visibleCount = getListBatchSize();
+}
+
+function scrollDetailIntoView() {
+  if (!isMobileLayout()) return;
+  requestAnimationFrame(() => {
+    els.detailPanel?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function selectEntry(id, options = {}) {
+  state.selectedId = id;
+  render();
+  if (options.scrollMobile) {
+    scrollDetailIntoView();
+  }
 }
 
 function buildIndexes(data) {
@@ -61,11 +94,13 @@ function renderTabs() {
   els.tabs.innerHTML = "";
   for (const tab of tabs) {
     const button = document.createElement("button");
+    button.type = "button";
     button.className = `tab${state.tab === tab.id ? " active" : ""}`;
     button.textContent = tab.label;
     button.addEventListener("click", () => {
       state.tab = tab.id;
       state.selectedId = null;
+      resetVisibleCount();
       render();
     });
     els.tabs.appendChild(button);
@@ -154,7 +189,7 @@ function escapeHtml(value) {
 }
 
 function navButton(tab, id, label) {
-  return `<button class="chip nav-chip" data-nav-tab="${tab}" data-nav-id="${id}">${escapeHtml(label)}</button>`;
+  return `<button type="button" class="chip nav-chip" data-nav-tab="${tab}" data-nav-id="${id}">${escapeHtml(label)}</button>`;
 }
 
 function setDetailHtml(html, options = {}) {
@@ -164,12 +199,15 @@ function setDetailHtml(html, options = {}) {
 
 function renderList(entries) {
   els.listTitle.textContent = tabs.find((tab) => tab.id === state.tab)?.label ?? state.tab;
-  els.listCount.textContent = state.tab === "rules" ? "Snapshot" : `${entries.length} entries`;
 
   if (state.tab === "rules") {
+    els.listCount.textContent = "Snapshot";
     els.list.innerHTML = `<div class="detail-card"><strong>${state.data.project.title}</strong><p>${state.data.project.subtitle}</p></div>`;
     return;
   }
+
+  const visibleEntries = entries.slice(0, state.visibleCount);
+  els.listCount.textContent = visibleEntries.length < entries.length ? `${entries.length} entries • ${visibleEntries.length} shown` : `${entries.length} entries`;
 
   if (!entries.length) {
     els.list.innerHTML = `<div class="detail-card"><strong>No results</strong><p>Try a broader search.</p></div>`;
@@ -177,12 +215,17 @@ function renderList(entries) {
   }
 
   els.list.innerHTML = "";
-  for (const entry of entries) {
+  for (const entry of visibleEntries) {
     const id = entry.id ?? entry.idToken;
     const button = document.createElement("button");
+    button.type = "button";
     button.className = `list-item${String(state.selectedId) === String(id) ? " active" : ""}`;
 
-    const icon = state.tab === "pokemon" && entry.icon ? `<img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" />` : `<div></div>`;
+    const icon =
+      state.tab === "pokemon" && entry.icon
+        ? `<img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" loading="lazy" decoding="async" />`
+        : `<div></div>`;
+
     let sub = "";
     if (state.tab === "pokemon") sub = (entry.types || []).join(" / ");
     if (state.tab === "moves") sub = entry.description?.replace(/\n/g, " ") || [entry.type, entry.category].filter(Boolean).join(" • ");
@@ -192,10 +235,21 @@ function renderList(entries) {
 
     button.innerHTML = `${icon}<div><div class="list-item-title">${entry.name ?? entry.idToken}</div><div class="list-item-sub">${sub}</div></div><div class="muted">ID: ${id}</div>`;
     button.addEventListener("click", () => {
-      state.selectedId = id;
-      render();
+      selectEntry(id, { scrollMobile: true });
     });
     els.list.appendChild(button);
+  }
+
+  if (visibleEntries.length < entries.length) {
+    const moreButton = document.createElement("button");
+    moreButton.type = "button";
+    moreButton.className = "show-more";
+    moreButton.textContent = `Show ${Math.min(getListBatchSize(), entries.length - visibleEntries.length)} more`;
+    moreButton.addEventListener("click", () => {
+      state.visibleCount += getListBatchSize();
+      render();
+    });
+    els.list.appendChild(moreButton);
   }
 }
 
@@ -262,7 +316,7 @@ function renderPokemonDetail(entry) {
         <h2>${entry.name}</h2>
         <p>ID: ${entry.id} • ${entry.token}</p>
       </div>
-      ${entry.icon ? `<div class="pokemon-icon-zoom"><img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" /></div>` : ""}
+      ${entry.icon ? `<div class="pokemon-icon-zoom"><img class="pokemon-icon" src="${entry.icon}" alt="${entry.name}" decoding="async" /></div>` : ""}
     </div>
 
     <div class="chip-row" style="margin-top:18px;">${types.map(typeChip).join("")}</div>
@@ -425,7 +479,7 @@ function renderRulesDetail() {
         <p>${state.data.project.subtitle}</p>
       </div>
     </div>
-    <div class="detail-section">
+    <div class="detail-section detail-section-list">
       ${state.data.project.sections
         .map(
           (section) => `
@@ -469,22 +523,33 @@ function render() {
 }
 
 async function init() {
+  resetVisibleCount();
   const response = await fetch("data/site-data.json");
   state.data = await response.json();
   buildIndexes(state.data);
+
   document.addEventListener("click", (event) => {
     const button = event.target.closest("[data-nav-tab][data-nav-id]");
     if (!button) return;
     state.tab = button.dataset.navTab;
     state.selectedId = button.dataset.navId;
     state.query = "";
+    resetVisibleCount();
     els.search.value = "";
     render();
+    scrollDetailIntoView();
   });
+
   els.search.addEventListener("input", (event) => {
     state.query = event.target.value;
+    resetVisibleCount();
     render();
   });
+
+  window.addEventListener("resize", () => {
+    state.visibleCount = Math.max(state.visibleCount, getListBatchSize());
+  });
+
   render();
 }
 

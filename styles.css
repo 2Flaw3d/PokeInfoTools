@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #0b1118;
   --panel: rgba(18, 28, 40, 0.92);
   --line: rgba(154, 180, 204, 0.16);
@@ -27,6 +27,18 @@ body {
 
 body {
   padding: 24px;
+}
+
+button,
+input {
+  font: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  display: block;
 }
 
 .app-shell {
@@ -76,9 +88,10 @@ h1 {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  grid-template-columns: minmax(160px, 1fr);
   gap: 14px;
-  min-width: 290px;
+  min-width: 180px;
+  align-content: start;
 }
 
 .meta-card,
@@ -94,6 +107,14 @@ h1 {
 .meta-label,
 .muted {
   color: var(--muted);
+}
+
+.meta-card strong,
+.stat-card strong,
+.detail-box strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.25rem;
 }
 
 .toolbar {
@@ -129,7 +150,8 @@ input[type="search"]::placeholder {
   gap: 10px;
 }
 
-.tab {
+.tab,
+.show-more {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
@@ -139,7 +161,8 @@ input[type="search"]::placeholder {
 }
 
 .tab:hover,
-.tab.active {
+.tab.active,
+.show-more:hover {
   background: rgba(117, 217, 255, 0.12);
   border-color: rgba(117, 217, 255, 0.3);
 }
@@ -150,13 +173,6 @@ input[type="search"]::placeholder {
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-}
-
-.stat-card strong,
-.detail-box strong {
-  display: block;
-  margin-top: 8px;
-  font-size: 1.25rem;
 }
 
 .main-grid {
@@ -177,6 +193,7 @@ input[type="search"]::placeholder {
 
 .detail-panel {
   padding: 22px;
+  scroll-margin-top: 14px;
 }
 
 .list-head {
@@ -213,6 +230,8 @@ input[type="search"]::placeholder {
   border-radius: 16px;
   cursor: pointer;
   text-align: left;
+  content-visibility: auto;
+  contain-intrinsic-size: 58px;
 }
 
 .list-item.active,
@@ -227,6 +246,7 @@ input[type="search"]::placeholder {
   object-fit: none;
   object-position: left top;
   image-rendering: pixelated;
+  background: transparent;
 }
 
 .pokemon-icon-zoom {
@@ -248,6 +268,10 @@ input[type="search"]::placeholder {
 .detail-card p,
 .detail-title p {
   color: var(--muted);
+}
+
+.detail {
+  min-height: 100%;
 }
 
 .detail.empty-state {
@@ -330,6 +354,11 @@ input[type="search"]::placeholder {
   .hero-meta {
     min-width: 0;
   }
+
+  .list-panel,
+  .detail-panel {
+    min-height: 0;
+  }
 }
 
 @media (max-width: 720px) {
@@ -343,5 +372,17 @@ input[type="search"]::placeholder {
   .list-panel,
   .detail-panel {
     border-radius: 18px;
+  }
+
+  .detail-panel {
+    padding: 18px;
+  }
+
+  .list-item {
+    grid-template-columns: auto 1fr;
+  }
+
+  .list-item > .muted {
+    grid-column: 2;
   }
 }
