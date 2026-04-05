@@ -17,16 +17,25 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, rgba(62, 107, 153, 0.28), transparent 30%),
-    radial-gradient(circle at top right, rgba(80, 178, 149, 0.18), transparent 26%),
-    linear-gradient(180deg, #091018 0%, #0d141d 100%);
+  background: #0d141d;
   color: var(--text);
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
 body {
+  position: relative;
   padding: 24px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at top left, rgba(62, 107, 153, 0.28), transparent 30%),
+    radial-gradient(circle at top right, rgba(80, 178, 149, 0.18), transparent 26%),
+    linear-gradient(180deg, #091018 0%, #0d141d 100%);
 }
 
 button,
@@ -142,6 +151,15 @@ input[type="search"] {
 
 input[type="search"]::placeholder {
   color: #72849a;
+}
+
+input[type="search"]:focus,
+input[type="search"]:active {
+  background: rgba(7, 12, 19, 0.8);
+  border-color: rgba(117, 217, 255, 0.3);
+  box-shadow: none;
+  color: var(--text);
+  outline: none;
 }
 
 .tabs {
