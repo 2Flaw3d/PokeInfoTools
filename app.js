@@ -31,6 +31,7 @@ const typeColors = {
 const MOBILE_BREAKPOINT = 1040;
 const LIST_BATCH_DESKTOP = 120;
 const LIST_BATCH_MOBILE = 48;
+const DATA_VERSION = "20260705-trainer-routes-ai-flags";
 
 const els = {
   tabs: document.getElementById("tabs"),
@@ -254,10 +255,11 @@ function buildAiFlagCards(entry) {
   return details
     .map((flag) => {
       const expandsTo = (flag.expandsTo || []).filter(Boolean);
+      const title = flag.macro ? `${flag.label || "AI flag"} (${flag.macro})` : flag.label || "AI flag";
       return `
         <div class="detail-card ai-flag-card">
-          <h4>${escapeHtml(flag.label || flag.macro || "AI flag")}</h4>
-          <p><span class="muted">Macro:</span> ${escapeHtml(flag.macro || "Unknown")}</p>
+          <h4>${escapeHtml(title)}</h4>
+          <p><span class="muted">Flags:</span></p>
           <div class="chip-row">
             ${
               expandsTo.length
@@ -269,6 +271,17 @@ function buildAiFlagCards(entry) {
       `;
     })
     .join("");
+}
+
+function formatAiFlagSummary(entry) {
+  const details = entry.aiFlagDetails || [];
+  if (details.length) {
+    return details
+      .map((flag) => (flag.macro ? `${flag.label} (${flag.macro})` : flag.label))
+      .filter(Boolean)
+      .join(" / ");
+  }
+  return (entry.aiFlags || []).join(" / ");
 }
 
 function setDetailHtml(html, options = {}) {
@@ -644,7 +657,7 @@ function renderList(entries) {
         entry.zone || "",
         entry.class || "Trainer",
         `${(entry.pokemon || []).length} mon`,
-        (entry.aiFlags || []).join(" / "),
+        formatAiFlagSummary(entry),
       ].filter(Boolean).join(" - ");
     }
 
@@ -710,7 +723,7 @@ function render() {
 
 async function init() {
   resetVisibleCount();
-  const response = await fetch("data/site-data.json");
+  const response = await fetch(`data/site-data.json?v=${DATA_VERSION}`);
   state.data = await response.json();
   buildIndexes(state.data);
 
