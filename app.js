@@ -31,7 +31,7 @@ const typeColors = {
 const MOBILE_BREAKPOINT = 1040;
 const LIST_BATCH_DESKTOP = 120;
 const LIST_BATCH_MOBILE = 48;
-const DATA_VERSION = "20260705-trainer-routes-ai-flags";
+const DATA_VERSION = "20260705-trainer-public-snapshot";
 
 const els = {
   tabs: document.getElementById("tabs"),
@@ -160,7 +160,6 @@ function getEntriesForTab() {
         entry.map,
         ...(entry.aiFlags || []),
         ...(entry.aiFlagDetails || []).flatMap((flag) => [flag.macro, ...(flag.expandsTo || [])]),
-        ...(entry.contractRoles || []),
         ...entry.pokemon.map((mon) => mon.speciesName),
       ].join(" ").toLowerCase().includes(query),
     );
@@ -217,30 +216,6 @@ function escapeHtml(value) {
 
 function navButton(tab, id, label) {
   return `<button type="button" class="chip nav-chip" data-nav-tab="${tab}" data-nav-id="${id}">${escapeHtml(label)}</button>`;
-}
-
-function roleLabel(role) {
-  const labels = {
-    required: "Required",
-    optional: "Optional",
-    choice: "Choice group",
-    floating: "Floating",
-  };
-  return labels[role] || role || "-";
-}
-
-function formatSegmentRef(ref) {
-  if (!ref) return "-";
-  if (ref.role === "floating") return "Any allowed segment";
-  const from = ref.fromLabel || ref.fromAnchor || "?";
-  const to = ref.toLabel || ref.toAnchor || "?";
-  return `${from} -> ${to}`;
-}
-
-function formatFlagId(flagId) {
-  const value = Number(flagId);
-  if (!Number.isFinite(value)) return "-";
-  return `${value} / 0x${value.toString(16).toUpperCase()}`;
 }
 
 function buildAiFlagCards(entry) {
@@ -458,33 +433,7 @@ function buildItemDetail(entry) {
 }
 
 function buildTrainerDetail(entry) {
-  const contractRefs = entry.contractRefs || [];
   const aiCards = buildAiFlagCards(entry);
-  const roleChips = (entry.contractRoles || [])
-    .map((role) => `<span class="chip contract-role ${escapeHtml(role)}">${roleLabel(role)}</span>`)
-    .join("");
-  const contractCards = contractRefs.length
-    ? contractRefs
-        .map((ref) => {
-          const choiceLine = ref.choiceGroupId
-            ? `<p class="muted">Group: ${escapeHtml(ref.choiceGroupId)}${
-                Number.isFinite(ref.choiceMinDefeated) || Number.isFinite(ref.choiceMaxDefeated)
-                  ? ` (${ref.choiceMinDefeated ?? "?"}-${ref.choiceMaxDefeated ?? "?"} defeated)`
-                  : ""
-              }</p>`
-            : "";
-          return `
-            <div class="detail-card">
-              <h4>${roleLabel(ref.role)}</h4>
-              <p>${escapeHtml(formatSegmentRef(ref))}</p>
-              <p><span class="muted">Defeat flag:</span> ${escapeHtml(formatFlagId(ref.flagId ?? entry.defeatedFlagId))}</p>
-              ${choiceLine}
-              ${ref.notes ? `<p class="muted">${escapeHtml(ref.notes)}</p>` : ""}
-            </div>
-          `;
-        })
-        .join("")
-    : `<div class="detail-card"><p>No contract data available.</p></div>`;
 
   const party = (entry.pokemon || [])
     .map(
@@ -520,7 +469,6 @@ function buildTrainerDetail(entry) {
     </div>
     <div class="detail-grid">
       <div class="detail-box"><span class="muted">Trainer #</span><strong>${entry.id ?? "-"}</strong></div>
-      <div class="detail-box"><span class="muted">Defeat Flag</span><strong>${formatFlagId(entry.defeatedFlagId)}</strong></div>
       <div class="detail-box"><span class="muted">Zone</span><strong>${entry.zone || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Map</span><strong>${entry.map || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
@@ -529,16 +477,8 @@ function buildTrainerDetail(entry) {
       <div class="detail-box"><span class="muted">Party Size</span><strong>${(entry.pokemon || []).length}</strong></div>
     </div>
     <div class="detail-section">
-      <h3>Contract Roles</h3>
-      <div class="chip-row">${roleChips || `<span class="chip">No contract role</span>`}</div>
-    </div>
-    <div class="detail-section">
       <h3>AI</h3>
       <div class="detail-section-list">${aiCards}</div>
-    </div>
-    <div class="detail-section">
-      <h3>Legal Contract</h3>
-      <div class="detail-section-list">${contractCards}</div>
     </div>
     <div class="detail-section">
       <h3>Trainer Items</h3>

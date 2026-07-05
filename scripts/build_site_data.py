@@ -252,7 +252,6 @@ def parse_showdown_trainers(
             {
                 "id": trainer_id,
                 "idToken": id_token,
-                "defeatedFlagId": TRAINER_FLAGS_START + trainer_id,
                 "name": trainer_meta.get("Name", ""),
                 "class": trainer_meta.get("Class", ""),
                 "pic": trainer_meta.get("Pic", ""),
@@ -266,18 +265,12 @@ def parse_showdown_trainers(
                 "map": contract["map"],
                 "zoneOrder": contract["zoneOrder"],
                 "contractOrder": contract["firstOrder"],
-                "contractRoles": contract["roles"],
-                "contractRefs": contract["refs"],
                 "pokemon": pokemon_entries,
             }
         )
 
     trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["zone"], entry["contractOrder"], entry["id"]))
     return trainers
-
-
-def humanize_anchor(anchor: str) -> str:
-    return humanize_token(anchor)
 
 
 def parse_ai_flag_details(path: Path) -> dict[str, dict]:
@@ -305,7 +298,6 @@ def build_contract_trainer_index(
 
     by_trainer_id: dict[int, dict] = {}
     zone_order: dict[str, int] = {}
-    seen_refs: set[tuple[int, str, str, str]] = set()
     order = 0
 
     def record(flag_id: int, role: str, source: dict) -> None:
@@ -328,37 +320,13 @@ def build_contract_trainer_index(
             trainer_id,
             {
                 "trainerId": trainer_id,
-                "defeatedFlagId": flag_id,
                 "zone": zone,
                 "map": map_name,
                 "zoneOrder": zone_order[zone],
                 "firstOrder": order,
-                "roles": [],
-                "refs": [],
             },
         )
         entry["firstOrder"] = min(entry["firstOrder"], order)
-        if role not in entry["roles"]:
-            entry["roles"].append(role)
-
-        ref = {
-            "role": role,
-            "flagId": flag_id,
-            "segmentId": source.get("segmentId", ""),
-            "fromAnchor": source.get("fromAnchor", ""),
-            "toAnchor": source.get("toAnchor", ""),
-            "fromLabel": humanize_anchor(source.get("fromAnchor", "")) if source.get("fromAnchor") else "",
-            "toLabel": humanize_anchor(source.get("toAnchor", "")) if source.get("toAnchor") else "",
-            "choiceGroupId": source.get("choiceGroupId", ""),
-            "choiceRequired": source.get("choiceRequired"),
-            "choiceMinDefeated": source.get("choiceMinDefeated"),
-            "choiceMaxDefeated": source.get("choiceMaxDefeated"),
-            "notes": source.get("notes", ""),
-        }
-        key = (trainer_id, role, ref["segmentId"], ref["choiceGroupId"])
-        if key not in seen_refs:
-            seen_refs.add(key)
-            entry["refs"].append(ref)
         order += 1
 
     for segment in contract.get("segments", []):
@@ -395,18 +363,7 @@ def build_contract_trainer_index(
         for flag_id in floating.get("flagIds", []):
             record(flag_id, "floating", source)
 
-    for entry in by_trainer_id.values():
-        entry["refs"].sort(key=lambda ref: (
-            1 if ref.get("segmentId") == "*" else 0,
-            ref.get("segmentId", ""),
-            ref.get("role", ""),
-            ref.get("choiceGroupId", ""),
-        ))
-
     summary = {
-        "schemaVersion": contract.get("schemaVersion"),
-        "sourceSha256": contract.get("sourceSha256"),
-        "modeScope": contract.get("modeScope", []),
         "legalTrainerCount": len(by_trainer_id),
         "zoneCount": len(zone_order),
         "zones": [
@@ -535,7 +492,7 @@ def build_project_rules() -> dict:
             {
                 "title": "Notes",
                 "items": [
-                    "La sezione trainer mostra solo i trainer legali nel trainer contract corrente.",
+                    "La sezione trainer mostra solo i trainer effettivamente affrontabili nella run corrente.",
                     "Le regole qui riportate vengono dai file di documentazione locali e sono pensate come base iniziale del sito.",
                 ],
             },
@@ -860,7 +817,7 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
         "abilities": abilities,
         "items": items,
         "trainers": trainers,
-        "trainerContract": trainer_contract_summary,
+        "trainerSnapshot": trainer_contract_summary,
         "indexes": {
             "tmhmMoveIds": sorted({move_constants[token] for token in tmhm_tokens if token in move_constants}),
             "tutorMoveIds": sorted({move_constants[token] for token in tutor_tokens if token in move_constants}),

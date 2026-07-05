@@ -9,7 +9,7 @@ Minimal dark GitHub Pages site for Flawzo testing data.
 - Abilities
 - Items
 - Teachables and egg moves inside each Pokemon page
-- Legal trainer snapshot from the current trainer contract, grouped by zone
+- Legal fightable trainer snapshot, grouped by zone
   and including trainer AI flags
 - Project rules snapshot
 

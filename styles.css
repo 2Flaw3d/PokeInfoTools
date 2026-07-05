@@ -388,19 +388,6 @@ input[type="search"]:active {
   font-weight: 700;
 }
 
-.contract-role.required {
-  border-color: rgba(255, 216, 107, 0.32);
-}
-
-.contract-role.optional {
-  border-color: rgba(124, 226, 153, 0.28);
-}
-
-.contract-role.choice,
-.contract-role.floating {
-  border-color: rgba(117, 217, 255, 0.32);
-}
-
 .detail-grid {
   margin-top: 22px;
   display: grid;
