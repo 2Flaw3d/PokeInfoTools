@@ -112,7 +112,7 @@ function renderStats() {
     { label: "Moves", value: state.data.moves.length },
     { label: "Abilities", value: state.data.abilities.length },
     { label: "Items", value: state.data.items.length },
-    { label: "Trainers", value: state.data.trainers.length },
+    { label: "Legal Trainers", value: state.data.trainers.length },
   ];
   els.statsStrip.innerHTML = stats
     .map((stat) => `<div class="stat-card"><span class="muted">${stat.label}</span><strong>${stat.value}</strong></div>`)
@@ -149,7 +149,17 @@ function getEntriesForTab() {
   }
   if (state.tab === "trainers") {
     return state.data.trainers.filter((entry) =>
-      [entry.idToken, entry.name, entry.class, ...entry.pokemon.map((mon) => mon.speciesName)].join(" ").toLowerCase().includes(query),
+      [
+        entry.id,
+        entry.idToken,
+        entry.name,
+        entry.class,
+        entry.zone,
+        entry.map,
+        ...(entry.aiFlags || []),
+        ...(entry.contractRoles || []),
+        ...entry.pokemon.map((mon) => mon.speciesName),
+      ].join(" ").toLowerCase().includes(query),
     );
   }
   return [];
@@ -204,6 +214,24 @@ function escapeHtml(value) {
 
 function navButton(tab, id, label) {
   return `<button type="button" class="chip nav-chip" data-nav-tab="${tab}" data-nav-id="${id}">${escapeHtml(label)}</button>`;
+}
+
+function roleLabel(role) {
+  const labels = {
+    required: "Required",
+    optional: "Optional",
+    choice: "Choice group",
+    floating: "Floating",
+  };
+  return labels[role] || role || "-";
+}
+
+function formatSegmentRef(ref) {
+  if (!ref) return "-";
+  if (ref.role === "floating") return "Any allowed segment";
+  const from = ref.fromLabel || ref.fromAnchor || "?";
+  const to = ref.toLabel || ref.toAnchor || "?";
+  return `${from} -> ${to}`;
 }
 
 function setDetailHtml(html, options = {}) {
@@ -380,6 +408,36 @@ function buildItemDetail(entry) {
 }
 
 function buildTrainerDetail(entry) {
+  const aiFlags = entry.aiFlags || [];
+  const contractRefs = entry.contractRefs || [];
+  const aiChips = aiFlags.length
+    ? aiFlags.map((flag) => `<span class="chip">${escapeHtml(flag)}</span>`).join("")
+    : `<span class="chip">No AI flags</span>`;
+  const roleChips = (entry.contractRoles || [])
+    .map((role) => `<span class="chip contract-role ${escapeHtml(role)}">${roleLabel(role)}</span>`)
+    .join("");
+  const contractCards = contractRefs.length
+    ? contractRefs
+        .map((ref) => {
+          const choiceLine = ref.choiceGroupId
+            ? `<p class="muted">Group: ${escapeHtml(ref.choiceGroupId)}${
+                Number.isFinite(ref.choiceMinDefeated) || Number.isFinite(ref.choiceMaxDefeated)
+                  ? ` (${ref.choiceMinDefeated ?? "?"}-${ref.choiceMaxDefeated ?? "?"} defeated)`
+                  : ""
+              }</p>`
+            : "";
+          return `
+            <div class="detail-card">
+              <h4>${roleLabel(ref.role)}</h4>
+              <p>${escapeHtml(formatSegmentRef(ref))}</p>
+              ${choiceLine}
+              ${ref.notes ? `<p class="muted">${escapeHtml(ref.notes)}</p>` : ""}
+            </div>
+          `;
+        })
+        .join("")
+    : `<div class="detail-card"><p>No contract data available.</p></div>`;
+
   const party = (entry.pokemon || [])
     .map(
       (mon) => `
@@ -413,10 +471,25 @@ function buildTrainerDetail(entry) {
       </div>
     </div>
     <div class="detail-grid">
+      <div class="detail-box"><span class="muted">Trainer #</span><strong>${entry.id ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Zone</span><strong>${entry.zone || "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Map</span><strong>${entry.map || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Gender</span><strong>${entry.gender || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Battle Type</span><strong>${entry.battleType || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Party Size</span><strong>${(entry.pokemon || []).length}</strong></div>
+    </div>
+    <div class="detail-section">
+      <h3>Contract Roles</h3>
+      <div class="chip-row">${roleChips || `<span class="chip">No contract role</span>`}</div>
+    </div>
+    <div class="detail-section">
+      <h3>AI</h3>
+      <div class="chip-row">${aiChips}</div>
+    </div>
+    <div class="detail-section">
+      <h3>Legal Contract</h3>
+      <div class="detail-section-list">${contractCards}</div>
     </div>
     <div class="detail-section">
       <h3>Trainer Items</h3>
@@ -479,7 +552,16 @@ function renderList(entries) {
   }
 
   els.list.innerHTML = "";
+  let lastZone = null;
   for (const entry of visibleEntries) {
+    if (state.tab === "trainers" && entry.zone !== lastZone) {
+      lastZone = entry.zone;
+      const zoneHeader = document.createElement("div");
+      zoneHeader.className = "zone-header";
+      zoneHeader.innerHTML = `<span>${escapeHtml(entry.zone || "Unknown Zone")}</span><small>${escapeHtml(entry.map || "")}</small>`;
+      els.list.appendChild(zoneHeader);
+    }
+
     const id = entry.id ?? entry.idToken;
     const isSelected = String(state.selectedId) === String(id);
     const button = document.createElement("button");
@@ -496,7 +578,14 @@ function renderList(entries) {
     if (state.tab === "moves") sub = entry.description?.replace(/\n/g, " ") || [entry.type, entry.category].filter(Boolean).join(" • ");
     if (state.tab === "abilities") sub = entry.description || `${(entry.speciesIds || []).length} linked species`;
     if (state.tab === "items") sub = entry.description || [entry.pocket?.replace("POCKET_", ""), entry.price ? `${entry.price}$` : ""].filter(Boolean).join(" • ");
-    if (state.tab === "trainers") sub = `${entry.class || "Trainer"} • ${(entry.pokemon || []).length} mon`;
+    if (state.tab === "trainers") {
+      sub = [
+        entry.zone || "",
+        entry.class || "Trainer",
+        `${(entry.pokemon || []).length} mon`,
+        (entry.aiFlags || []).join(" / "),
+      ].filter(Boolean).join(" - ");
+    }
 
     button.innerHTML = `${icon}<div><div class="list-item-title">${entry.name ?? entry.idToken}</div><div class="list-item-sub">${sub}</div></div><div class="muted">ID: ${id}</div>`;
     button.addEventListener("click", () => {

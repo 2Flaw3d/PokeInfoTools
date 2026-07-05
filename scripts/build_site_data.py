@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_FLAWMERALD_ROOT = ROOT.parent / "Flawmerald"
+TRAINER_FLAGS_START = 0x500
 
 
 def load_module(path: Path):
@@ -33,6 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--flawmerald-root", default=str(DEFAULT_FLAWMERALD_ROOT))
     parser.add_argument("--expansion-root")
     parser.add_argument("--tracker-root")
+    parser.add_argument("--webapp-root")
     return parser.parse_args()
 
 
@@ -147,6 +149,8 @@ def parse_tmhm_move_lists(path: Path) -> tuple[list[str], list[str]]:
 def parse_showdown_trainers(
     path: Path,
     species_id_by_name: dict[str, int],
+    trainer_id_by_token: dict[str, int],
+    contract_by_trainer_id: dict[int, dict],
 ) -> list[dict]:
     content = read_text(path)
     pattern = re.compile(r"^===\s+([A-Z0-9_]+)\s+===\s*$", re.MULTILINE)
@@ -224,9 +228,23 @@ def parse_showdown_trainers(
                     mon["nature"] = value
             pokemon_entries.append(mon)
 
+        id_token = match.group(1)
+        trainer_id = trainer_id_by_token.get(id_token)
+        contract = contract_by_trainer_id.get(trainer_id) if trainer_id is not None else None
+        if contract is None:
+            continue
+
+        ai_flags = [
+            part.strip()
+            for part in trainer_meta.get("AI", "").split("/")
+            if part.strip()
+        ]
+
         trainers.append(
             {
-                "idToken": match.group(1),
+                "id": trainer_id,
+                "idToken": id_token,
+                "defeatedFlagId": TRAINER_FLAGS_START + trainer_id,
                 "name": trainer_meta.get("Name", ""),
                 "class": trainer_meta.get("Class", ""),
                 "pic": trainer_meta.get("Pic", ""),
@@ -234,11 +252,144 @@ def parse_showdown_trainers(
                 "music": trainer_meta.get("Music", ""),
                 "battleType": trainer_meta.get("Double Battle", "No"),
                 "items": [item.strip() for item in trainer_meta.get("Items", "").split("/") if item.strip()],
+                "aiFlags": ai_flags,
+                "zone": contract["zone"],
+                "map": contract["map"],
+                "zoneOrder": contract["zoneOrder"],
+                "contractOrder": contract["firstOrder"],
+                "contractRoles": contract["roles"],
+                "contractRefs": contract["refs"],
                 "pokemon": pokemon_entries,
             }
         )
 
+    trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["zone"], entry["contractOrder"], entry["id"]))
     return trainers
+
+
+def humanize_anchor(anchor: str) -> str:
+    return humanize_token(anchor)
+
+
+def build_contract_trainer_index(
+    contract_path: Path,
+    locations_path: Path,
+    known_trainer_ids: set[int],
+) -> tuple[dict[int, dict], dict]:
+    contract = json.loads(read_text(contract_path))
+    locations = json.loads(read_text(locations_path))
+
+    by_trainer_id: dict[int, dict] = {}
+    zone_order: dict[str, int] = {}
+    seen_refs: set[tuple[int, str, str, str]] = set()
+    order = 0
+
+    def record(flag_id: int, role: str, source: dict) -> None:
+        nonlocal order
+        if not isinstance(flag_id, int):
+            return
+        trainer_id = flag_id - TRAINER_FLAGS_START
+        # Same guard as apps/api/src/lib/postRunLog/contractTrainers.ts:
+        # story/milestone flags are part of the contract flagQuery, but only
+        # 0x500+id flags resolving to a known TRAINER_* token are trainer rows.
+        if trainer_id <= 0 or trainer_id not in known_trainer_ids:
+            return
+        location = locations.get(str(trainer_id), {})
+        zone = location.get("zone") or "Unknown"
+        map_name = location.get("map") or ""
+        if zone not in zone_order:
+            zone_order[zone] = len(zone_order)
+
+        entry = by_trainer_id.setdefault(
+            trainer_id,
+            {
+                "trainerId": trainer_id,
+                "defeatedFlagId": flag_id,
+                "zone": zone,
+                "map": map_name,
+                "zoneOrder": zone_order[zone],
+                "firstOrder": order,
+                "roles": [],
+                "refs": [],
+            },
+        )
+        entry["firstOrder"] = min(entry["firstOrder"], order)
+        if role not in entry["roles"]:
+            entry["roles"].append(role)
+
+        ref = {
+            "role": role,
+            "segmentId": source.get("segmentId", ""),
+            "fromAnchor": source.get("fromAnchor", ""),
+            "toAnchor": source.get("toAnchor", ""),
+            "fromLabel": humanize_anchor(source.get("fromAnchor", "")) if source.get("fromAnchor") else "",
+            "toLabel": humanize_anchor(source.get("toAnchor", "")) if source.get("toAnchor") else "",
+            "choiceGroupId": source.get("choiceGroupId", ""),
+            "choiceRequired": source.get("choiceRequired"),
+            "choiceMinDefeated": source.get("choiceMinDefeated"),
+            "choiceMaxDefeated": source.get("choiceMaxDefeated"),
+            "notes": source.get("notes", ""),
+        }
+        key = (trainer_id, role, ref["segmentId"], ref["choiceGroupId"])
+        if key not in seen_refs:
+            seen_refs.add(key)
+            entry["refs"].append(ref)
+        order += 1
+
+    for segment in contract.get("segments", []):
+        base_source = {
+            "segmentId": segment.get("id", ""),
+            "fromAnchor": segment.get("fromAnchor", ""),
+            "toAnchor": segment.get("toAnchor", ""),
+            "notes": segment.get("notes", ""),
+        }
+        for flag_id in segment.get("requiredFlagIds", []):
+            record(flag_id, "required", base_source)
+        for flag_id in segment.get("optionalFlagIds", []):
+            record(flag_id, "optional", base_source)
+        for choice in segment.get("choiceGroups", []):
+            choice_source = {
+                **base_source,
+                "choiceGroupId": choice.get("id", ""),
+                "choiceRequired": choice.get("required"),
+                "choiceMinDefeated": choice.get("minDefeated"),
+                "choiceMaxDefeated": choice.get("maxDefeated"),
+            }
+            for flag_id in choice.get("flagIds", []):
+                record(flag_id, "choice", choice_source)
+
+    for floating in contract.get("floatingTrainers", []):
+        source = {
+            "segmentId": "*",
+            "fromAnchor": "",
+            "toAnchor": "",
+            "choiceGroupId": floating.get("id", ""),
+            "choiceRequired": floating.get("required"),
+            "notes": floating.get("notes", ""),
+        }
+        for flag_id in floating.get("flagIds", []):
+            record(flag_id, "floating", source)
+
+    for entry in by_trainer_id.values():
+        entry["refs"].sort(key=lambda ref: (
+            1 if ref.get("segmentId") == "*" else 0,
+            ref.get("segmentId", ""),
+            ref.get("role", ""),
+            ref.get("choiceGroupId", ""),
+        ))
+
+    summary = {
+        "schemaVersion": contract.get("schemaVersion"),
+        "sourceSha256": contract.get("sourceSha256"),
+        "modeScope": contract.get("modeScope", []),
+        "legalTrainerCount": len(by_trainer_id),
+        "zoneCount": len(zone_order),
+        "zones": [
+            {"name": zone, "order": order}
+            for zone, order in sorted(zone_order.items(), key=lambda item: item[1])
+        ],
+    }
+    return by_trainer_id, summary
 
 
 def iter_group_paths(parts: list[str]) -> list[str]:
@@ -359,7 +510,7 @@ def build_project_rules() -> dict:
             {
                 "title": "Notes",
                 "items": [
-                    "La sezione trainer e da considerare snapshot temporanea dello stato attuale.",
+                    "La sezione trainer mostra solo i trainer legali nel trainer contract corrente.",
                     "Le regole qui riportate vengono dai file di documentazione locali e sono pensate come base iniziale del sito.",
                 ],
             },
@@ -371,7 +522,7 @@ def build_project_rules() -> dict:
     }
 
 
-def build_site_data(expansion_root: Path, tracker_root: Path) -> dict:
+def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path) -> dict:
     export_mod = load_module(expansion_root / "tools" / "tracker" / "export_expansion_data.py")
     expansion_json_path = tracker_root / "ironmon_tracker" / "data" / "ExpansionData.json"
     expansion_data = json.loads(read_text(expansion_json_path))
@@ -653,7 +804,26 @@ def build_site_data(expansion_root: Path, tracker_root: Path) -> dict:
             }
         )
 
-    trainers = parse_showdown_trainers(expansion_root / "src" / "data" / "trainers.party", species_id_by_name)
+    trainer_id_by_token, _ = parse_numeric_defines(
+        expansion_root / "include" / "constants" / "opponents.h",
+        "TRAINER_",
+    )
+    contract_by_trainer_id, trainer_contract_summary = build_contract_trainer_index(
+        webapp_root / "apps" / "api" / "src" / "lib" / "data" / "trainerSegmentContract.generated.json",
+        webapp_root / "apps" / "api" / "src" / "lib" / "postRunLog" / "trainerLocations.generated.json",
+        set(trainer_id_by_token.values()),
+    )
+    trainers = parse_showdown_trainers(
+        expansion_root / "src" / "data" / "trainers.party",
+        species_id_by_name,
+        trainer_id_by_token,
+        contract_by_trainer_id,
+    )
+
+    missing_contract_trainers = sorted(set(contract_by_trainer_id) - {entry["id"] for entry in trainers})
+    if missing_contract_trainers:
+        missing = ", ".join(str(trainer_id) for trainer_id in missing_contract_trainers[:20])
+        raise RuntimeError(f"Contract references trainer ids missing from trainers.party: {missing}")
 
     return {
         "generatedAtUtc": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
@@ -663,6 +833,7 @@ def build_site_data(expansion_root: Path, tracker_root: Path) -> dict:
         "abilities": abilities,
         "items": items,
         "trainers": trainers,
+        "trainerContract": trainer_contract_summary,
         "indexes": {
             "tmhmMoveIds": sorted({move_constants[token] for token in tmhm_tokens if token in move_constants}),
             "tutorMoveIds": sorted({move_constants[token] for token in tutor_tokens if token in move_constants}),
@@ -676,8 +847,9 @@ def main() -> int:
     flaw_root = Path(args.flawmerald_root).resolve()
     expansion_root = Path(args.expansion_root).resolve() if args.expansion_root else flaw_root / "pokeemerald-expansion"
     tracker_root = Path(args.tracker_root).resolve() if args.tracker_root else flaw_root / "Ironmon-Tracker-flawzo"
+    webapp_root = Path(args.webapp_root).resolve() if args.webapp_root else flaw_root / "Flawzo-WebApp"
 
-    site_data = build_site_data(expansion_root, tracker_root)
+    site_data = build_site_data(expansion_root, tracker_root, webapp_root)
     output = ROOT / "data" / "site-data.json"
     output.write_text(json.dumps(site_data, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
     print(f"Wrote {output}")

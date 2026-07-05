@@ -290,6 +290,27 @@ input[type="search"]:active {
   font-weight: 700;
 }
 
+.zone-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: rgba(117, 217, 255, 0.1);
+  border: 1px solid rgba(117, 217, 255, 0.16);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.zone-header small {
+  color: var(--muted);
+  font-weight: 500;
+}
+
 .list-item-sub,
 .detail-card p,
 .detail-title p {
@@ -343,6 +364,19 @@ input[type="search"]:active {
 .chip.type {
   color: #081019;
   font-weight: 700;
+}
+
+.contract-role.required {
+  border-color: rgba(255, 216, 107, 0.32);
+}
+
+.contract-role.optional {
+  border-color: rgba(124, 226, 153, 0.28);
+}
+
+.contract-role.choice,
+.contract-role.floating {
+  border-color: rgba(117, 217, 255, 0.32);
 }
 
 .detail-grid {

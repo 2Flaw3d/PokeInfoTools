@@ -9,7 +9,8 @@ Minimal dark GitHub Pages site for Flawzo testing data.
 - Abilities
 - Items
 - Teachables and egg moves inside each Pokemon page
-- Trainer snapshot
+- Legal trainer snapshot from the current trainer contract, grouped by zone
+  and including trainer AI flags
 - Project rules snapshot
 
 ## Data Source
@@ -20,6 +21,7 @@ Expected sibling workspace layout:
 
 - `../Flawmerald/pokeemerald-expansion`
 - `../Flawmerald/Ironmon-Tracker-flawzo`
+- `../Flawmerald/Flawzo-WebApp`
 
 ## Rebuild Data
 
