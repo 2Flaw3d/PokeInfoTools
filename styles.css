@@ -298,17 +298,39 @@ input[type="search"]:active {
   justify-content: space-between;
   gap: 12px;
   align-items: baseline;
+  width: 100%;
   padding: 10px 12px;
   border-radius: 12px;
   background: rgba(117, 217, 255, 0.1);
   border: 1px solid rgba(117, 217, 255, 0.16);
   color: var(--text);
   font-weight: 700;
+  cursor: pointer;
+  text-align: left;
+}
+
+.zone-header:hover,
+.zone-header.collapsed {
+  border-color: rgba(117, 217, 255, 0.28);
+  background: rgba(117, 217, 255, 0.14);
+}
+
+.zone-chevron {
+  display: inline-flex;
+  justify-content: center;
+  width: 1.2em;
+  margin-right: 6px;
+  color: var(--accent);
 }
 
 .zone-header small {
   color: var(--muted);
   font-weight: 500;
+}
+
+.code-chip {
+  font-family: Consolas, "Liberation Mono", monospace;
+  font-size: 0.82rem;
 }
 
 .list-item-sub,

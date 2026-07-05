@@ -49,6 +49,7 @@ const state = {
   query: "",
   selectedId: null,
   visibleCount: 0,
+  collapsedTrainerZones: new Set(),
 };
 
 function byId(entries) {
@@ -157,6 +158,7 @@ function getEntriesForTab() {
         entry.zone,
         entry.map,
         ...(entry.aiFlags || []),
+        ...(entry.aiFlagDetails || []).flatMap((flag) => [flag.macro, ...(flag.expandsTo || [])]),
         ...(entry.contractRoles || []),
         ...entry.pokemon.map((mon) => mon.speciesName),
       ].join(" ").toLowerCase().includes(query),
@@ -232,6 +234,41 @@ function formatSegmentRef(ref) {
   const from = ref.fromLabel || ref.fromAnchor || "?";
   const to = ref.toLabel || ref.toAnchor || "?";
   return `${from} -> ${to}`;
+}
+
+function formatFlagId(flagId) {
+  const value = Number(flagId);
+  if (!Number.isFinite(value)) return "-";
+  return `${value} / 0x${value.toString(16).toUpperCase()}`;
+}
+
+function buildAiFlagCards(entry) {
+  const details = (entry.aiFlagDetails || []).length
+    ? entry.aiFlagDetails
+    : (entry.aiFlags || []).map((label) => ({ label }));
+
+  if (!details.length) {
+    return `<div class="detail-card"><p>No AI flags</p></div>`;
+  }
+
+  return details
+    .map((flag) => {
+      const expandsTo = (flag.expandsTo || []).filter(Boolean);
+      return `
+        <div class="detail-card ai-flag-card">
+          <h4>${escapeHtml(flag.label || flag.macro || "AI flag")}</h4>
+          <p><span class="muted">Macro:</span> ${escapeHtml(flag.macro || "Unknown")}</p>
+          <div class="chip-row">
+            ${
+              expandsTo.length
+                ? expandsTo.map((token) => `<span class="chip code-chip">${escapeHtml(token)}</span>`).join("")
+                : `<span class="chip">No resolved flag macro</span>`
+            }
+          </div>
+        </div>
+      `;
+    })
+    .join("");
 }
 
 function setDetailHtml(html, options = {}) {
@@ -408,11 +445,8 @@ function buildItemDetail(entry) {
 }
 
 function buildTrainerDetail(entry) {
-  const aiFlags = entry.aiFlags || [];
   const contractRefs = entry.contractRefs || [];
-  const aiChips = aiFlags.length
-    ? aiFlags.map((flag) => `<span class="chip">${escapeHtml(flag)}</span>`).join("")
-    : `<span class="chip">No AI flags</span>`;
+  const aiCards = buildAiFlagCards(entry);
   const roleChips = (entry.contractRoles || [])
     .map((role) => `<span class="chip contract-role ${escapeHtml(role)}">${roleLabel(role)}</span>`)
     .join("");
@@ -430,6 +464,7 @@ function buildTrainerDetail(entry) {
             <div class="detail-card">
               <h4>${roleLabel(ref.role)}</h4>
               <p>${escapeHtml(formatSegmentRef(ref))}</p>
+              <p><span class="muted">Defeat flag:</span> ${escapeHtml(formatFlagId(ref.flagId ?? entry.defeatedFlagId))}</p>
               ${choiceLine}
               ${ref.notes ? `<p class="muted">${escapeHtml(ref.notes)}</p>` : ""}
             </div>
@@ -472,6 +507,7 @@ function buildTrainerDetail(entry) {
     </div>
     <div class="detail-grid">
       <div class="detail-box"><span class="muted">Trainer #</span><strong>${entry.id ?? "-"}</strong></div>
+      <div class="detail-box"><span class="muted">Defeat Flag</span><strong>${formatFlagId(entry.defeatedFlagId)}</strong></div>
       <div class="detail-box"><span class="muted">Zone</span><strong>${entry.zone || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Map</span><strong>${entry.map || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
@@ -485,7 +521,7 @@ function buildTrainerDetail(entry) {
     </div>
     <div class="detail-section">
       <h3>AI</h3>
-      <div class="chip-row">${aiChips}</div>
+      <div class="detail-section-list">${aiCards}</div>
     </div>
     <div class="detail-section">
       <h3>Legal Contract</h3>
@@ -552,14 +588,39 @@ function renderList(entries) {
   }
 
   els.list.innerHTML = "";
+  const zoneCounts = new Map();
+  if (state.tab === "trainers") {
+    for (const entry of entries) {
+      const zone = entry.zone || "Unknown Zone";
+      zoneCounts.set(zone, (zoneCounts.get(zone) || 0) + 1);
+    }
+  }
   let lastZone = null;
   for (const entry of visibleEntries) {
-    if (state.tab === "trainers" && entry.zone !== lastZone) {
-      lastZone = entry.zone;
-      const zoneHeader = document.createElement("div");
-      zoneHeader.className = "zone-header";
-      zoneHeader.innerHTML = `<span>${escapeHtml(entry.zone || "Unknown Zone")}</span><small>${escapeHtml(entry.map || "")}</small>`;
+    const zone = entry.zone || "Unknown Zone";
+    if (state.tab === "trainers" && zone !== lastZone) {
+      lastZone = zone;
+      const isCollapsed = state.collapsedTrainerZones.has(zone);
+      const zoneHeader = document.createElement("button");
+      zoneHeader.type = "button";
+      zoneHeader.className = `zone-header${isCollapsed ? " collapsed" : ""}`;
+      zoneHeader.setAttribute("aria-expanded", String(!isCollapsed));
+      zoneHeader.innerHTML = `
+        <span><span class="zone-chevron" aria-hidden="true">${isCollapsed ? "+" : "-"}</span>${escapeHtml(zone)}</span>
+        <small>${zoneCounts.get(zone) || 0} trainers${entry.map ? ` - ${escapeHtml(entry.map)}` : ""}</small>
+      `;
+      zoneHeader.addEventListener("click", () => {
+        if (state.collapsedTrainerZones.has(zone)) {
+          state.collapsedTrainerZones.delete(zone);
+        } else {
+          state.collapsedTrainerZones.add(zone);
+        }
+        render();
+      });
       els.list.appendChild(zoneHeader);
+    }
+    if (state.tab === "trainers" && state.collapsedTrainerZones.has(zone)) {
+      continue;
     }
 
     const id = entry.id ?? entry.idToken;

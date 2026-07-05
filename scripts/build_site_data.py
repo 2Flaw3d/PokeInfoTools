@@ -151,6 +151,7 @@ def parse_showdown_trainers(
     species_id_by_name: dict[str, int],
     trainer_id_by_token: dict[str, int],
     contract_by_trainer_id: dict[int, dict],
+    ai_flag_by_label: dict[str, dict],
 ) -> list[dict]:
     content = read_text(path)
     pattern = re.compile(r"^===\s+([A-Z0-9_]+)\s+===\s*$", re.MULTILINE)
@@ -239,6 +240,13 @@ def parse_showdown_trainers(
             for part in trainer_meta.get("AI", "").split("/")
             if part.strip()
         ]
+        ai_flag_details = [
+            {
+                "label": flag,
+                **ai_flag_by_label.get(flag.lower(), {}),
+            }
+            for flag in ai_flags
+        ]
 
         trainers.append(
             {
@@ -253,6 +261,7 @@ def parse_showdown_trainers(
                 "battleType": trainer_meta.get("Double Battle", "No"),
                 "items": [item.strip() for item in trainer_meta.get("Items", "").split("/") if item.strip()],
                 "aiFlags": ai_flags,
+                "aiFlagDetails": ai_flag_details,
                 "zone": contract["zone"],
                 "map": contract["map"],
                 "zoneOrder": contract["zoneOrder"],
@@ -269,6 +278,21 @@ def parse_showdown_trainers(
 
 def humanize_anchor(anchor: str) -> str:
     return humanize_token(anchor)
+
+
+def parse_ai_flag_details(path: Path) -> dict[str, dict]:
+    text = read_text(path)
+    details: dict[str, dict] = {}
+    define_pattern = re.compile(r"^\s*#define\s+(AI_FLAG_[A-Z0-9_]+)\s+(.+?)(?:\s*//.*)?$", re.MULTILINE)
+    for macro, expression in define_pattern.findall(text):
+        label = humanize_token(macro, "AI_FLAG_")
+        referenced = [token for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", expression) if token != macro]
+        expands_to = referenced if referenced else [macro]
+        details[label.lower()] = {
+            "macro": macro,
+            "expandsTo": expands_to,
+        }
+    return details
 
 
 def build_contract_trainer_index(
@@ -319,6 +343,7 @@ def build_contract_trainer_index(
 
         ref = {
             "role": role,
+            "flagId": flag_id,
             "segmentId": source.get("segmentId", ""),
             "fromAnchor": source.get("fromAnchor", ""),
             "toAnchor": source.get("toAnchor", ""),
@@ -813,11 +838,13 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
         webapp_root / "apps" / "api" / "src" / "lib" / "postRunLog" / "trainerLocations.generated.json",
         set(trainer_id_by_token.values()),
     )
+    ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
     trainers = parse_showdown_trainers(
         expansion_root / "src" / "data" / "trainers.party",
         species_id_by_name,
         trainer_id_by_token,
         contract_by_trainer_id,
+        ai_flag_by_label,
     )
 
     missing_contract_trainers = sorted(set(contract_by_trainer_id) - {entry["id"] for entry in trainers})

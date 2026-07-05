@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-05T11:54:22+00:00",
+  "generatedAtUtc": "2026-07-05T12:12:34+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -251848,6 +251848,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -251858,6 +251869,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1800,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -251897,6 +251909,29 @@
         "Try To Faint",
         "Force Setup First Turn"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "Force Setup First Turn",
+          "macro": "AI_FLAG_FORCE_SETUP_FIRST_TURN",
+          "expandsTo": [
+            "AI_FLAG_FORCE_SETUP_FIRST_TURN"
+          ]
+        }
+      ],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -251907,6 +251942,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1803,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -251944,6 +251980,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -251954,6 +252001,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1806,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -251989,6 +252037,7 @@
       "battleType": "No",
       "items": [],
       "aiFlags": [],
+      "aiFlagDetails": [],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -251999,6 +252048,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1809,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -252034,6 +252084,7 @@
       "battleType": "No",
       "items": [],
       "aiFlags": [],
+      "aiFlagDetails": [],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -252044,6 +252095,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1812,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -252079,6 +252131,7 @@
       "battleType": "No",
       "items": [],
       "aiFlags": [],
+      "aiFlagDetails": [],
       "zone": "Route 103",
       "map": "Route103",
       "zoneOrder": 0,
@@ -252089,6 +252142,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1815,
           "segmentId": "STARTER_CHOSEN__RIVAL_ROUTE103_DEFEATED",
           "fromAnchor": "STARTER_CHOSEN",
           "toAnchor": "RIVAL_ROUTE103_DEFEATED",
@@ -252124,6 +252178,7 @@
       "battleType": "No",
       "items": [],
       "aiFlags": [],
+      "aiFlagDetails": [],
       "zone": "Route 102",
       "map": "Route102",
       "zoneOrder": 1,
@@ -252134,6 +252189,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1598,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252171,6 +252227,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 102",
       "map": "Route102",
       "zoneOrder": 1,
@@ -252181,6 +252246,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1613,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252226,6 +252292,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 102",
       "map": "Route102",
       "zoneOrder": 1,
@@ -252236,6 +252311,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1883,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252281,6 +252357,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Petalburg Woods",
       "map": "PetalburgWoods",
       "zoneOrder": 2,
@@ -252291,6 +252376,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1896,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252346,6 +252432,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Petalburg Woods",
       "map": "PetalburgWoods",
       "zoneOrder": 2,
@@ -252356,6 +252451,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1394,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252393,6 +252489,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Petalburg Woods",
       "map": "PetalburgWoods",
       "zoneOrder": 2,
@@ -252403,6 +252508,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1976,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252448,6 +252554,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Petalburg Woods",
       "map": "PetalburgWoods",
       "zoneOrder": 2,
@@ -252458,6 +252573,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1290,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252511,6 +252627,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Petalburg Woods",
       "map": "PetalburgWoods",
       "zoneOrder": 2,
@@ -252521,6 +252646,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1901,
           "segmentId": "RIVAL_ROUTE103_DEFEATED__DUNGEON_PETALBURG_WOODS_CLEARED",
           "fromAnchor": "RIVAL_ROUTE103_DEFEATED",
           "toAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
@@ -252558,6 +252684,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Rustboro City Gym",
       "map": "RustboroCity_Gym",
       "zoneOrder": 3,
@@ -252568,6 +252703,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1851,
           "segmentId": "DUNGEON_PETALBURG_WOODS_CLEARED__GYM_ROXANNE_DEFEATED",
           "fromAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
           "toAnchor": "GYM_ROXANNE_DEFEATED",
@@ -252605,6 +252741,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Rustboro City Gym",
       "map": "RustboroCity_Gym",
       "zoneOrder": 3,
@@ -252615,6 +252760,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1601,
           "segmentId": "DUNGEON_PETALBURG_WOODS_CLEARED__GYM_ROXANNE_DEFEATED",
           "fromAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
           "toAnchor": "GYM_ROXANNE_DEFEATED",
@@ -252663,6 +252809,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Rustboro City Gym",
       "map": "RustboroCity_Gym",
       "zoneOrder": 3,
@@ -252673,6 +252830,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1545,
           "segmentId": "DUNGEON_PETALBURG_WOODS_CLEARED__GYM_ROXANNE_DEFEATED",
           "fromAnchor": "DUNGEON_PETALBURG_WOODS_CLEARED",
           "toAnchor": "GYM_ROXANNE_DEFEATED",
@@ -252746,6 +252904,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Rustboro City Gym",
       "map": "RustboroCity_Gym",
       "zoneOrder": 3,
@@ -252756,6 +252925,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 2050,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -252837,6 +253007,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B1F",
       "map": "GraniteCave_B1F",
       "zoneOrder": 4,
@@ -252847,6 +253026,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2033,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -252892,6 +253072,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B1F",
       "map": "GraniteCave_B1F",
       "zoneOrder": 4,
@@ -252902,6 +253091,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1911,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -252939,6 +253129,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B1F",
       "map": "GraniteCave_B1F",
       "zoneOrder": 4,
@@ -252949,6 +253148,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1560,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -252986,6 +253186,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B2F",
       "map": "GraniteCave_B2F",
       "zoneOrder": 5,
@@ -252996,6 +253205,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1723,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253049,6 +253259,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B2F",
       "map": "GraniteCave_B2F",
       "zoneOrder": 5,
@@ -253059,6 +253278,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1619,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253104,6 +253324,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave B2F",
       "map": "GraniteCave_B2F",
       "zoneOrder": 5,
@@ -253114,6 +253343,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1620,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253153,6 +253383,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Granite Cave 1F",
       "map": "GraniteCave_1F",
       "zoneOrder": 6,
@@ -253163,6 +253402,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1553,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253208,6 +253448,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Rustboro City",
       "map": "RustboroCity",
       "zoneOrder": 7,
@@ -253218,6 +253469,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 2048,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253279,6 +253531,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Rustboro City",
       "map": "RustboroCity",
       "zoneOrder": 7,
@@ -253289,6 +253552,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 2049,
           "segmentId": "GYM_ROXANNE_DEFEATED__DUNGEON_GRANITE_CAVE_CLEARED",
           "fromAnchor": "GYM_ROXANNE_DEFEATED",
           "toAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
@@ -253350,6 +253614,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253360,6 +253633,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1705,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253405,6 +253679,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253415,6 +253698,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1706,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253468,6 +253752,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253478,6 +253771,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1852,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253523,6 +253817,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253533,6 +253836,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1853,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253570,6 +253874,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253580,6 +253893,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1459,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253617,6 +253931,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253627,6 +253950,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1854,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253667,6 +253991,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Dewford Town Gym",
       "map": "DewfordTown_Gym",
       "zoneOrder": 8,
@@ -253677,6 +254012,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1546,
           "segmentId": "DUNGEON_GRANITE_CAVE_CLEARED__GYM_BRAWLY_DEFEATED",
           "fromAnchor": "DUNGEON_GRANITE_CAVE_CLEARED",
           "toAnchor": "GYM_BRAWLY_DEFEATED",
@@ -253754,6 +254090,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Slateport City Oceanic Museum 2F",
       "map": "SlateportCity_OceanicMuseum_2F",
       "zoneOrder": 9,
@@ -253764,6 +254109,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1300,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -253801,6 +254147,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Slateport City Oceanic Museum 2F",
       "map": "SlateportCity_OceanicMuseum_2F",
       "zoneOrder": 9,
@@ -253811,6 +254166,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1301,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -253851,6 +254207,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -253861,6 +254228,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1813,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -253917,6 +254285,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -253927,6 +254306,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1816,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -253983,6 +254363,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -253993,6 +254384,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1810,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -254046,6 +254438,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254056,6 +254459,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1804,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -254109,6 +254513,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254119,6 +254534,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1807,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -254172,6 +254588,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254182,6 +254609,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1801,
           "segmentId": "GYM_BRAWLY_DEFEATED__RIVAL_ROUTE110_DEFEATED",
           "fromAnchor": "GYM_BRAWLY_DEFEATED",
           "toAnchor": "RIVAL_ROUTE110_DEFEATED",
@@ -254235,6 +254663,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254245,6 +254682,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1523,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254290,6 +254728,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254300,6 +254747,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1981,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254337,6 +254785,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254347,6 +254804,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1512,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254408,6 +254866,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254418,6 +254885,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1621,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254463,6 +254931,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254473,6 +254950,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1614,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254510,6 +254988,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254520,6 +255007,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1582,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254557,6 +255045,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254567,6 +255064,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1979,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254612,6 +255110,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254622,6 +255129,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1638,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254667,6 +255175,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254677,6 +255194,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1633,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254714,6 +255232,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254724,6 +255251,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1639,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254761,6 +255289,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254771,6 +255308,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1632,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254816,6 +255354,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 110",
       "map": "Route110",
       "zoneOrder": 10,
@@ -254826,6 +255373,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1631,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254871,6 +255419,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 104",
       "map": "Route104",
       "zoneOrder": 11,
@@ -254881,6 +255438,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1884,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254918,6 +255476,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 104",
       "map": "Route104",
       "zoneOrder": 11,
@@ -254928,6 +255495,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1617,
           "segmentId": "RIVAL_ROUTE110_DEFEATED__DUNGEON_CYCLING_ROAD_CLEARED",
           "fromAnchor": "RIVAL_ROUTE110_DEFEATED",
           "toAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
@@ -254965,6 +255533,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -254975,6 +255552,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1474,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255020,6 +255598,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -255030,6 +255619,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2082,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255075,6 +255665,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -255085,6 +255684,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1929,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255130,6 +255730,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -255140,6 +255749,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1471,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255185,6 +255795,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -255195,6 +255814,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1603,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255243,6 +255863,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mauville City Gym",
       "map": "MauvilleCity_Gym",
       "zoneOrder": 12,
@@ -255253,6 +255884,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1547,
           "segmentId": "DUNGEON_CYCLING_ROAD_CLEARED__GYM_WATTSON_DEFEATED",
           "fromAnchor": "DUNGEON_CYCLING_ROAD_CLEARED",
           "toAnchor": "GYM_WATTSON_DEFEATED",
@@ -255330,6 +255962,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255340,6 +255981,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1907,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255385,6 +256027,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255395,6 +256046,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1756,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255448,6 +256100,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255458,6 +256119,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1498,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255495,6 +256157,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255505,6 +256176,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1987,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255558,6 +256230,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255568,6 +256249,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1984,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255605,6 +256287,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255615,6 +256306,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1751,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255660,6 +256352,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255670,6 +256371,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1985,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255707,6 +256409,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255717,6 +256428,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1906,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255762,6 +256474,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fiery Path",
       "map": "FieryPath",
       "zoneOrder": 13,
@@ -255772,6 +256493,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1986,
           "segmentId": "GYM_WATTSON_DEFEATED__DUNGEON_FIERY_PATH_CLEARED",
           "fromAnchor": "GYM_WATTSON_DEFEATED",
           "toAnchor": "DUNGEON_FIERY_PATH_CLEARED",
@@ -255825,6 +256547,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 113",
       "map": "Route113",
       "zoneOrder": 14,
@@ -255835,6 +256566,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1991,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -255880,6 +256612,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 113",
       "map": "Route113",
       "zoneOrder": 14,
@@ -255890,6 +256631,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1714,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -255927,6 +256669,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 114",
       "map": "Route114",
       "zoneOrder": 15,
@@ -255937,6 +256688,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1994,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -255974,6 +256726,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 114",
       "map": "Route114",
       "zoneOrder": 15,
@@ -255984,6 +256745,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1618,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256021,6 +256783,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 114",
       "map": "Route114",
       "zoneOrder": 15,
@@ -256031,6 +256802,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1486,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256084,6 +256856,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 114",
       "map": "Route114",
       "zoneOrder": 15,
@@ -256094,6 +256875,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1423,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256131,6 +256913,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256141,6 +256932,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1909,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256186,6 +256978,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256196,6 +256997,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1752,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256241,6 +257043,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256251,6 +257062,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1992,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256296,6 +257108,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256306,6 +257127,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1908,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256351,6 +257173,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256361,6 +257192,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1494,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256398,6 +257230,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256408,6 +257249,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1993,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256445,6 +257287,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Meteor Falls 1F 1R",
       "map": "MeteorFalls_1F_1R",
       "zoneOrder": 16,
@@ -256455,6 +257306,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1622,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256508,6 +257360,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 112",
       "map": "Route112",
       "zoneOrder": 17,
@@ -256518,6 +257379,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2026,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256563,6 +257425,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 112",
       "map": "Route112",
       "zoneOrder": 17,
@@ -256573,6 +257444,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2027,
           "segmentId": "DUNGEON_FIERY_PATH_CLEARED__DUNGEON_METEOR_FALLS_CLEARED",
           "fromAnchor": "DUNGEON_FIERY_PATH_CLEARED",
           "toAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
@@ -256621,6 +257493,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256631,6 +257514,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1882,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256684,6 +257568,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256694,6 +257589,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1281,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256747,6 +257643,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256757,6 +257662,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1406,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256802,6 +257708,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256812,6 +257727,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1426,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256849,6 +257765,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256859,6 +257784,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1859,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256896,6 +257822,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mt Chimney",
       "map": "MtChimney",
       "zoneOrder": 18,
@@ -256906,6 +257843,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1877,
           "segmentId": "DUNGEON_METEOR_FALLS_CLEARED__DUNGEON_MT_CHIMNEY_CLEARED",
           "fromAnchor": "DUNGEON_METEOR_FALLS_CLEARED",
           "toAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
@@ -256967,6 +257905,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Lavaridge Town Gym 1F",
       "map": "LavaridgeTown_Gym_1F",
       "zoneOrder": 19,
@@ -256977,6 +257924,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1483,
           "segmentId": "DUNGEON_MT_CHIMNEY_CLEARED__GYM_FLANNERY_DEFEATED",
           "fromAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
           "toAnchor": "GYM_FLANNERY_DEFEATED",
@@ -257022,6 +257970,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lavaridge Town Gym 1F",
       "map": "LavaridgeTown_Gym_1F",
       "zoneOrder": 19,
@@ -257032,6 +257991,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1928,
           "segmentId": "DUNGEON_MT_CHIMNEY_CLEARED__GYM_FLANNERY_DEFEATED",
           "fromAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
           "toAnchor": "GYM_FLANNERY_DEFEATED",
@@ -257069,6 +258029,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Lavaridge Town Gym 1F",
       "map": "LavaridgeTown_Gym_1F",
       "zoneOrder": 19,
@@ -257079,6 +258048,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1481,
           "segmentId": "DUNGEON_MT_CHIMNEY_CLEARED__GYM_FLANNERY_DEFEATED",
           "fromAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
           "toAnchor": "GYM_FLANNERY_DEFEATED",
@@ -257116,6 +258086,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Lavaridge Town Gym 1F",
       "map": "LavaridgeTown_Gym_1F",
       "zoneOrder": 19,
@@ -257126,6 +258105,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1930,
           "segmentId": "DUNGEON_MT_CHIMNEY_CLEARED__GYM_FLANNERY_DEFEATED",
           "fromAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
           "toAnchor": "GYM_FLANNERY_DEFEATED",
@@ -257166,6 +258146,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lavaridge Town Gym 1F",
       "map": "LavaridgeTown_Gym_1F",
       "zoneOrder": 19,
@@ -257176,6 +258167,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1548,
           "segmentId": "DUNGEON_MT_CHIMNEY_CLEARED__GYM_FLANNERY_DEFEATED",
           "fromAnchor": "DUNGEON_MT_CHIMNEY_CLEARED",
           "toAnchor": "GYM_FLANNERY_DEFEATED",
@@ -257253,6 +258245,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257263,6 +258264,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1324,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257300,6 +258302,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257310,6 +258321,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2023,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257355,6 +258367,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257365,6 +258386,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2025,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257418,6 +258440,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257428,6 +258459,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2024,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257465,6 +258497,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257475,6 +258516,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1750,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257512,6 +258554,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257522,6 +258573,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1749,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257567,6 +258619,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257577,6 +258638,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1492,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257614,6 +258676,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257624,6 +258695,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1469,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257703,6 +258775,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257713,6 +258796,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1358,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257760,6 +258844,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257770,6 +258865,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1374,
           "segmentId": "GYM_FLANNERY_DEFEATED__DUNGEON_DESERT_CLEARED",
           "fromAnchor": "GYM_FLANNERY_DEFEATED",
           "toAnchor": "DUNGEON_DESERT_CLEARED",
@@ -257807,6 +258903,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
@@ -257817,6 +258922,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1491,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -257856,6 +258962,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -257866,6 +258983,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1369,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -257905,6 +259023,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -257915,6 +259044,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1351,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -257954,6 +259084,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -257964,6 +259105,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1353,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258003,6 +259145,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -258013,6 +259166,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1370,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258054,6 +259208,29 @@
         "Try To Faint",
         "Force Setup First Turn"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "Force Setup First Turn",
+          "macro": "AI_FLAG_FORCE_SETUP_FIRST_TURN",
+          "expandsTo": [
+            "AI_FLAG_FORCE_SETUP_FIRST_TURN"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -258064,6 +259241,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1371,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258103,6 +259281,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -258113,6 +259302,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1354,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258152,6 +259342,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -258162,6 +259363,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1352,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258202,6 +259404,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
       "zoneOrder": 21,
@@ -258212,6 +259425,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1549,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258297,6 +259511,50 @@
         "Smart Switching",
         "Smart Mon Choices"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "Check Viability",
+          "macro": "AI_FLAG_CHECK_VIABILITY",
+          "expandsTo": [
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Smart Switching",
+          "macro": "AI_FLAG_SMART_SWITCHING",
+          "expandsTo": [
+            "AI_FLAG_SMART_SWITCHING"
+          ]
+        },
+        {
+          "label": "Smart Mon Choices",
+          "macro": "AI_FLAG_SMART_MON_CHOICES",
+          "expandsTo": [
+            "AI_FLAG_SMART_MON_CHOICES"
+          ]
+        }
+      ],
       "zone": "Terra Cave End",
       "map": "TerraCave_End",
       "zoneOrder": 22,
@@ -258307,6 +259565,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1476,
           "segmentId": "DUNGEON_DESERT_CLEARED__GYM_NORMAN_DEFEATED",
           "fromAnchor": "DUNGEON_DESERT_CLEARED",
           "toAnchor": "GYM_NORMAN_DEFEATED",
@@ -258384,6 +259643,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258394,6 +259662,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2041,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -258439,6 +259708,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258449,6 +259727,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2040,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -258486,6 +259765,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258496,6 +259784,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1680,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -258534,6 +259823,22 @@
         "Check Bad Move",
         "Try To Faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258544,6 +259849,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1696,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -258589,6 +259895,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258599,6 +259914,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1679,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -258636,6 +259952,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258646,6 +259973,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1814,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -258715,6 +260043,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258725,6 +260064,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1817,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -258794,6 +260134,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258804,6 +260155,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1811,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -258873,6 +260225,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258883,6 +260246,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1805,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -258936,6 +260300,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -258946,6 +260321,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1808,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -258999,6 +260375,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119",
       "map": "Route119",
       "zoneOrder": 23,
@@ -259009,6 +260396,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1802,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259062,6 +260450,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
       "zoneOrder": 24,
@@ -259072,6 +260469,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1298,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259117,6 +260515,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
       "zoneOrder": 24,
@@ -259127,6 +260536,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1312,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259180,6 +260590,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
       "zoneOrder": 24,
@@ -259190,6 +260609,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1876,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259235,6 +260655,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
       "zoneOrder": 24,
@@ -259245,6 +260674,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1299,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259282,6 +260712,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
       "zoneOrder": 25,
@@ -259292,6 +260731,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1505,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259329,6 +260769,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
       "zoneOrder": 25,
@@ -259339,6 +260788,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1899,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259376,6 +260826,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
       "zoneOrder": 25,
@@ -259386,6 +260845,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1306,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259431,6 +260891,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
       "zoneOrder": 25,
@@ -259441,6 +260910,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1297,
           "segmentId": "GYM_NORMAN_DEFEATED__DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "fromAnchor": "GYM_NORMAN_DEFEATED",
           "toAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
@@ -259486,6 +260956,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259496,6 +260975,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1682,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259549,6 +261029,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259559,6 +261048,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1935,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259596,6 +261086,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259606,6 +261105,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1684,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259659,6 +261159,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259669,6 +261178,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1934,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259706,6 +261216,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259716,6 +261235,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1681,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259761,6 +261281,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259771,6 +261302,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2083,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259820,6 +261352,24 @@
         "Basic Trainer",
         "HP Aware"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
       "zoneOrder": 26,
@@ -259830,6 +261380,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1550,
           "segmentId": "DUNGEON_WEATHER_INSTITUTE_CLEARED__GYM_WINONA_DEFEATED",
           "fromAnchor": "DUNGEON_WEATHER_INSTITUTE_CLEARED",
           "toAnchor": "GYM_WINONA_DEFEATED",
@@ -259908,6 +261459,22 @@
         "Check Bad Move",
         "Try To Faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Route 120",
       "map": "Route120",
       "zoneOrder": 27,
@@ -259918,6 +261485,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1933,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -259963,6 +261531,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 120",
       "map": "Route120",
       "zoneOrder": 27,
@@ -259973,6 +261550,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2043,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260018,6 +261596,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 120",
       "map": "Route120",
       "zoneOrder": 27,
@@ -260028,6 +261615,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1506,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260073,6 +261661,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 120",
       "map": "Route120",
       "zoneOrder": 27,
@@ -260083,6 +261680,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1715,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260128,6 +261726,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
       "zoneOrder": 28,
@@ -260138,6 +261745,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1305,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260183,6 +261791,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
       "zoneOrder": 28,
@@ -260193,6 +261810,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1304,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260230,6 +261848,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
       "zoneOrder": 28,
@@ -260240,6 +261867,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1303,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260285,6 +261913,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
       "zoneOrder": 28,
@@ -260295,6 +261932,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1849,
           "segmentId": "GYM_WINONA_DEFEATED__DUNGEON_MT_PYRE_CLEARED",
           "fromAnchor": "GYM_WINONA_DEFEATED",
           "toAnchor": "DUNGEON_MT_PYRE_CLEARED",
@@ -260332,6 +261970,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260342,6 +261989,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1387,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260387,6 +262035,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260397,6 +262054,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2045,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260476,6 +262134,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260486,6 +262155,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1291,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260525,6 +262195,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260535,6 +262216,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2047,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260572,6 +262254,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260582,6 +262273,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1580,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260619,6 +262311,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260629,6 +262330,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2046,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260706,6 +262408,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260716,6 +262427,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1407,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260761,6 +262473,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 121",
       "map": "Route121",
       "zoneOrder": 29,
@@ -260771,6 +262492,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1534,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260848,6 +262570,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -260858,6 +262591,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1945,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -260935,6 +262669,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -260945,6 +262690,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1946,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -261022,6 +262768,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -261032,6 +262789,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1944,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -261109,6 +262867,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -261119,6 +262888,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1943,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -261180,6 +262950,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -261190,6 +262971,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1941,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -261251,6 +263033,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
       "zoneOrder": 30,
@@ -261261,6 +263054,7 @@
       "contractRefs": [
         {
           "role": "choice",
+          "flagId": 1942,
           "segmentId": "DUNGEON_MT_PYRE_CLEARED__RIVAL_LILYCOVE_DEFEATED",
           "fromAnchor": "DUNGEON_MT_PYRE_CLEARED",
           "toAnchor": "RIVAL_LILYCOVE_DEFEATED",
@@ -261322,6 +263116,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
       "zoneOrder": 31,
@@ -261332,6 +263135,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1996,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261369,6 +263173,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
       "zoneOrder": 31,
@@ -261379,6 +263192,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2001,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261416,6 +263230,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
       "zoneOrder": 31,
@@ -261426,6 +263249,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1997,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261463,6 +263287,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261473,6 +263306,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1998,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261510,6 +263344,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261520,6 +263363,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2002,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261557,6 +263401,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261567,6 +263420,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2009,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261604,6 +263458,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261614,6 +263477,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2000,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261651,6 +263515,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261661,6 +263534,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1999,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261698,6 +263572,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
       "zoneOrder": 32,
@@ -261708,6 +263591,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2044,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261747,6 +263631,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
       "zoneOrder": 33,
@@ -261757,6 +263652,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1881,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261834,6 +263730,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
       "zoneOrder": 33,
@@ -261844,6 +263749,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2012,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261905,6 +263811,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
       "zoneOrder": 33,
@@ -261915,6 +263830,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 2007,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -261960,6 +263876,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
       "zoneOrder": 33,
@@ -261970,6 +263895,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2008,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -262007,6 +263933,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
       "zoneOrder": 33,
@@ -262017,6 +263952,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2006,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -262062,6 +263998,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
       "zoneOrder": 34,
@@ -262072,6 +264017,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2010,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -262109,6 +264055,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
       "zoneOrder": 34,
@@ -262119,6 +264074,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 2004,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -262156,6 +264112,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
       "zoneOrder": 34,
@@ -262166,6 +264131,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1462,
           "segmentId": "RIVAL_LILYCOVE_DEFEATED__DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "fromAnchor": "RIVAL_LILYCOVE_DEFEATED",
           "toAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
@@ -262203,6 +264169,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
       "zoneOrder": 35,
@@ -262213,6 +264188,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1283,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262250,6 +264226,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
       "zoneOrder": 35,
@@ -262260,6 +264245,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1472,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262297,6 +264283,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
       "zoneOrder": 35,
@@ -262307,6 +264302,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1284,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262344,6 +264340,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
       "zoneOrder": 35,
@@ -262354,6 +264359,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1307,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262401,6 +264407,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
       "zoneOrder": 36,
@@ -262411,6 +264428,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1310,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262464,6 +264482,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
       "zoneOrder": 36,
@@ -262474,6 +264501,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1308,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262511,6 +264539,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
       "zoneOrder": 36,
@@ -262521,6 +264558,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1473,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262566,6 +264604,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
       "zoneOrder": 36,
@@ -262576,6 +264623,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1285,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262621,6 +264669,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Aqua Hideout 1F",
       "map": "AquaHideout_1F",
       "zoneOrder": 37,
@@ -262631,6 +264688,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1282,
           "segmentId": "DUNGEON_MAGMA_HIDEOUT_CLEARED__DUNGEON_AQUA_HIDEOUT_CLEARED",
           "fromAnchor": "DUNGEON_MAGMA_HIDEOUT_CLEARED",
           "toAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
@@ -262668,6 +264726,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262678,6 +264745,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1524,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262715,6 +264783,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262725,6 +264802,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1513,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262762,6 +264840,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262772,6 +264859,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1871,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262809,6 +264897,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262819,6 +264916,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1855,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262856,6 +264954,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262866,6 +264973,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1864,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262903,6 +265011,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262913,6 +265030,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1526,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262950,6 +265068,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -262960,6 +265087,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1515,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -262997,6 +265125,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263007,6 +265144,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1862,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263044,6 +265182,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263054,6 +265201,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1514,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263091,6 +265239,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263101,6 +265258,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1863,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263138,6 +265296,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263148,6 +265315,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1525,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263185,6 +265353,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263195,6 +265372,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1865,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263237,6 +265415,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
       "zoneOrder": 38,
@@ -263247,6 +265436,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1551,
           "segmentId": "DUNGEON_AQUA_HIDEOUT_CLEARED__GYM_TATE_LIZA_DEFEATED",
           "fromAnchor": "DUNGEON_AQUA_HIDEOUT_CLEARED",
           "toAnchor": "GYM_TATE_LIZA_DEFEATED",
@@ -263324,6 +265514,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
@@ -263334,6 +265533,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1867,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263371,6 +265571,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
@@ -263381,6 +265590,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1396,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263418,6 +265628,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
@@ -263428,6 +265647,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1866,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263465,6 +265685,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
@@ -263475,6 +265704,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1302,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263512,6 +265742,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
       "zoneOrder": 40,
@@ -263522,6 +265761,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1869,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263559,6 +265799,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
       "zoneOrder": 40,
@@ -263569,6 +265818,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1870,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263606,6 +265856,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
       "zoneOrder": 40,
@@ -263616,6 +265875,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1868,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263653,6 +265913,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
       "zoneOrder": 40,
@@ -263663,6 +265932,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1794,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263716,6 +265986,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
@@ -263726,6 +266005,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1294,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263763,6 +266043,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
@@ -263773,6 +266062,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1847,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263813,6 +266103,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
@@ -263823,6 +266124,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1314,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263876,6 +266178,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
@@ -263886,6 +266197,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1288,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263933,6 +266245,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
@@ -263943,6 +266266,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1950,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -263982,6 +266306,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
@@ -263992,6 +266327,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1951,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264029,6 +266365,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
@@ -264039,6 +266384,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1953,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264076,6 +266422,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
@@ -264086,6 +266441,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1287,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264123,6 +266479,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
@@ -264133,6 +266500,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1313,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264178,6 +266546,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Seafloor Cavern Room 1",
       "map": "SeafloorCavern_Room1",
       "zoneOrder": 43,
@@ -264188,6 +266565,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1286,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264236,6 +266614,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Sky Pillar Top",
       "map": "SkyPillar_Top",
       "zoneOrder": 44,
@@ -264246,6 +266635,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1656,
           "segmentId": "GYM_TATE_LIZA_DEFEATED__DUNGEON_SKY_PILLAR_CLEARED",
           "fromAnchor": "GYM_TATE_LIZA_DEFEATED",
           "toAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
@@ -264299,6 +266689,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264309,6 +266708,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1408,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264346,6 +266746,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264356,6 +266765,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1893,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264401,6 +266811,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264411,6 +266830,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1782,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264450,6 +266870,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264460,6 +266889,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1395,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264505,6 +266935,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264515,6 +266954,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1409,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264562,6 +267002,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264572,6 +267021,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1398,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264609,6 +267059,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264619,6 +267078,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1581,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264664,6 +267124,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264674,6 +267143,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1411,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264711,6 +267181,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264721,6 +267200,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1894,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264774,6 +267254,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
@@ -264784,6 +267273,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1410,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264840,6 +267330,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Sootopolis City Gym 1F",
       "map": "SootopolisCity_Gym_1F",
       "zoneOrder": 46,
@@ -264850,6 +267351,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1552,
           "segmentId": "DUNGEON_SKY_PILLAR_CLEARED__GYM_JUAN_DEFEATED",
           "fromAnchor": "DUNGEON_SKY_PILLAR_CLEARED",
           "toAnchor": "GYM_JUAN_DEFEATED",
@@ -264929,6 +267431,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -264939,6 +267452,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1376,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -264979,6 +267493,24 @@
         "Basic Trainer",
         "Try to faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Try to faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -264989,6 +267521,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1359,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265036,6 +267569,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265046,6 +267590,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1362,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265110,6 +267655,24 @@
         "Basic Trainer",
         "Try to faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Try to faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265120,6 +267683,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1377,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265157,6 +267721,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265167,6 +267742,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1820,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265206,6 +267782,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265216,6 +267803,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1380,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265272,6 +267860,24 @@
         "Basic Trainer",
         "Try to faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Try to faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265282,6 +267888,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1604,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265321,6 +267928,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265331,6 +267949,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1378,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265386,6 +268005,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265396,6 +268026,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1605,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265435,6 +268066,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265445,6 +268087,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1318,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265484,6 +268127,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265494,6 +268148,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1826,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265565,6 +268220,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265575,6 +268241,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1363,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265644,6 +268311,7 @@
         "Full Restore"
       ],
       "aiFlags": [],
+      "aiFlagDetails": [],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265654,6 +268322,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1697,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265725,6 +268394,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265735,6 +268415,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1361,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265806,6 +268487,17 @@
       "aiFlags": [
         "Basic Trainer"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
@@ -265816,6 +268508,7 @@
       "contractRefs": [
         {
           "role": "optional",
+          "flagId": 1379,
           "segmentId": "GYM_JUAN_DEFEATED__DUNGEON_VICTORY_ROAD_CLEARED",
           "fromAnchor": "GYM_JUAN_DEFEATED",
           "toAnchor": "DUNGEON_VICTORY_ROAD_CLEARED",
@@ -265891,6 +268584,28 @@
         "Smart Trainer",
         "HP Aware"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
       "zone": "Ever Grande City Champions Room",
       "map": "EverGrandeCity_ChampionsRoom",
       "zoneOrder": 48,
@@ -265901,6 +268616,7 @@
       "contractRefs": [
         {
           "role": "required",
+          "flagId": 1615,
           "segmentId": "E4_DRAKE_DEFEATED__CHAMPION_WALLACE_DEFEATED",
           "fromAnchor": "E4_DRAKE_DEFEATED",
           "toAnchor": "CHAMPION_WALLACE_DEFEATED",
@@ -265985,6 +268701,36 @@
         "Smart Switching",
         "HP Aware"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try to Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "Smart Switching",
+          "macro": "AI_FLAG_SMART_SWITCHING",
+          "expandsTo": [
+            "AI_FLAG_SMART_SWITCHING"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
       "zone": "Island Cave",
       "map": "IslandCave",
       "zoneOrder": 49,
@@ -265995,6 +268741,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1722,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266056,6 +268803,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 50,
@@ -266066,6 +268822,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1602,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266103,6 +268860,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 50,
@@ -266113,6 +268879,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1897,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266158,6 +268925,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 50,
@@ -266168,6 +268944,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 2034,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266216,6 +268993,36 @@
         "Check Viability",
         "HP Aware"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Try To Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "Check Viability",
+          "macro": "AI_FLAG_CHECK_VIABILITY",
+          "expandsTo": [
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
       "zone": "New Mauville Inside",
       "map": "NewMauville_Inside",
       "zoneOrder": 51,
@@ -266226,6 +269033,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 2016,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266291,6 +269099,31 @@
         "Try to faint",
         "HP Aware"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Try to faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
       "zone": "Desert Ruins",
       "map": "DesertRuins",
       "zoneOrder": 52,
@@ -266301,6 +269134,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1989,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266352,6 +269186,29 @@
         "HP Aware",
         "Try to Faint"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Try to Faint",
+          "macro": "AI_FLAG_TRY_TO_FAINT",
+          "expandsTo": [
+            "AI_FLAG_TRY_TO_FAINT"
+          ]
+        }
+      ],
       "zone": "Ancient Tomb",
       "map": "AncientTomb",
       "zoneOrder": 53,
@@ -266362,6 +269219,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1566,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
@@ -266409,6 +269267,15 @@
       "aiFlags": [
         "Check Bad Move"
       ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Lilycove City Contest Hall",
       "map": "LilycoveCity_ContestHall",
       "zoneOrder": 54,
@@ -266419,6 +269286,7 @@
       "contractRefs": [
         {
           "role": "floating",
+          "flagId": 1974,
           "segmentId": "*",
           "fromAnchor": "",
           "toAnchor": "",
