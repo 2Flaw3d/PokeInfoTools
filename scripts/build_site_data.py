@@ -15,6 +15,15 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_FLAWMERALD_ROOT = ROOT.parent / "Flawmerald"
 TRAINER_FLAGS_START = 0x500
 
+# Elite Four victories use story flags (0x4FB-0x4FE), not the usual
+# 0x500 + trainer id flags used by the rest of the trainer contract.
+SPECIAL_CONTRACT_TRAINERS_BY_ANCHOR = {
+    "E4_SIDNEY_DEFEATED": "TRAINER_SIDNEY",
+    "E4_PHOEBE_DEFEATED": "TRAINER_PHOEBE",
+    "E4_GLACIA_DEFEATED": "TRAINER_GLACIA",
+    "E4_DRAKE_DEFEATED": "TRAINER_DRAKE",
+}
+
 
 def load_module(path: Path):
     spec = importlib.util.spec_from_file_location("exp_export", path)
@@ -291,10 +300,11 @@ def parse_ai_flag_details(path: Path) -> dict[str, dict]:
 def build_contract_trainer_index(
     contract_path: Path,
     locations_path: Path,
-    known_trainer_ids: set[int],
+    trainer_id_by_token: dict[str, int],
 ) -> tuple[dict[int, dict], dict]:
     contract = json.loads(read_text(contract_path))
     locations = json.loads(read_text(locations_path))
+    known_trainer_ids = set(trainer_id_by_token.values())
 
     by_trainer_id: dict[int, dict] = {}
     zone_order: dict[str, int] = {}
@@ -350,6 +360,16 @@ def build_contract_trainer_index(
             }
             for flag_id in choice.get("flagIds", []):
                 record(flag_id, "choice", choice_source)
+
+        special_trainer_token = SPECIAL_CONTRACT_TRAINERS_BY_ANCHOR.get(segment.get("toAnchor"))
+        if special_trainer_token:
+            trainer_id = trainer_id_by_token.get(special_trainer_token)
+            if trainer_id is None:
+                raise RuntimeError(
+                    f"Contract boundary {segment.get('toAnchor')} references unknown trainer "
+                    f"{special_trainer_token}"
+                )
+            record(TRAINER_FLAGS_START + trainer_id, "boundary", base_source)
 
     for floating in contract.get("floatingTrainers", []):
         source = {
@@ -793,7 +813,7 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
     contract_by_trainer_id, trainer_contract_summary = build_contract_trainer_index(
         webapp_root / "apps" / "api" / "src" / "lib" / "data" / "trainerSegmentContract.generated.json",
         webapp_root / "apps" / "api" / "src" / "lib" / "postRunLog" / "trainerLocations.generated.json",
-        set(trainer_id_by_token.values()),
+        trainer_id_by_token,
     )
     ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
     trainers = parse_showdown_trainers(

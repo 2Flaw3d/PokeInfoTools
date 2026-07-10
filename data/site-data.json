@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-05T12:21:54+00:00",
+  "generatedAtUtc": "2026-07-10T11:40:39+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -256774,7 +256774,7 @@
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
-      "contractOrder": 255,
+      "contractOrder": 259,
       "pokemon": [
         {
           "speciesName": "Sandshrew",
@@ -263585,6 +263585,390 @@
       ]
     },
     {
+      "id": 261,
+      "idToken": "TRAINER_SIDNEY",
+      "name": "SIDNEY",
+      "class": "Elite Four",
+      "pic": "Elite Four Sidney",
+      "gender": "Male",
+      "music": "Elite Four",
+      "battleType": "No",
+      "items": [
+        "Full Restore",
+        "Full Restore",
+        "Full Restore",
+        "Full Restore"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Ever Grande City Sidneys Room",
+      "map": "EverGrandeCity_SidneysRoom",
+      "zoneOrder": 48,
+      "contractOrder": 248,
+      "pokemon": [
+        {
+          "speciesName": "Mightyena",
+          "speciesId": 262,
+          "level": 77,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Shiftry",
+          "speciesId": 275,
+          "level": 77,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Cacturne",
+          "speciesId": 332,
+          "level": 78,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Crawdaunt",
+          "speciesId": 342,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Absol",
+          "speciesId": 359,
+          "level": 78,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Absol",
+          "speciesId": 359,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 262,
+      "idToken": "TRAINER_PHOEBE",
+      "name": "PHOEBE",
+      "class": "Elite Four",
+      "pic": "Elite Four Phoebe",
+      "gender": "Female",
+      "music": "Elite Four",
+      "battleType": "No",
+      "items": [
+        "Full Restore",
+        "Full Restore",
+        "Full Restore",
+        "Full Restore"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Ever Grande City Phoebes Room",
+      "map": "EverGrandeCity_PhoebesRoom",
+      "zoneOrder": 49,
+      "contractOrder": 249,
+      "pokemon": [
+        {
+          "speciesName": "Dusclops",
+          "speciesId": 356,
+          "level": 77,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 77,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Sableye",
+          "speciesId": 302,
+          "level": 84,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Dusclops",
+          "speciesId": 356,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Dusclops",
+          "speciesId": 356,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "idToken": "TRAINER_GLACIA",
+      "name": "GLACIA",
+      "class": "Elite Four",
+      "pic": "Elite Four Glacia",
+      "gender": "Female",
+      "music": "Elite Four",
+      "battleType": "No",
+      "items": [
+        "Full Restore",
+        "Full Restore",
+        "Full Restore",
+        "Full Restore"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Ever Grande City Glacias Room",
+      "map": "EverGrandeCity_GlaciasRoom",
+      "zoneOrder": 50,
+      "contractOrder": 250,
+      "pokemon": [
+        {
+          "speciesName": "Sealeo",
+          "speciesId": 364,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Glalie",
+          "speciesId": 362,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Sealeo",
+          "speciesId": 364,
+          "level": 87,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Glalie",
+          "speciesId": 362,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Walrein",
+          "speciesId": 365,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Walrein",
+          "speciesId": 365,
+          "level": 84,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "idToken": "TRAINER_DRAKE",
+      "name": "DRAKE",
+      "class": "Elite Four",
+      "pic": "Elite Four Drake",
+      "gender": "Male",
+      "music": "Elite Four",
+      "battleType": "No",
+      "items": [
+        "Full Restore",
+        "Full Restore",
+        "Full Restore",
+        "Full Restore"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Ever Grande City Drakes Room",
+      "map": "EverGrandeCity_DrakesRoom",
+      "zoneOrder": 51,
+      "contractOrder": 251,
+      "pokemon": [
+        {
+          "speciesName": "Shelgon",
+          "speciesId": 372,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Altaria",
+          "speciesId": 334,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kingdra",
+          "speciesId": 230,
+          "level": 81,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Flygon",
+          "speciesId": 330,
+          "level": 84,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Salamence",
+          "speciesId": 373,
+          "level": 90,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Salamence",
+          "speciesId": 373,
+          "level": 87,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
       "id": 335,
       "idToken": "TRAINER_WALLACE",
       "name": "WALLACE",
@@ -263627,8 +264011,8 @@
       ],
       "zone": "Ever Grande City Champions Room",
       "map": "EverGrandeCity_ChampionsRoom",
-      "zoneOrder": 48,
-      "contractOrder": 248,
+      "zoneOrder": 52,
+      "contractOrder": 252,
       "pokemon": [
         {
           "speciesName": "Wailord",
@@ -263732,8 +264116,8 @@
       ],
       "zone": "Island Cave",
       "map": "IslandCave",
-      "zoneOrder": 49,
-      "contractOrder": 249,
+      "zoneOrder": 53,
+      "contractOrder": 253,
       "pokemon": [
         {
           "speciesName": "Marill",
@@ -263793,8 +264177,8 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 50,
-      "contractOrder": 250,
+      "zoneOrder": 54,
+      "contractOrder": 254,
       "pokemon": [
         {
           "speciesName": "Machop",
@@ -263830,8 +264214,8 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 50,
-      "contractOrder": 251,
+      "zoneOrder": 54,
+      "contractOrder": 255,
       "pokemon": [
         {
           "speciesName": "Wurmple",
@@ -263875,8 +264259,8 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 50,
-      "contractOrder": 252,
+      "zoneOrder": 54,
+      "contractOrder": 256,
       "pokemon": [
         {
           "speciesName": "Shroomish",
@@ -263944,8 +264328,8 @@
       ],
       "zone": "New Mauville Inside",
       "map": "NewMauville_Inside",
-      "zoneOrder": 51,
-      "contractOrder": 253,
+      "zoneOrder": 55,
+      "contractOrder": 257,
       "pokemon": [
         {
           "speciesName": "Marill",
@@ -264025,8 +264409,8 @@
       ],
       "zone": "Desert Ruins",
       "map": "DesertRuins",
-      "zoneOrder": 52,
-      "contractOrder": 254,
+      "zoneOrder": 56,
+      "contractOrder": 258,
       "pokemon": [
         {
           "speciesName": "Skarmory",
@@ -264090,8 +264474,8 @@
       ],
       "zone": "Ancient Tomb",
       "map": "AncientTomb",
-      "zoneOrder": 53,
-      "contractOrder": 256,
+      "zoneOrder": 57,
+      "contractOrder": 260,
       "pokemon": [
         {
           "speciesName": "Spinda",
@@ -264137,8 +264521,8 @@
       ],
       "zone": "Lilycove City Contest Hall",
       "map": "LilycoveCity_ContestHall",
-      "zoneOrder": 54,
-      "contractOrder": 257,
+      "zoneOrder": 58,
+      "contractOrder": 261,
       "pokemon": [
         {
           "speciesName": "Zigzagoon",
@@ -264176,8 +264560,8 @@
     }
   ],
   "trainerSnapshot": {
-    "legalTrainerCount": 258,
-    "zoneCount": 55,
+    "legalTrainerCount": 262,
+    "zoneCount": 59,
     "zones": [
       {
         "name": "Route 103",
@@ -264372,32 +264756,48 @@
         "order": 47
       },
       {
-        "name": "Ever Grande City Champions Room",
+        "name": "Ever Grande City Sidneys Room",
         "order": 48
       },
       {
-        "name": "Island Cave",
+        "name": "Ever Grande City Phoebes Room",
         "order": 49
       },
       {
-        "name": "Route 106",
+        "name": "Ever Grande City Glacias Room",
         "order": 50
       },
       {
-        "name": "New Mauville Inside",
+        "name": "Ever Grande City Drakes Room",
         "order": 51
       },
       {
-        "name": "Desert Ruins",
+        "name": "Ever Grande City Champions Room",
         "order": 52
       },
       {
-        "name": "Ancient Tomb",
+        "name": "Island Cave",
         "order": 53
       },
       {
-        "name": "Lilycove City Contest Hall",
+        "name": "Route 106",
         "order": 54
+      },
+      {
+        "name": "New Mauville Inside",
+        "order": 55
+      },
+      {
+        "name": "Desert Ruins",
+        "order": 56
+      },
+      {
+        "name": "Ancient Tomb",
+        "order": 57
+      },
+      {
+        "name": "Lilycove City Contest Hall",
+        "order": 58
       }
     ]
   },
