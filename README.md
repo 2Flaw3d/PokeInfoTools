@@ -20,8 +20,10 @@ The site reads from the local Flawmerald workspace and builds a committed JSON s
 Expected sibling workspace layout:
 
 - `../Flawmerald/pokeemerald-expansion`
-- `../Flawmerald/Ironmon-Tracker-flawzo`
 - `../Flawmerald/Flawzo-WebApp`
+
+The deprecated standalone Ironmon Tracker repository is not a data source.
+The generator reads the canonical ROM export produced in the WebApp workspace.
 
 ## Rebuild Data
 

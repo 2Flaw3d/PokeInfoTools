@@ -42,7 +42,6 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build site data for PokeInfoTools.")
     parser.add_argument("--flawmerald-root", default=str(DEFAULT_FLAWMERALD_ROOT))
     parser.add_argument("--expansion-root")
-    parser.add_argument("--tracker-root")
     parser.add_argument("--webapp-root")
     return parser.parse_args()
 
@@ -161,6 +160,7 @@ def parse_showdown_trainers(
     trainer_id_by_token: dict[str, int],
     contract_by_trainer_id: dict[int, dict],
     ai_flag_by_label: dict[str, dict],
+    class_auto_ai_flags: dict[str, list[str]],
 ) -> list[dict]:
     content = read_text(path)
     pattern = re.compile(r"^===\s+([A-Z0-9_]+)\s+===\s*$", re.MULTILINE)
@@ -244,11 +244,16 @@ def parse_showdown_trainers(
         if contract is None:
             continue
 
-        ai_flags = [
+        declared_ai_flags = [
             part.strip()
             for part in trainer_meta.get("AI", "").split("/")
             if part.strip()
         ]
+        ai_flags = merge_effective_ai_flags(
+            declared_ai_flags,
+            trainer_meta.get("Class", ""),
+            class_auto_ai_flags,
+        )
         ai_flag_details = [
             {
                 "label": flag,
@@ -268,6 +273,7 @@ def parse_showdown_trainers(
                 "music": trainer_meta.get("Music", ""),
                 "battleType": trainer_meta.get("Double Battle", "No"),
                 "items": [item.strip() for item in trainer_meta.get("Items", "").split("/") if item.strip()],
+                "declaredAiFlags": declared_ai_flags,
                 "aiFlags": ai_flags,
                 "aiFlagDetails": ai_flag_details,
                 "zone": contract["zone"],
@@ -295,6 +301,46 @@ def parse_ai_flag_details(path: Path) -> dict[str, dict]:
             "expandsTo": expands_to,
         }
     return details
+
+
+def merge_effective_ai_flags(
+    declared_flags: list[str],
+    trainer_class: str,
+    class_auto_ai_flags: dict[str, list[str]],
+) -> list[str]:
+    effective = list(declared_flags)
+    if not declared_flags:
+        return effective
+    for flag in class_auto_ai_flags.get(trainer_class.strip().lower(), []):
+        if flag not in effective:
+            effective.append(flag)
+    return effective
+
+
+def parse_class_auto_ai_flags(path: Path) -> dict[str, list[str]]:
+    text = read_text(path)
+    match = re.search(
+        r"GetTrainerAIFlagsFromId\s*\([^)]*\)\s*\{(.*?)return\s+flags\s*;",
+        text,
+        re.DOTALL,
+    )
+    if not match:
+        raise RuntimeError("GetTrainerAIFlagsFromId body not found")
+    body = match.group(1)
+    cases = re.findall(r"case\s+(TRAINER_CLASS_[A-Z0-9_]+)\s*:", body)
+    assignment = re.search(r"flags\s*\|=\s*(.*?);", body, re.DOTALL)
+    if not cases or not assignment:
+        raise RuntimeError("trainer class auto-AI contract is incomplete")
+    labels = [
+        humanize_token(token, "AI_FLAG_")
+        for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", assignment.group(1))
+    ]
+    if not labels:
+        raise RuntimeError("trainer class auto-AI flags not found")
+    return {
+        humanize_token(token, "TRAINER_CLASS_").lower(): labels
+        for token in cases
+    }
 
 
 def build_contract_trainer_index(
@@ -524,9 +570,9 @@ def build_project_rules() -> dict:
     }
 
 
-def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path) -> dict:
+def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
     export_mod = load_module(expansion_root / "tools" / "tracker" / "export_expansion_data.py")
-    expansion_json_path = tracker_root / "ironmon_tracker" / "data" / "ExpansionData.json"
+    expansion_json_path = webapp_root / "apps" / "web" / "public" / "data" / "expansion-data.json"
     expansion_data = json.loads(read_text(expansion_json_path))
 
     move_constants = export_mod.parse_enum_constants(
@@ -666,11 +712,7 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
         icon.parent.relative_to(expansion_root / "graphics" / "pokemon").as_posix(): icon
         for icon in (expansion_root / "graphics" / "pokemon").rglob("icon.png")
     }
-    tracker_updated_icons = tracker_root / "ironmon_tracker" / "images" / "pokemonUpdated"
-    tracker_named_icons = tracker_root / "ironmon_tracker" / "images" / "pokemonByName"
     icons_dir = ROOT / "assets" / "icons"
-    for old_icon in icons_dir.glob("*.png"):
-        old_icon.unlink()
 
     abilities_users: dict[int, list[int]] = defaultdict(list)
     species_id_by_name: dict[str, int] = {}
@@ -685,19 +727,17 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
         teachable_tokens = teachable_arrays.get(symbol_info.get("teachableSymbol") or "", [])
         egg_tokens = egg_arrays.get(symbol_info.get("eggMoveSymbol") or "", [])
 
-        updated_icon = tracker_updated_icons / f"{species_id}.png"
-        by_name_icon = tracker_named_icons / f"{normalize_species_name_for_icon(raw_species['name'])}.png"
-        icon_source = None
-        if updated_icon.is_file():
-            icon_source = updated_icon
-        elif by_name_icon.is_file():
-            icon_source = by_name_icon
-        else:
-            icon_source = find_icon_source(token, icons_by_rel_dir)
+        icon_source = find_icon_source(token, icons_by_rel_dir)
         icon_path = None
         if icon_source is not None:
             destination = icons_dir / f"{species_id}.png"
-            shutil.copyfile(icon_source, destination)
+            # Existing committed icons are stable public assets. Use the ROM
+            # source only to fill new IDs; rebuilding data must not rewrite or
+            # delete the complete icon catalog as a side effect.
+            if not destination.is_file():
+                shutil.copyfile(icon_source, destination)
+            icon_path = f"assets/icons/{species_id}.png"
+        elif (icons_dir / f"{species_id}.png").is_file():
             icon_path = f"assets/icons/{species_id}.png"
 
         abilities = []
@@ -816,12 +856,14 @@ def build_site_data(expansion_root: Path, tracker_root: Path, webapp_root: Path)
         trainer_id_by_token,
     )
     ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
+    class_auto_ai_flags = parse_class_auto_ai_flags(expansion_root / "include" / "data.h")
     trainers = parse_showdown_trainers(
         expansion_root / "src" / "data" / "trainers.party",
         species_id_by_name,
         trainer_id_by_token,
         contract_by_trainer_id,
         ai_flag_by_label,
+        class_auto_ai_flags,
     )
 
     missing_contract_trainers = sorted(set(contract_by_trainer_id) - {entry["id"] for entry in trainers})
@@ -850,10 +892,9 @@ def main() -> int:
     args = parse_args()
     flaw_root = Path(args.flawmerald_root).resolve()
     expansion_root = Path(args.expansion_root).resolve() if args.expansion_root else flaw_root / "pokeemerald-expansion"
-    tracker_root = Path(args.tracker_root).resolve() if args.tracker_root else flaw_root / "Ironmon-Tracker-flawzo"
     webapp_root = Path(args.webapp_root).resolve() if args.webapp_root else flaw_root / "Flawzo-WebApp"
 
-    site_data = build_site_data(expansion_root, tracker_root, webapp_root)
+    site_data = build_site_data(expansion_root, webapp_root)
     output = ROOT / "data" / "site-data.json"
     output.write_text(json.dumps(site_data, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
     print(f"Wrote {output}")

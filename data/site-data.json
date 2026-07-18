@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-12T22:14:20+00:00",
+  "generatedAtUtc": "2026-07-18T22:15:02+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -145595,6 +145595,443 @@
       "eggMoves": []
     },
     {
+      "id": 899,
+      "token": "SPECIES_WYRDEER",
+      "name": "Wyrdeer",
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "typeTokens": [
+        "TYPE_NORMAL",
+        "TYPE_PSYCHIC"
+      ],
+      "bst": 525,
+      "weight": 95.1,
+      "moveLevels": [
+        1,
+        5,
+        9,
+        15,
+        21,
+        29,
+        37,
+        47
+      ],
+      "abilities": [
+        {
+          "id": 22,
+          "name": "Intimidate",
+          "description": "Lowers the foe's Attack."
+        },
+        {
+          "id": 119,
+          "name": "Frisk",
+          "description": "Checks a foe's item."
+        },
+        {
+          "id": 157,
+          "name": "Sap Sipper",
+          "description": "Grass increases Attack."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/899.png",
+      "teachable": {
+        "all": [
+          523,
+          347,
+          451,
+          91,
+          89,
+          412,
+          263,
+          218,
+          416,
+          237,
+          63,
+          231,
+          113,
+          182,
+          94,
+          244,
+          473,
+          240,
+          115,
+          156,
+          216,
+          46,
+          290,
+          247,
+          285,
+          214,
+          76,
+          164,
+          241,
+          168,
+          87,
+          85,
+          86,
+          433,
+          528,
+          34,
+          38,
+          203,
+          102,
+          129
+        ],
+        "tmhm": [
+          523,
+          347,
+          451,
+          91,
+          89,
+          412,
+          263,
+          218,
+          416,
+          237,
+          63,
+          231,
+          113,
+          182,
+          94,
+          244,
+          473,
+          240,
+          115,
+          156,
+          216,
+          46,
+          290,
+          247,
+          285,
+          214,
+          76,
+          164,
+          241,
+          168,
+          87,
+          85,
+          86,
+          433,
+          528
+        ],
+        "tutor": [
+          244,
+          214,
+          164,
+          86,
+          34,
+          38,
+          203,
+          102,
+          129
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 900,
+      "token": "SPECIES_KLEAVOR",
+      "name": "Kleavor",
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "typeTokens": [
+        "TYPE_BUG",
+        "TYPE_ROCK"
+      ],
+      "bst": 500,
+      "weight": 89.0,
+      "moveLevels": [
+        1,
+        6,
+        11,
+        14,
+        14,
+        18,
+        25,
+        29,
+        34,
+        43
+      ],
+      "abilities": [
+        {
+          "id": 68,
+          "name": "Swarm",
+          "description": "Ups Bug moves in a pinch.\nBug damage +50% at 1/3 HP or less."
+        },
+        {
+          "id": 125,
+          "name": "Sheer Force",
+          "description": "Trades effects for power."
+        },
+        {
+          "id": 292,
+          "name": "Sharpness",
+          "description": "Strengthens slicing moves.\nSlicing move damage +50%."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/900.png",
+      "teachable": {
+        "all": [
+          512,
+          332,
+          280,
+          347,
+          104,
+          263,
+          206,
+          218,
+          416,
+          237,
+          63,
+          113,
+          182,
+          240,
+          156,
+          216,
+          157,
+          249,
+          317,
+          201,
+          290,
+          214,
+          444,
+          522,
+          164,
+          241,
+          14,
+          168,
+          369,
+          404,
+          68,
+          38,
+          203,
+          210,
+          102,
+          129
+        ],
+        "tmhm": [
+          512,
+          332,
+          280,
+          347,
+          104,
+          263,
+          206,
+          218,
+          416,
+          237,
+          63,
+          113,
+          182,
+          240,
+          156,
+          216,
+          157,
+          249,
+          317,
+          201,
+          290,
+          214,
+          444,
+          522,
+          164,
+          241,
+          14,
+          168,
+          369,
+          404
+        ],
+        "tutor": [
+          157,
+          214,
+          164,
+          14,
+          68,
+          38,
+          203,
+          210,
+          102,
+          129
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 901,
+      "token": "SPECIES_URSALUNA",
+      "name": "Ursaluna",
+      "types": [
+        "Ground",
+        "Normal"
+      ],
+      "typeTokens": [
+        "TYPE_GROUND",
+        "TYPE_NORMAL"
+      ],
+      "bst": 550,
+      "weight": 290.0,
+      "moveLevels": [
+        1,
+        6,
+        11,
+        18,
+        25,
+        34,
+        43,
+        43
+      ],
+      "abilities": [
+        {
+          "id": 62,
+          "name": "Guts",
+          "description": "Ups Attack if suffering."
+        },
+        {
+          "id": 171,
+          "name": "Bulletproof",
+          "description": "Avoids some projectiles."
+        },
+        {
+          "id": 127,
+          "name": "Unnerve",
+          "description": "Foes can't eat Berries."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/901.png",
+      "teachable": {
+        "all": [
+          332,
+          280,
+          339,
+          523,
+          91,
+          89,
+          263,
+          374,
+          264,
+          218,
+          416,
+          237,
+          63,
+          371,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          421,
+          214,
+          444,
+          164,
+          241,
+          14,
+          269,
+          168,
+          34,
+          68,
+          38,
+          203,
+          7,
+          210,
+          8,
+          118,
+          102,
+          69,
+          173,
+          129,
+          9
+        ],
+        "tmhm": [
+          332,
+          280,
+          339,
+          523,
+          91,
+          89,
+          263,
+          374,
+          264,
+          218,
+          416,
+          237,
+          63,
+          371,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          421,
+          214,
+          444,
+          164,
+          241,
+          14,
+          269,
+          168
+        ],
+        "tutor": [
+          157,
+          214,
+          164,
+          14,
+          34,
+          68,
+          38,
+          203,
+          7,
+          210,
+          8,
+          118,
+          102,
+          69,
+          173,
+          129,
+          9
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
       "id": 902,
       "token": "SPECIES_BASCULEGION_M",
       "name": "Basculegion",
@@ -198273,6 +198710,184 @@
       ]
     },
     {
+      "id": 1370,
+      "token": "SPECIES_ANNIHILAPE",
+      "name": "Annihilape",
+      "types": [
+        "Fighting",
+        "Ghost"
+      ],
+      "typeTokens": [
+        "TYPE_FIGHTING",
+        "TYPE_GHOST"
+      ],
+      "bst": 535,
+      "weight": 56.0,
+      "moveLevels": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        8,
+        12,
+        17,
+        22,
+        26,
+        30,
+        35,
+        39,
+        44,
+        48,
+        53,
+        57
+      ],
+      "abilities": [
+        {
+          "id": 72,
+          "name": "Vital Spirit",
+          "description": "Prevents sleep."
+        },
+        {
+          "id": 39,
+          "name": "Inner Focus",
+          "description": "Prevents flinching."
+        },
+        {
+          "id": 128,
+          "name": "Defiant",
+          "description": "Lowered stats up Attack."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1370.png",
+      "teachable": {
+        "all": [
+          512,
+          280,
+          339,
+          523,
+          91,
+          89,
+          263,
+          374,
+          411,
+          264,
+          218,
+          416,
+          237,
+          63,
+          315,
+          398,
+          612,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          247,
+          421,
+          214,
+          444,
+          164,
+          241,
+          207,
+          269,
+          168,
+          87,
+          85,
+          259,
+          369,
+          34,
+          68,
+          38,
+          223,
+          203,
+          7,
+          8,
+          118,
+          102,
+          69,
+          129,
+          9
+        ],
+        "tmhm": [
+          512,
+          280,
+          339,
+          523,
+          91,
+          89,
+          263,
+          374,
+          411,
+          264,
+          218,
+          416,
+          237,
+          63,
+          315,
+          398,
+          612,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          247,
+          421,
+          214,
+          444,
+          164,
+          241,
+          207,
+          269,
+          168,
+          87,
+          85,
+          259,
+          369
+        ],
+        "tutor": [
+          157,
+          214,
+          164,
+          207,
+          34,
+          68,
+          38,
+          223,
+          203,
+          7,
+          8,
+          118,
+          102,
+          69,
+          129,
+          9
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
       "id": 1371,
       "token": "SPECIES_CLODSIRE",
       "name": "Clodsire",
@@ -198393,6 +199008,623 @@
           203,
           102,
           189
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1372,
+      "token": "SPECIES_FARIGIRAF",
+      "name": "Farigiraf",
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "typeTokens": [
+        "TYPE_NORMAL",
+        "TYPE_PSYCHIC"
+      ],
+      "bst": 520,
+      "weight": 160.0,
+      "moveLevels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        5,
+        10,
+        14,
+        19,
+        23,
+        28,
+        32,
+        37,
+        41,
+        46,
+        50
+      ],
+      "abilities": [
+        {
+          "id": 291,
+          "name": "Cud Chew",
+          "description": "Eats a used berry again."
+        },
+        {
+          "id": 296,
+          "name": "Armor Tail",
+          "description": "Protects from priority."
+        },
+        {
+          "id": 157,
+          "name": "Sap Sipper",
+          "description": "Grass increases Attack."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1372.png",
+      "teachable": {
+        "all": [
+          523,
+          347,
+          451,
+          605,
+          89,
+          412,
+          263,
+          218,
+          416,
+          447,
+          237,
+          63,
+          113,
+          182,
+          94,
+          244,
+          473,
+          240,
+          115,
+          156,
+          216,
+          46,
+          290,
+          247,
+          285,
+          214,
+          164,
+          241,
+          168,
+          87,
+          85,
+          86,
+          433,
+          34,
+          38,
+          203,
+          102,
+          129
+        ],
+        "tmhm": [
+          523,
+          347,
+          451,
+          605,
+          89,
+          412,
+          263,
+          218,
+          416,
+          447,
+          237,
+          63,
+          113,
+          182,
+          94,
+          244,
+          473,
+          240,
+          115,
+          156,
+          216,
+          46,
+          290,
+          247,
+          285,
+          214,
+          164,
+          241,
+          168,
+          87,
+          85,
+          86,
+          433
+        ],
+        "tutor": [
+          244,
+          214,
+          164,
+          86,
+          34,
+          38,
+          203,
+          102,
+          129
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1373,
+      "token": "SPECIES_DUDUNSPARCE_TWO_SEGMENT",
+      "name": "Dudunsparce",
+      "types": [
+        "Normal",
+        "Normal"
+      ],
+      "typeTokens": [
+        "TYPE_NORMAL",
+        "TYPE_NORMAL"
+      ],
+      "bst": 520,
+      "weight": 39.2,
+      "moveLevels": [
+        1,
+        1,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        62
+      ],
+      "abilities": [
+        {
+          "id": 32,
+          "name": "Serene Grace",
+          "description": "Promotes added effects."
+        },
+        {
+          "id": 50,
+          "name": "Run Away",
+          "description": "Makes escaping easier."
+        },
+        {
+          "id": 155,
+          "name": "Rattled",
+          "description": "Raises Speed when scared."
+        }
+      ],
+      "evolutions": [],
+      "icon": null,
+      "teachable": {
+        "all": [
+          59,
+          523,
+          347,
+          91,
+          525,
+          89,
+          263,
+          126,
+          53,
+          218,
+          416,
+          360,
+          237,
+          63,
+          58,
+          398,
+          182,
+          244,
+          240,
+          156,
+          216,
+          157,
+          317,
+          201,
+          290,
+          247,
+          214,
+          76,
+          444,
+          164,
+          241,
+          168,
+          87,
+          85,
+          92,
+          528,
+          34,
+          111,
+          38,
+          203,
+          102,
+          189,
+          205
+        ],
+        "tmhm": [
+          59,
+          523,
+          347,
+          91,
+          525,
+          89,
+          263,
+          126,
+          53,
+          218,
+          416,
+          360,
+          237,
+          63,
+          58,
+          398,
+          182,
+          244,
+          240,
+          156,
+          216,
+          157,
+          317,
+          201,
+          290,
+          247,
+          214,
+          76,
+          444,
+          164,
+          241,
+          168,
+          87,
+          85,
+          92,
+          528
+        ],
+        "tutor": [
+          244,
+          157,
+          214,
+          164,
+          34,
+          111,
+          38,
+          203,
+          102,
+          189,
+          205
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1374,
+      "token": "SPECIES_DUDUNSPARCE_THREE_SEGMENT",
+      "name": "Dudunsparce",
+      "types": [
+        "Normal",
+        "Normal"
+      ],
+      "typeTokens": [
+        "TYPE_NORMAL",
+        "TYPE_NORMAL"
+      ],
+      "bst": 520,
+      "weight": 47.4,
+      "moveLevels": [
+        1,
+        1,
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        32,
+        36,
+        40,
+        44,
+        48,
+        52,
+        56,
+        62
+      ],
+      "abilities": [
+        {
+          "id": 32,
+          "name": "Serene Grace",
+          "description": "Promotes added effects."
+        },
+        {
+          "id": 50,
+          "name": "Run Away",
+          "description": "Makes escaping easier."
+        },
+        {
+          "id": 155,
+          "name": "Rattled",
+          "description": "Raises Speed when scared."
+        }
+      ],
+      "evolutions": [],
+      "icon": null,
+      "teachable": {
+        "all": [
+          59,
+          523,
+          347,
+          91,
+          525,
+          89,
+          263,
+          126,
+          53,
+          218,
+          416,
+          360,
+          237,
+          63,
+          58,
+          398,
+          182,
+          244,
+          240,
+          156,
+          216,
+          157,
+          317,
+          201,
+          290,
+          247,
+          214,
+          76,
+          444,
+          164,
+          241,
+          168,
+          87,
+          85,
+          92,
+          528,
+          34,
+          111,
+          38,
+          203,
+          102,
+          189,
+          205
+        ],
+        "tmhm": [
+          59,
+          523,
+          347,
+          91,
+          525,
+          89,
+          263,
+          126,
+          53,
+          218,
+          416,
+          360,
+          237,
+          63,
+          58,
+          398,
+          182,
+          244,
+          240,
+          156,
+          216,
+          157,
+          317,
+          201,
+          290,
+          247,
+          214,
+          76,
+          444,
+          164,
+          241,
+          168,
+          87,
+          85,
+          92,
+          528
+        ],
+        "tutor": [
+          244,
+          157,
+          214,
+          164,
+          34,
+          111,
+          38,
+          203,
+          102,
+          189,
+          205
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1375,
+      "token": "SPECIES_KINGAMBIT",
+      "name": "Kingambit",
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "typeTokens": [
+        "TYPE_DARK",
+        "TYPE_STEEL"
+      ],
+      "bst": 550,
+      "weight": 120.0,
+      "moveLevels": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        57,
+        64,
+        71
+      ],
+      "abilities": [
+        {
+          "id": 128,
+          "name": "Defiant",
+          "description": "Lowered stats up Attack."
+        },
+        {
+          "id": 293,
+          "name": "Supreme Overlord",
+          "description": "Inherits fallen's strength.\nDamage +10% per fainted ally, up to +50%."
+        },
+        {
+          "id": 46,
+          "name": "Pressure",
+          "description": "Raises foe's PP usage."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1375.png",
+      "teachable": {
+        "all": [
+          332,
+          280,
+          399,
+          91,
+          263,
+          206,
+          430,
+          374,
+          411,
+          218,
+          416,
+          447,
+          237,
+          63,
+          398,
+          182,
+          240,
+          156,
+          514,
+          216,
+          317,
+          201,
+          290,
+          421,
+          214,
+          555,
+          444,
+          164,
+          14,
+          269,
+          168,
+          86,
+          259,
+          404,
+          203,
+          210,
+          102
+        ],
+        "tmhm": [
+          332,
+          280,
+          399,
+          91,
+          263,
+          206,
+          430,
+          374,
+          411,
+          218,
+          416,
+          447,
+          237,
+          63,
+          398,
+          182,
+          240,
+          156,
+          514,
+          216,
+          317,
+          201,
+          290,
+          421,
+          214,
+          555,
+          444,
+          164,
+          14,
+          269,
+          168,
+          86,
+          259,
+          404
+        ],
+        "tutor": [
+          214,
+          164,
+          14,
+          86,
+          203,
+          210,
+          102
         ],
         "special": [
           218,
@@ -202368,6 +203600,128 @@
       "eggMoves": []
     },
     {
+      "id": 1408,
+      "token": "SPECIES_DIPPLIN",
+      "name": "Dipplin",
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "typeTokens": [
+        "TYPE_GRASS",
+        "TYPE_DRAGON"
+      ],
+      "bst": 485,
+      "weight": 4.4,
+      "moveLevels": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        4,
+        8,
+        12,
+        16,
+        20,
+        28,
+        32,
+        36,
+        40,
+        44
+      ],
+      "abilities": [
+        {
+          "id": 306,
+          "name": "Supersweet Syrup",
+          "description": "Lowers the foe's Evasion."
+        },
+        {
+          "id": 82,
+          "name": "Gluttony",
+          "description": "Eats Berries early."
+        },
+        {
+          "id": 60,
+          "name": "Sticky Hold",
+          "description": "Prevents item theft."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1408.png",
+      "teachable": {
+        "all": [
+          331,
+          525,
+          412,
+          263,
+          218,
+          202,
+          416,
+          447,
+          360,
+          237,
+          63,
+          611,
+          182,
+          115,
+          156,
+          216,
+          290,
+          214,
+          76,
+          164,
+          241,
+          34,
+          111,
+          203,
+          102,
+          205
+        ],
+        "tmhm": [
+          331,
+          525,
+          412,
+          263,
+          218,
+          202,
+          416,
+          447,
+          360,
+          237,
+          63,
+          611,
+          182,
+          115,
+          156,
+          216,
+          290,
+          214,
+          76,
+          164,
+          241
+        ],
+        "tutor": [
+          214,
+          164,
+          34,
+          111,
+          203,
+          102,
+          205
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
       "id": 1409,
       "token": "SPECIES_POLTCHAGEIST_COUNTERFEIT",
       "name": "Poltchageist",
@@ -203591,6 +204945,428 @@
         "tmhm": [],
         "tutor": [],
         "special": []
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1424,
+      "token": "SPECIES_URSALUNA_BLOODMOON",
+      "name": "Ursaluna",
+      "types": [
+        "Ground",
+        "Normal"
+      ],
+      "typeTokens": [
+        "TYPE_GROUND",
+        "TYPE_NORMAL"
+      ],
+      "bst": 555,
+      "weight": 333.0,
+      "moveLevels": [
+        1,
+        1,
+        1,
+        1,
+        8,
+        13,
+        17,
+        22,
+        25,
+        35,
+        41,
+        41,
+        48,
+        56,
+        64,
+        70
+      ],
+      "abilities": [
+        {
+          "id": 300,
+          "name": "Mind's Eye",
+          "description": "Keen Eye and Scrappy."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1424.png",
+      "teachable": {
+        "all": [
+          280,
+          523,
+          347,
+          91,
+          89,
+          263,
+          374,
+          411,
+          264,
+          218,
+          416,
+          237,
+          63,
+          371,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          317,
+          290,
+          421,
+          214,
+          555,
+          444,
+          164,
+          241,
+          14,
+          269,
+          168,
+          34,
+          68,
+          38,
+          203,
+          7,
+          210,
+          8,
+          102,
+          69,
+          173,
+          129,
+          9
+        ],
+        "tmhm": [
+          280,
+          523,
+          347,
+          91,
+          89,
+          263,
+          374,
+          411,
+          264,
+          218,
+          416,
+          237,
+          63,
+          371,
+          182,
+          240,
+          156,
+          216,
+          46,
+          157,
+          317,
+          290,
+          421,
+          214,
+          555,
+          444,
+          164,
+          241,
+          14,
+          269,
+          168
+        ],
+        "tutor": [
+          157,
+          214,
+          164,
+          14,
+          34,
+          68,
+          38,
+          203,
+          7,
+          210,
+          8,
+          102,
+          69,
+          173,
+          129,
+          9
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1425,
+      "token": "SPECIES_ARCHALUDON",
+      "name": "Archaludon",
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "typeTokens": [
+        "TYPE_STEEL",
+        "TYPE_DRAGON"
+      ],
+      "bst": 600,
+      "weight": 60.0,
+      "moveLevels": [
+        0,
+        1,
+        1,
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66
+      ],
+      "abilities": [
+        {
+          "id": 192,
+          "name": "Stamina",
+          "description": "Boosts Defense when hit."
+        },
+        {
+          "id": 5,
+          "name": "Sturdy",
+          "description": "Negates 1-hit KO attacks."
+        },
+        {
+          "id": 242,
+          "name": "Stalwart",
+          "description": "Ignores foe's redirection."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1425.png",
+      "teachable": {
+        "all": [
+          280,
+          399,
+          337,
+          525,
+          89,
+          263,
+          430,
+          218,
+          416,
+          360,
+          237,
+          468,
+          63,
+          113,
+          182,
+          115,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          214,
+          555,
+          76,
+          444,
+          164,
+          14,
+          87,
+          85,
+          86,
+          34,
+          38,
+          203,
+          102
+        ],
+        "tmhm": [
+          280,
+          399,
+          337,
+          525,
+          89,
+          263,
+          430,
+          218,
+          416,
+          360,
+          237,
+          468,
+          63,
+          113,
+          182,
+          115,
+          156,
+          216,
+          46,
+          157,
+          249,
+          317,
+          290,
+          214,
+          555,
+          76,
+          444,
+          164,
+          14,
+          87,
+          85,
+          86
+        ],
+        "tutor": [
+          157,
+          214,
+          164,
+          14,
+          86,
+          34,
+          38,
+          203,
+          102
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
+      },
+      "eggMoves": []
+    },
+    {
+      "id": 1426,
+      "token": "SPECIES_HYDRAPPLE",
+      "name": "Hydrapple",
+      "types": [
+        "Grass",
+        "Dragon"
+      ],
+      "typeTokens": [
+        "TYPE_GRASS",
+        "TYPE_DRAGON"
+      ],
+      "bst": 540,
+      "weight": 93.0,
+      "moveLevels": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        4,
+        8,
+        12,
+        16,
+        20,
+        28,
+        32,
+        36,
+        40,
+        44,
+        54
+      ],
+      "abilities": [
+        {
+          "id": 306,
+          "name": "Supersweet Syrup",
+          "description": "Lowers the foe's Evasion."
+        },
+        {
+          "id": 144,
+          "name": "Regenerator",
+          "description": "Heals upon switching out.\nHeals 1/3 max HP when switching out."
+        },
+        {
+          "id": 60,
+          "name": "Sticky Hold",
+          "description": "Prevents item theft."
+        }
+      ],
+      "evolutions": [],
+      "icon": "assets/icons/1426.png",
+      "teachable": {
+        "all": [
+          331,
+          525,
+          89,
+          412,
+          263,
+          218,
+          202,
+          416,
+          447,
+          360,
+          237,
+          63,
+          611,
+          182,
+          240,
+          115,
+          156,
+          216,
+          290,
+          214,
+          76,
+          164,
+          241,
+          34,
+          111,
+          38,
+          203,
+          102,
+          205
+        ],
+        "tmhm": [
+          331,
+          525,
+          89,
+          412,
+          263,
+          218,
+          202,
+          416,
+          447,
+          360,
+          237,
+          63,
+          611,
+          182,
+          240,
+          115,
+          156,
+          216,
+          290,
+          214,
+          76,
+          164,
+          241
+        ],
+        "tutor": [
+          214,
+          164,
+          34,
+          111,
+          38,
+          203,
+          102,
+          205
+        ],
+        "special": [
+          218,
+          237,
+          216,
+          290,
+          164,
+          102
+        ]
       },
       "eggMoves": []
     },
@@ -224071,7 +225847,7 @@
       "power": 130,
       "accuracy": 100,
       "pp": 10,
-      "description": "Tucks in the head, then\nattacks on the next turn.",
+      "description": "Raises Defense, then\nattacks on the next turn.",
       "effect": "EFFECT_TWO_TURNS_ATTACK",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -225286,7 +227062,7 @@
       "power": 70,
       "accuracy": 90,
       "pp": 25,
-      "description": "Strikes the foe with hard\nwings spread wide.",
+      "description": "Strikes with hard wings.\nMay raise the user's Defense.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -228661,7 +230437,7 @@
       "power": 80,
       "accuracy": 100,
       "pp": 15,
-      "description": "Scarlet flames torch\neverything around the user.",
+      "description": "Scorches all around the user\nand may cause a burn.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_FOES_AND_ALLY",
       "priority": 0
@@ -230296,7 +232072,7 @@
       "power": 100,
       "accuracy": 100,
       "pp": 5,
-      "description": "Scarlet flames torch\neverything around the user.",
+      "description": "Scorches all around the user\nand may cause a burn.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_FOES_AND_ALLY",
       "priority": 0
@@ -231436,7 +233212,7 @@
       "power": 100,
       "accuracy": 0,
       "pp": 5,
-      "description": "Uses a warp hole to attack.\nCan't be evaded.",
+      "description": "Bypasses protection, but\nlowers the user's Defense.",
       "effect": "EFFECT_HYPERSPACE_FURY",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -232261,7 +234037,7 @@
       "power": 50,
       "accuracy": 100,
       "pp": 15,
-      "description": "Electric bursts always go\nfirst and land a critical hit.",
+      "description": "Always moves first and lands\na critical hit. Raises Evasion.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 2
@@ -234451,7 +236227,7 @@
       "power": 80,
       "accuracy": 100,
       "pp": 10,
-      "description": "---",
+      "description": "A blazing engine attack\nthat may burn the target.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -234466,7 +236242,7 @@
       "power": 80,
       "accuracy": 100,
       "pp": 10,
-      "description": "---",
+      "description": "A wicked engine attack\nthat may induce sleep.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -234481,7 +236257,7 @@
       "power": 100,
       "accuracy": 100,
       "pp": 10,
-      "description": "---",
+      "description": "A noxious engine attack\nthat may poison the target.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -234496,7 +236272,7 @@
       "power": 100,
       "accuracy": 100,
       "pp": 10,
-      "description": "---",
+      "description": "A forceful engine attack\nthat may paralyze.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -234511,7 +236287,7 @@
       "power": 100,
       "accuracy": 100,
       "pp": 10,
-      "description": "---",
+      "description": "A magical engine attack\nthat may confuse the target.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -234616,7 +236392,7 @@
       "power": 130,
       "accuracy": 100,
       "pp": 10,
-      "description": "Gathers electricity, then\nfires a high-voltage shot.",
+      "description": "Raises Sp. Atk, then fires\na high-voltage shot.",
       "effect": "EFFECT_TWO_TURNS_ATTACK",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -236256,6 +238032,7 @@
         1321,
         1322,
         1419,
+        1425,
         1486,
         1530
       ]
@@ -236799,6 +238576,7 @@
         725,
         726,
         727,
+        899,
         904,
         935,
         935,
@@ -237112,7 +238890,9 @@
         1097,
         1098,
         1099,
-        1107
+        1107,
+        1373,
+        1374
       ]
     },
     {
@@ -237342,6 +239122,7 @@
         950,
         989,
         999,
+        1370,
         1527,
         1559
       ]
@@ -237489,6 +239270,7 @@
         1069,
         1070,
         1229,
+        1375,
         1506
       ]
     },
@@ -237626,6 +239408,8 @@
         976,
         1308,
         1330,
+        1373,
+        1374,
         1392,
         1488,
         1499
@@ -237868,7 +239652,9 @@
         568,
         617,
         1062,
-        1063
+        1063,
+        1408,
+        1426
       ]
     },
     {
@@ -237948,6 +239734,7 @@
         534,
         538,
         862,
+        901,
         1316,
         1317,
         1495
@@ -238130,6 +239917,7 @@
         824,
         825,
         826,
+        900,
         1303,
         1304,
         1436,
@@ -238211,7 +239999,8 @@
         506,
         744,
         981,
-        1173
+        1173,
+        1370
       ]
     },
     {
@@ -238426,6 +240215,7 @@
         1298,
         1299,
         1300,
+        1408,
         1500,
         1510,
         1511,
@@ -239180,6 +240970,7 @@
         859,
         860,
         861,
+        899,
         972,
         997,
         1157,
@@ -239316,6 +241107,7 @@
         733,
         878,
         879,
+        900,
         937,
         937,
         937,
@@ -239377,6 +241169,7 @@
         822,
         823,
         898,
+        901,
         974,
         1494,
         1506,
@@ -239404,6 +241197,8 @@
         862,
         870,
         983,
+        1370,
+        1375,
         1416,
         1549
       ]
@@ -239777,7 +241572,8 @@
         1100,
         1100,
         1338,
-        1356
+        1356,
+        1426
       ]
     },
     {
@@ -239983,6 +241779,8 @@
         1091,
         1348,
         1349,
+        1373,
+        1374,
         1391
       ]
     },
@@ -240034,6 +241832,7 @@
         705,
         706,
         780,
+        899,
         1005,
         1006,
         1094,
@@ -240042,6 +241841,7 @@
         1097,
         1098,
         1099,
+        1372,
         1548
       ]
     },
@@ -240331,6 +242131,7 @@
         831,
         832,
         840,
+        901,
         1538
       ]
     },
@@ -240666,7 +242467,8 @@
       "description": "Boosts Defense when hit.",
       "speciesIds": [
         749,
-        750
+        750,
+        1425
       ]
     },
     {
@@ -241176,6 +242978,7 @@
       "description": "Ignores foe's redirection.",
       "speciesIds": [
         884,
+        1425,
         1520
       ]
     },
@@ -241619,6 +243422,7 @@
       "name": "Cud Chew",
       "description": "Eats a used berry again.",
       "speciesIds": [
+        1372,
         1402,
         1403,
         1404
@@ -241629,6 +243433,7 @@
       "name": "Sharpness",
       "description": "Strengthens slicing moves.\nSlicing move damage +50%.",
       "speciesIds": [
+        900,
         1000,
         1365
       ]
@@ -241637,7 +243442,9 @@
       "id": 293,
       "name": "Supreme Overlord",
       "description": "Inherits fallen's strength.\nDamage +10% per fainted ally, up to +50%.",
-      "speciesIds": []
+      "speciesIds": [
+        1375
+      ]
     },
     {
       "id": 294,
@@ -241661,7 +243468,9 @@
       "id": 296,
       "name": "Armor Tail",
       "description": "Protects from priority.",
-      "speciesIds": []
+      "speciesIds": [
+        1372
+      ]
     },
     {
       "id": 297,
@@ -241695,7 +243504,9 @@
       "id": 300,
       "name": "Mind's Eye",
       "description": "Keen Eye and Scrappy.",
-      "speciesIds": []
+      "speciesIds": [
+        1424
+      ]
     },
     {
       "id": 301,
@@ -241743,7 +243554,10 @@
       "id": 306,
       "name": "Supersweet Syrup",
       "description": "Lowers the foe's Evasion.",
-      "speciesIds": []
+      "speciesIds": [
+        1408,
+        1426
+      ]
     },
     {
       "id": 307,
@@ -252278,6 +254092,30 @@
       "machineNumber": null,
       "moveId": null,
       "moveName": null
+    },
+    {
+      "id": 876,
+      "token": "ITEM_KAIZO_STONE_MINI",
+      "name": "Kaizo Stone Mini",
+      "description": "Evolves a Pokemon below\n470 BST if it has an\nitem evolution.",
+      "pocket": "POCKET_ITEMS",
+      "price": 0,
+      "machineType": null,
+      "machineNumber": null,
+      "moveId": null,
+      "moveName": null
+    },
+    {
+      "id": 877,
+      "token": "ITEM_KAIZO_STONE_MAX",
+      "name": "Kaizo Stone Max",
+      "description": "Evolves a Pokemon with\n470 BST or more if it\nhas an item evolution.",
+      "pocket": "POCKET_ITEMS",
+      "price": 0,
+      "machineType": null,
+      "machineNumber": null,
+      "moveId": null,
+      "moveName": null
     }
   ],
   "trainers": [
@@ -252291,8 +254129,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -252302,6 +254147,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -252330,10 +254213,19 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Check Bad Move",
         "Try To Faint",
         "Force Setup First Turn"
+      ],
+      "aiFlags": [
+        "Check Bad Move",
+        "Try To Faint",
+        "Force Setup First Turn",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -252355,6 +254247,44 @@
           "macro": "AI_FLAG_FORCE_SETUP_FIRST_TURN",
           "expandsTo": [
             "AI_FLAG_FORCE_SETUP_FIRST_TURN"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -252383,8 +254313,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -252394,6 +254331,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -252422,6 +254397,7 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
       "zone": "Route 103",
@@ -252449,6 +254425,7 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
       "zone": "Route 103",
@@ -252476,6 +254453,7 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
       "zone": "Route 103",
@@ -252503,6 +254481,7 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
       "zone": "Route 102",
@@ -252530,6 +254509,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252575,6 +254557,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252620,6 +254605,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252675,6 +254663,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252712,6 +254703,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252757,6 +254751,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252810,6 +254807,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252847,6 +254847,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252884,6 +254887,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -252932,8 +254938,15 @@
         "Potion",
         "Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -252943,6 +254956,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253007,8 +255058,15 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253018,6 +255076,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253090,6 +255186,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253135,6 +255234,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253172,6 +255274,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253209,6 +255314,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253262,6 +255370,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253307,6 +255418,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253345,6 +255459,9 @@
       "battleType": "Yes",
       "items": [
         "Full restore"
+      ],
+      "declaredAiFlags": [
+        "Check Bad Move"
       ],
       "aiFlags": [
         "Check Bad Move"
@@ -253391,8 +255508,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253402,6 +255526,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253454,8 +255616,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253465,6 +255634,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253517,6 +255724,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253562,6 +255772,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253615,6 +255828,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253660,6 +255876,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253697,6 +255916,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253734,6 +255956,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253774,8 +255999,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253785,6 +256017,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253853,6 +256123,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253890,6 +256163,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -253930,8 +256206,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253941,6 +256224,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -253988,8 +256309,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -253999,6 +256327,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -254046,8 +256412,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -254057,6 +256430,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -254101,8 +256512,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -254112,6 +256530,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -254156,8 +256612,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -254167,6 +256630,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -254211,8 +256712,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -254222,6 +256730,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -254266,6 +256812,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254311,6 +256860,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254348,6 +256900,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254409,6 +256964,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254454,6 +257012,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254491,6 +257052,9 @@
       "music": "Twins",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254528,6 +257092,9 @@
       "music": "Twins",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254573,6 +257140,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254618,6 +257188,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254655,6 +257228,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254692,6 +257268,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254737,6 +257316,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254782,6 +257364,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254819,6 +257404,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254856,6 +257444,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254901,6 +257492,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -254948,6 +257542,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -254993,6 +257590,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255038,6 +257638,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255086,8 +257689,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -255097,6 +257707,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -255165,6 +257813,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255210,6 +257861,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255263,6 +257917,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255300,6 +257957,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255353,6 +258013,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255390,6 +258053,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255435,6 +258101,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255472,6 +258141,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255517,6 +258189,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255570,6 +258245,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255615,6 +258293,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255652,6 +258333,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255689,6 +258373,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255726,6 +258413,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255779,6 +258469,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255816,6 +258509,9 @@
       "music": "Hiker",
       "battleType": "Yes",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255861,6 +258557,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255906,6 +258605,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255951,6 +258653,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -255996,6 +258701,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256033,6 +258741,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256070,6 +258781,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256123,6 +258837,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256168,6 +258885,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256216,8 +258936,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -256227,6 +258954,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -256271,6 +259036,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -256326,6 +259094,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256371,6 +259142,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256408,6 +259182,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256445,8 +259222,15 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -256456,6 +259240,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -256508,6 +259330,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256553,6 +259378,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -256592,6 +259420,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256629,6 +259460,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256669,8 +259503,15 @@
         "Hyper Potion",
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -256680,6 +259521,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -256748,6 +259627,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256785,6 +259667,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256830,6 +259715,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256883,6 +259771,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256920,6 +259811,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -256957,6 +259851,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257002,6 +259899,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257039,6 +259939,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257118,6 +260021,9 @@
       "items": [
         "Super Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -257167,6 +260073,9 @@
       "items": [
         "Super Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -257206,6 +260115,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257221,7 +260133,7 @@
       "zone": "Route 111",
       "map": "Route111",
       "zoneOrder": 20,
-      "contractOrder": 259,
+      "contractOrder": 260,
       "pokemon": [
         {
           "speciesName": "Sandshrew",
@@ -257244,6 +260156,9 @@
       "battleType": "No",
       "items": [
         "Hyper Potion"
+      ],
+      "declaredAiFlags": [
+        "Basic Trainer"
       ],
       "aiFlags": [
         "Basic Trainer"
@@ -257286,6 +260201,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -257326,6 +260244,9 @@
       "battleType": "No",
       "items": [
         "Hyper Potion"
+      ],
+      "declaredAiFlags": [
+        "Basic Trainer"
       ],
       "aiFlags": [
         "Basic Trainer"
@@ -257368,6 +260289,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -257408,6 +260332,11 @@
       "battleType": "No",
       "items": [
         "Hyper Potion"
+      ],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try To Faint",
+        "Force Setup First Turn"
       ],
       "aiFlags": [
         "Check Bad Move",
@@ -257464,6 +260393,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -257504,6 +260436,9 @@
       "battleType": "No",
       "items": [
         "Hyper Potion"
+      ],
+      "declaredAiFlags": [
+        "Basic Trainer"
       ],
       "aiFlags": [
         "Basic Trainer"
@@ -257547,8 +260482,15 @@
         "Hyper Potion",
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -257558,6 +260500,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -257628,6 +260608,14 @@
       "items": [
         "Full Restore",
         "Full Restore"
+      ],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try To Faint",
+        "Check Viability",
+        "HP Aware",
+        "Smart Switching",
+        "Smart Mon Choices"
       ],
       "aiFlags": [
         "Check Bad Move",
@@ -257746,6 +260734,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257791,6 +260782,9 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257828,6 +260822,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257865,6 +260862,10 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try To Faint"
+      ],
       "aiFlags": [
         "Check Bad Move",
         "Try To Faint"
@@ -257918,6 +260919,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -257955,8 +260959,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -257966,6 +260977,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258026,8 +261075,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258037,6 +261093,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258097,8 +261191,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258108,6 +261209,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258168,8 +261307,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258179,6 +261325,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258223,8 +261407,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258234,6 +261425,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258278,8 +261507,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258289,6 +261525,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258333,6 +261607,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258378,8 +261655,15 @@
       "music": "Aqua",
       "battleType": "Yes",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258389,6 +261673,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -258433,6 +261755,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258478,6 +261803,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258515,6 +261843,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258552,6 +261883,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258589,6 +261923,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258634,6 +261971,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258679,6 +262019,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258732,6 +262075,9 @@
       "music": "Girl",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258769,6 +262115,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258822,6 +262171,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258859,6 +262211,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -258904,6 +262259,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -258954,9 +262312,17 @@
         "Hyper Potion",
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "HP Aware",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -258973,6 +262339,44 @@
           "macro": "AI_FLAG_HP_AWARE",
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -259041,6 +262445,10 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try To Faint"
+      ],
       "aiFlags": [
         "Check Bad Move",
         "Try To Faint"
@@ -259094,6 +262502,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259139,6 +262550,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259184,6 +262598,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259229,6 +262646,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259274,6 +262694,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259311,6 +262734,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259356,6 +262782,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259393,6 +262822,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259438,6 +262870,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259517,6 +262952,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -259558,6 +262996,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -259597,6 +263038,9 @@
       "music": "Twins",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259634,6 +263078,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259711,6 +263158,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259756,6 +263206,9 @@
       "music": "Rich",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -259833,8 +263286,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -259844,6 +263304,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -259912,8 +263410,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -259923,6 +263428,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -259991,8 +263534,15 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260002,6 +263552,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260070,8 +263658,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260081,6 +263676,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260133,8 +263766,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260144,6 +263784,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260196,8 +263874,15 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260207,6 +263892,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260259,6 +263982,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260296,6 +264022,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260333,6 +264062,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260370,6 +264102,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260407,6 +264142,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260444,6 +264182,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260481,6 +264222,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260518,6 +264262,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260555,6 +264302,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260594,8 +264344,15 @@
       "items": [
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260605,6 +264362,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260673,8 +264468,15 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -260682,6 +264484,44 @@
           "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
             "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -260734,6 +264574,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260779,6 +264622,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260816,6 +264662,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260861,6 +264710,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260898,6 +264750,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260935,6 +264790,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -260972,6 +264830,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261009,6 +264870,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261046,6 +264910,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261083,6 +264950,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261130,8 +265000,15 @@
       "items": [
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -261141,6 +265018,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -261185,6 +265100,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261222,6 +265140,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261267,6 +265188,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261312,6 +265236,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261349,6 +265276,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261386,6 +265316,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261423,6 +265356,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261460,6 +265396,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261497,6 +265436,9 @@
       "music": "Rich",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261534,6 +265476,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261571,6 +265516,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261608,6 +265556,9 @@
       "music": "Rich",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261645,6 +265596,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261682,6 +265636,9 @@
       "music": "Suspicious",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261719,6 +265676,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261756,6 +265716,9 @@
       "music": "Intense",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261798,8 +265761,15 @@
         "Hyper Potion",
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -261809,6 +265779,44 @@
             "AI_FLAG_CHECK_BAD_MOVE",
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -261877,6 +265885,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261914,6 +265925,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261951,6 +265965,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -261966,7 +265983,7 @@
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
-      "contractOrder": 219,
+      "contractOrder": 220,
       "pokemon": [
         {
           "speciesName": "Zubat",
@@ -261988,6 +266005,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262003,7 +266023,7 @@
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
       "zoneOrder": 39,
-      "contractOrder": 220,
+      "contractOrder": 221,
       "pokemon": [
         {
           "speciesName": "Numel",
@@ -262025,6 +266045,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262062,6 +266085,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262099,6 +266125,9 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262136,8 +266165,15 @@
       "music": "Magma",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -262145,6 +266181,44 @@
           "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
             "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -262180,6 +266254,106 @@
       ]
     },
     {
+      "id": 734,
+      "idToken": "TRAINER_MAXIE_MOSSDEEP",
+      "name": "MAXIE",
+      "class": "Magma Leader",
+      "pic": "Magma Leader Maxie",
+      "gender": "Male",
+      "music": "Magma",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Mossdeep City Space Center 2F",
+      "map": "MossdeepCity_SpaceCenter_2F",
+      "zoneOrder": 40,
+      "contractOrder": 209,
+      "pokemon": [
+        {
+          "speciesName": "Mightyena",
+          "speciesId": 262,
+          "level": 50,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Crobat",
+          "speciesId": 169,
+          "level": 50,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Camerupt",
+          "speciesId": 323,
+          "level": 50,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
       "id": 14,
       "idToken": "TRAINER_GRUNT_SEAFLOOR_CAVERN_4",
       "name": "GRUNT",
@@ -262189,6 +266363,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262204,7 +266381,7 @@
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
-      "contractOrder": 209,
+      "contractOrder": 210,
       "pokemon": [
         {
           "speciesName": "Carvanha",
@@ -262226,6 +266403,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262241,7 +266421,7 @@
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
-      "contractOrder": 210,
+      "contractOrder": 211,
       "pokemon": [
         {
           "speciesName": "Mightyena",
@@ -262266,8 +266446,15 @@
         "Super Potion",
         "Super Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -262278,12 +266465,50 @@
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
           ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
-      "contractOrder": 211,
+      "contractOrder": 212,
       "pokemon": [
         {
           "speciesName": "Mightyena",
@@ -262321,6 +266546,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262336,7 +266564,7 @@
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
       "zoneOrder": 41,
-      "contractOrder": 221,
+      "contractOrder": 222,
       "pokemon": [
         {
           "speciesName": "Zubat",
@@ -262368,6 +266596,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -262385,7 +266616,7 @@
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
-      "contractOrder": 212,
+      "contractOrder": 213,
       "pokemon": [
         {
           "speciesName": "Gloom",
@@ -262409,6 +266640,9 @@
       "items": [
         "Hyper Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -262426,7 +266660,7 @@
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
-      "contractOrder": 213,
+      "contractOrder": 214,
       "pokemon": [
         {
           "speciesName": "Shiftry",
@@ -262448,6 +266682,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262463,7 +266700,7 @@
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
-      "contractOrder": 215,
+      "contractOrder": 216,
       "pokemon": [
         {
           "speciesName": "Tentacool",
@@ -262485,6 +266722,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262500,7 +266740,7 @@
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
-      "contractOrder": 216,
+      "contractOrder": 217,
       "pokemon": [
         {
           "speciesName": "Carvanha",
@@ -262522,8 +266762,15 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -262534,12 +266781,50 @@
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
           ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
       "zoneOrder": 42,
-      "contractOrder": 217,
+      "contractOrder": 218,
       "pokemon": [
         {
           "speciesName": "Sharpedo",
@@ -262569,6 +266854,9 @@
       "music": "Aqua",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262584,7 +266872,7 @@
       "zone": "Seafloor Cavern Room 1",
       "map": "SeafloorCavern_Room1",
       "zoneOrder": 43,
-      "contractOrder": 214,
+      "contractOrder": 215,
       "pokemon": [
         {
           "speciesName": "Poochyena",
@@ -262617,8 +266905,15 @@
         "Full restore",
         "Full restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -262629,12 +266924,50 @@
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
           ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Sky Pillar Top",
       "map": "SkyPillar_Top",
       "zoneOrder": 44,
-      "contractOrder": 218,
+      "contractOrder": 219,
       "pokemon": [
         {
           "speciesName": "Staryu",
@@ -262672,6 +267005,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262687,7 +267023,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 222,
+      "contractOrder": 223,
       "pokemon": [
         {
           "speciesName": "Goldeen",
@@ -262709,6 +267045,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262724,7 +267063,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 223,
+      "contractOrder": 224,
       "pokemon": [
         {
           "speciesName": "Luvdisc",
@@ -262754,6 +267093,9 @@
       "music": "Twins",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262769,7 +267111,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 224,
+      "contractOrder": 225,
       "pokemon": [
         {
           "speciesName": "Feebas",
@@ -262793,6 +267135,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262808,7 +267153,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 225,
+      "contractOrder": 226,
       "pokemon": [
         {
           "speciesName": "Luvdisc",
@@ -262838,6 +267183,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262853,7 +267201,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 226,
+      "contractOrder": 227,
       "pokemon": [
         {
           "speciesName": "Azumarill",
@@ -262885,6 +267233,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262900,7 +267251,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 227,
+      "contractOrder": 228,
       "pokemon": [
         {
           "speciesName": "Seaking",
@@ -262922,6 +267273,9 @@
       "music": "Twins",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262937,7 +267291,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 228,
+      "contractOrder": 229,
       "pokemon": [
         {
           "speciesName": "Azurill",
@@ -262967,6 +267321,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -262982,7 +267339,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 229,
+      "contractOrder": 230,
       "pokemon": [
         {
           "speciesName": "Carvanha",
@@ -263004,6 +267361,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -263019,7 +267379,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 230,
+      "contractOrder": 231,
       "pokemon": [
         {
           "speciesName": "Goldeen",
@@ -263057,6 +267417,9 @@
       "music": "Female",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -263072,7 +267435,7 @@
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
       "zoneOrder": 45,
-      "contractOrder": 231,
+      "contractOrder": 232,
       "pokemon": [
         {
           "speciesName": "Clamperl",
@@ -263113,8 +267476,15 @@
         "Hyper Potion",
         "Hyper Potion"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer",
+        "Smart Trainer",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -263125,12 +267495,50 @@
             "AI_FLAG_TRY_TO_FAINT",
             "AI_FLAG_CHECK_VIABILITY"
           ]
+        },
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Sootopolis City Gym 1F",
       "map": "SootopolisCity_Gym_1F",
       "zoneOrder": 46,
-      "contractOrder": 232,
+      "contractOrder": 233,
       "pokemon": [
         {
           "speciesName": "Luvdisc",
@@ -263194,6 +267602,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263211,7 +267622,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 233,
+      "contractOrder": 234,
       "pokemon": [
         {
           "speciesName": "Roselia",
@@ -263234,6 +267645,10 @@
       "battleType": "No",
       "items": [
         "Full Restore"
+      ],
+      "declaredAiFlags": [
+        "Basic Trainer",
+        "Try to faint"
       ],
       "aiFlags": [
         "Basic Trainer",
@@ -263260,7 +267675,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 234,
+      "contractOrder": 235,
       "pokemon": [
         {
           "speciesName": "Cacturne",
@@ -263292,6 +267707,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263309,7 +267727,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 235,
+      "contractOrder": 236,
       "pokemon": [
         {
           "speciesName": "Dodrio",
@@ -263357,6 +267775,10 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer",
+        "Try to faint"
+      ],
       "aiFlags": [
         "Basic Trainer",
         "Try to faint"
@@ -263382,7 +267804,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 236,
+      "contractOrder": 237,
       "pokemon": [
         {
           "speciesName": "Claydol",
@@ -263404,6 +267826,9 @@
       "music": "Cool",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263421,7 +267846,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 237,
+      "contractOrder": 238,
       "pokemon": [
         {
           "speciesName": "Lunatone",
@@ -263445,6 +267870,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263462,7 +267890,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 238,
+      "contractOrder": 239,
       "pokemon": [
         {
           "speciesName": "Sandslash",
@@ -263502,6 +267930,10 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer",
+        "Try to faint"
+      ],
       "aiFlags": [
         "Basic Trainer",
         "Try to faint"
@@ -263527,7 +267959,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 239,
+      "contractOrder": 240,
       "pokemon": [
         {
           "speciesName": "Slaking",
@@ -263551,6 +267983,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263568,7 +268003,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 240,
+      "contractOrder": 241,
       "pokemon": [
         {
           "speciesName": "Torkoal",
@@ -263608,6 +268043,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263625,7 +268063,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 241,
+      "contractOrder": 242,
       "pokemon": [
         {
           "speciesName": "Gardevoir",
@@ -263649,6 +268087,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263666,7 +268107,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 242,
+      "contractOrder": 243,
       "pokemon": [
         {
           "speciesName": "Medicham",
@@ -263690,6 +268131,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263707,7 +268151,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 243,
+      "contractOrder": 244,
       "pokemon": [
         {
           "speciesName": "Altaria",
@@ -263763,6 +268207,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263780,7 +268227,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 244,
+      "contractOrder": 245,
       "pokemon": [
         {
           "speciesName": "Kecleon",
@@ -263836,12 +268283,13 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 245,
+      "contractOrder": 246,
       "pokemon": [
         {
           "speciesName": "Claydol",
@@ -263897,6 +268345,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263914,7 +268365,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 246,
+      "contractOrder": 247,
       "pokemon": [
         {
           "speciesName": "Swellow",
@@ -263970,6 +268421,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
       "aiFlags": [
         "Basic Trainer"
       ],
@@ -263987,7 +268441,7 @@
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 47,
-      "contractOrder": 247,
+      "contractOrder": 248,
       "pokemon": [
         {
           "speciesName": "Skarmory",
@@ -264046,9 +268500,16 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Smart Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264070,12 +268531,37 @@
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
           ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Ever Grande City Sidneys Room",
       "map": "EverGrandeCity_SidneysRoom",
       "zoneOrder": 48,
-      "contractOrder": 248,
+      "contractOrder": 249,
       "pokemon": [
         {
           "speciesName": "Mightyena",
@@ -264142,9 +268628,16 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Smart Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264166,12 +268659,37 @@
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
           ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Ever Grande City Phoebes Room",
       "map": "EverGrandeCity_PhoebesRoom",
       "zoneOrder": 49,
-      "contractOrder": 249,
+      "contractOrder": 250,
       "pokemon": [
         {
           "speciesName": "Dusclops",
@@ -264238,9 +268756,16 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Smart Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264262,12 +268787,37 @@
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
           ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Ever Grande City Glacias Room",
       "map": "EverGrandeCity_GlaciasRoom",
       "zoneOrder": 50,
-      "contractOrder": 250,
+      "contractOrder": 251,
       "pokemon": [
         {
           "speciesName": "Sealeo",
@@ -264334,9 +268884,16 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Smart Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264358,12 +268915,37 @@
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
           ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Ever Grande City Drakes Room",
       "map": "EverGrandeCity_DrakesRoom",
       "zoneOrder": 51,
-      "contractOrder": 251,
+      "contractOrder": 252,
       "pokemon": [
         {
           "speciesName": "Shelgon",
@@ -264430,9 +269012,16 @@
         "Full Restore",
         "Full Restore"
       ],
-      "aiFlags": [
+      "declaredAiFlags": [
         "Smart Trainer",
         "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264454,12 +269043,37 @@
           "expandsTo": [
             "AI_FLAG_HP_AWARE"
           ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
         }
       ],
       "zone": "Ever Grande City Champions Room",
       "map": "EverGrandeCity_ChampionsRoom",
       "zoneOrder": 52,
-      "contractOrder": 252,
+      "contractOrder": 253,
       "pokemon": [
         {
           "speciesName": "Wailord",
@@ -264525,6 +269139,12 @@
         "Super Potion",
         "Full Heal"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try to Faint",
+        "Smart Switching",
+        "HP Aware"
+      ],
       "aiFlags": [
         "Check Bad Move",
         "Try to Faint",
@@ -264564,7 +269184,7 @@
       "zone": "Island Cave",
       "map": "IslandCave",
       "zoneOrder": 53,
-      "contractOrder": 253,
+      "contractOrder": 254,
       "pokemon": [
         {
           "speciesName": "Marill",
@@ -264610,6 +269230,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -264625,7 +269248,7 @@
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 54,
-      "contractOrder": 254,
+      "contractOrder": 255,
       "pokemon": [
         {
           "speciesName": "Machop",
@@ -264647,6 +269270,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -264662,7 +269288,7 @@
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 54,
-      "contractOrder": 255,
+      "contractOrder": 256,
       "pokemon": [
         {
           "speciesName": "Wurmple",
@@ -264692,6 +269318,9 @@
       "music": "Male",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -264707,7 +269336,7 @@
       "zone": "Route 106",
       "map": "Route106",
       "zoneOrder": 54,
-      "contractOrder": 256,
+      "contractOrder": 257,
       "pokemon": [
         {
           "speciesName": "Shroomish",
@@ -264737,6 +269366,12 @@
       "music": "Hiker",
       "battleType": "No",
       "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "Try To Faint",
+        "Check Viability",
+        "HP Aware"
+      ],
       "aiFlags": [
         "Check Bad Move",
         "Try To Faint",
@@ -264776,7 +269411,7 @@
       "zone": "New Mauville Inside",
       "map": "NewMauville_Inside",
       "zoneOrder": 55,
-      "contractOrder": 257,
+      "contractOrder": 258,
       "pokemon": [
         {
           "speciesName": "Marill",
@@ -264824,6 +269459,11 @@
       "items": [
         "Super Potion"
       ],
+      "declaredAiFlags": [
+        "Basic Trainer",
+        "Try to faint",
+        "HP Aware"
+      ],
       "aiFlags": [
         "Basic Trainer",
         "Try to faint",
@@ -264857,7 +269497,7 @@
       "zone": "Desert Ruins",
       "map": "DesertRuins",
       "zoneOrder": 56,
-      "contractOrder": 258,
+      "contractOrder": 259,
       "pokemon": [
         {
           "speciesName": "Skarmory",
@@ -264891,6 +269531,11 @@
         "Hyper Potion",
         "Max Revive"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move",
+        "HP Aware",
+        "Try to Faint"
+      ],
       "aiFlags": [
         "Check Bad Move",
         "HP Aware",
@@ -264922,7 +269567,7 @@
       "zone": "Ancient Tomb",
       "map": "AncientTomb",
       "zoneOrder": 57,
-      "contractOrder": 260,
+      "contractOrder": 261,
       "pokemon": [
         {
           "speciesName": "Spinda",
@@ -264954,6 +269599,9 @@
       "items": [
         "Full Restore"
       ],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
       "aiFlags": [
         "Check Bad Move"
       ],
@@ -264969,7 +269617,7 @@
       "zone": "Lilycove City Contest Hall",
       "map": "LilycoveCity_ContestHall",
       "zoneOrder": 58,
-      "contractOrder": 261,
+      "contractOrder": 262,
       "pokemon": [
         {
           "speciesName": "Zigzagoon",
@@ -265007,7 +269655,7 @@
     }
   ],
   "trainerSnapshot": {
-    "legalTrainerCount": 262,
+    "legalTrainerCount": 263,
     "zoneCount": 59,
     "zones": [
       {
