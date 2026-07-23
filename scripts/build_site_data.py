@@ -161,6 +161,7 @@ def parse_showdown_trainers(
     contract_by_trainer_id: dict[int, dict],
     ai_flag_by_label: dict[str, dict],
     class_auto_ai_flags: dict[str, list[str]],
+    trainer_auto_ai_flags: dict[str, list[str]],
 ) -> list[dict]:
     content = read_text(path)
     pattern = re.compile(r"^===\s+([A-Z0-9_]+)\s+===\s*$", re.MULTILINE)
@@ -253,6 +254,8 @@ def parse_showdown_trainers(
             declared_ai_flags,
             trainer_meta.get("Class", ""),
             class_auto_ai_flags,
+            id_token,
+            trainer_auto_ai_flags,
         )
         ai_flag_details = [
             {
@@ -307,14 +310,45 @@ def merge_effective_ai_flags(
     declared_flags: list[str],
     trainer_class: str,
     class_auto_ai_flags: dict[str, list[str]],
+    trainer_token: str = "",
+    trainer_auto_ai_flags: dict[str, list[str]] | None = None,
 ) -> list[str]:
     effective = list(declared_flags)
     if not declared_flags:
         return effective
+    for flag in (trainer_auto_ai_flags or {}).get(trainer_token, []):
+        if flag not in effective:
+            effective.append(flag)
     for flag in class_auto_ai_flags.get(trainer_class.strip().lower(), []):
         if flag not in effective:
             effective.append(flag)
     return effective
+
+
+def parse_trainer_auto_ai_flags(path: Path, trainer_id_by_token: dict[str, int]) -> dict[str, list[str]]:
+    text = read_text(path)
+    match = re.search(
+        r"GetTrainerAIFlagsFromId\s*\([^)]*\)\s*\{(.*?)return\s+flags\s*;",
+        text,
+        re.DOTALL,
+    )
+    if not match:
+        raise RuntimeError("GetTrainerAIFlagsFromId body not found")
+
+    result: dict[str, list[str]] = {}
+    condition_pattern = re.compile(
+        r"if\s*\(([^)]*trainerId[^)]*)\)\s*(?:\{\s*)?flags\s*\|=\s*(.*?);",
+        re.DOTALL,
+    )
+    for condition, expression in condition_pattern.findall(match.group(1)):
+        labels = [
+            humanize_token(token, "AI_FLAG_")
+            for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", expression)
+        ]
+        for trainer_token in re.findall(r"TRAINER_[A-Z0-9_]+", condition):
+            if trainer_token in trainer_id_by_token:
+                result[trainer_token] = labels
+    return result
 
 
 def parse_class_auto_ai_flags(path: Path) -> dict[str, list[str]]:
@@ -328,12 +362,12 @@ def parse_class_auto_ai_flags(path: Path) -> dict[str, list[str]]:
         raise RuntimeError("GetTrainerAIFlagsFromId body not found")
     body = match.group(1)
     cases = re.findall(r"case\s+(TRAINER_CLASS_[A-Z0-9_]+)\s*:", body)
-    assignment = re.search(r"flags\s*\|=\s*(.*?);", body, re.DOTALL)
-    if not cases or not assignment:
+    assignments = re.findall(r"flags\s*\|=\s*(.*?);", body, re.DOTALL)
+    if not cases or not assignments:
         raise RuntimeError("trainer class auto-AI contract is incomplete")
     labels = [
         humanize_token(token, "AI_FLAG_")
-        for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", assignment.group(1))
+        for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", assignments[-1])
     ]
     if not labels:
         raise RuntimeError("trainer class auto-AI flags not found")
@@ -856,7 +890,9 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
         trainer_id_by_token,
     )
     ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
-    class_auto_ai_flags = parse_class_auto_ai_flags(expansion_root / "include" / "data.h")
+    trainer_ai_contract_path = expansion_root / "include" / "data.h"
+    class_auto_ai_flags = parse_class_auto_ai_flags(trainer_ai_contract_path)
+    trainer_auto_ai_flags = parse_trainer_auto_ai_flags(trainer_ai_contract_path, trainer_id_by_token)
     trainers = parse_showdown_trainers(
         expansion_root / "src" / "data" / "trainers.party",
         species_id_by_name,
@@ -864,6 +900,7 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
         contract_by_trainer_id,
         ai_flag_by_label,
         class_auto_ai_flags,
+        trainer_auto_ai_flags,
     )
 
     missing_contract_trainers = sorted(set(contract_by_trainer_id) - {entry["id"] for entry in trainers})
