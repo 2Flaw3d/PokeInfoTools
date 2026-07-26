@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-23T13:34:48+00:00",
+  "generatedAtUtc": "2026-07-26T15:46:26+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -266770,7 +266770,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 53,
+          "level": 62,
           "ability": "",
           "item": "",
           "moves": []
@@ -266778,7 +266778,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 53,
+          "level": 63,
           "ability": "",
           "item": "",
           "moves": []
@@ -266786,7 +266786,7 @@
         {
           "speciesName": "Golbat",
           "speciesId": 42,
-          "level": 53,
+          "level": 64,
           "ability": "",
           "item": "",
           "moves": []
@@ -266870,7 +266870,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 53,
+          "level": 65,
           "ability": "",
           "item": "",
           "moves": []
@@ -266878,7 +266878,7 @@
         {
           "speciesName": "Crobat",
           "speciesId": 169,
-          "level": 53,
+          "level": 65,
           "ability": "",
           "item": "",
           "moves": []
@@ -266886,7 +266886,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 53,
+          "level": 67,
           "ability": "",
           "item": "",
           "moves": []
@@ -268143,19 +268143,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268187,28 +268185,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
-          ]
-        },
-        {
-          "label": "Try to faint",
-          "macro": "AI_FLAG_TRY_TO_FAINT",
-          "expandsTo": [
-            "AI_FLAG_TRY_TO_FAINT"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268248,19 +268235,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268292,14 +268277,6 @@
           "ability": "",
           "item": "",
           "moves": []
-        },
-        {
-          "speciesName": "Shiftry",
-          "speciesId": 275,
-          "level": 67,
-          "ability": "",
-          "item": "",
-          "moves": []
         }
       ]
     },
@@ -268316,28 +268293,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
-          ]
-        },
-        {
-          "label": "Try to faint",
-          "macro": "AI_FLAG_TRY_TO_FAINT",
-          "expandsTo": [
-            "AI_FLAG_TRY_TO_FAINT"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268367,19 +268333,17 @@
       "battleType": "No",
       "items": [],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268411,19 +268375,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268471,28 +268433,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer",
-        "Try to faint"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
-          ]
-        },
-        {
-          "label": "Try to faint",
-          "macro": "AI_FLAG_TRY_TO_FAINT",
-          "expandsTo": [
-            "AI_FLAG_TRY_TO_FAINT"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268524,19 +268475,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268584,19 +268533,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268628,19 +268575,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268672,19 +268617,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268716,22 +268659,6 @@
           "ability": "",
           "item": "",
           "moves": []
-        },
-        {
-          "speciesName": "Magneton",
-          "speciesId": 82,
-          "level": 71,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Gardevoir",
-          "speciesId": 282,
-          "level": 71,
-          "ability": "",
-          "item": "",
-          "moves": []
         }
       ]
     },
@@ -268748,19 +268675,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268792,22 +268717,6 @@
           "ability": "",
           "item": "",
           "moves": []
-        },
-        {
-          "speciesName": "Wailord",
-          "speciesId": 321,
-          "level": 67,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Wailord",
-          "speciesId": 321,
-          "level": 67,
-          "ability": "",
-          "item": "",
-          "moves": []
         }
       ]
     },
@@ -268823,9 +268732,21 @@
       "items": [
         "Full Restore"
       ],
-      "declaredAiFlags": [],
-      "aiFlags": [],
-      "aiFlagDetails": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
       "zoneOrder": 48,
@@ -268834,22 +268755,6 @@
         {
           "speciesName": "Claydol",
           "speciesId": 344,
-          "level": 68,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Lanturn",
-          "speciesId": 171,
-          "level": 68,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Lanturn",
-          "speciesId": 171,
           "level": 68,
           "ability": "",
           "item": "",
@@ -268886,19 +268791,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268930,22 +268833,6 @@
           "ability": "",
           "item": "",
           "moves": []
-        },
-        {
-          "speciesName": "Kadabra",
-          "speciesId": 64,
-          "level": 67,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Kadabra",
-          "speciesId": 64,
-          "level": 67,
-          "ability": "",
-          "item": "",
-          "moves": []
         }
       ]
     },
@@ -268962,19 +268849,17 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlags": [
-        "Basic Trainer"
+        "Check Bad Move"
       ],
       "aiFlagDetails": [
         {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
+            "AI_FLAG_CHECK_BAD_MOVE"
           ]
         }
       ],
@@ -268986,22 +268871,6 @@
         {
           "speciesName": "Skarmory",
           "speciesId": 227,
-          "level": 68,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Sableye",
-          "speciesId": 302,
-          "level": 68,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Sableye",
-          "speciesId": 302,
           "level": 68,
           "ability": "",
           "item": "",
