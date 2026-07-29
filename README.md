@@ -2,6 +2,14 @@
 
 Minimal dark GitHub Pages site for Flawzo testing data.
 
+## Mandatory Implementation Gate
+
+Do not duplicate ROM/WebApp rules, mappings or data pipelines in this project.
+Consume or extend their canonical export/generator; if a separate runtime
+representation is unavoidable, keep one canonical source and exact parity
+coverage. The authoritative policy is `DEC-020` in
+`../docs/PROJECT_DECISIONS.md`.
+
 ## Included In This First Version
 
 - Pokemon
