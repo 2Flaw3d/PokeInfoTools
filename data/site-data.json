@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-26T15:46:26+00:00",
+  "generatedAtUtc": "2026-07-30T22:11:42+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -14207,8 +14207,13 @@
       "icon": "assets/icons/83.png",
       "teachable": {
         "all": [
+          512,
           332,
+          213,
           280,
+          590,
+          15,
+          104,
           263,
           206,
           19,
@@ -14217,22 +14222,39 @@
           231,
           398,
           182,
+          244,
+          115,
+          156,
+          514,
           216,
           249,
           290,
+          214,
           211,
           164,
+          241,
+          207,
           14,
+          168,
+          92,
           369,
           34,
           38,
           203,
+          210,
           102,
+          189,
+          173,
           129
         ],
         "tmhm": [
+          512,
           332,
+          213,
           280,
+          590,
+          15,
+          104,
           263,
           206,
           19,
@@ -14241,21 +14263,36 @@
           231,
           398,
           182,
+          244,
+          115,
+          156,
+          514,
           216,
           249,
           290,
+          214,
           211,
           164,
+          241,
+          207,
           14,
+          168,
+          92,
           369
         ],
         "tutor": [
+          244,
+          214,
           164,
+          207,
           14,
           34,
           38,
           203,
+          210,
           102,
+          189,
+          173,
           129
         ],
         "special": [
@@ -21116,6 +21153,7 @@
         "all": [
           332,
           213,
+          59,
           280,
           347,
           451,
@@ -21129,11 +21167,13 @@
           374,
           411,
           264,
+          524,
           218,
           416,
           447,
           237,
           63,
+          58,
           611,
           113,
           371,
@@ -21185,6 +21225,7 @@
         "tmhm": [
           332,
           213,
+          59,
           280,
           347,
           451,
@@ -21198,11 +21239,13 @@
           374,
           411,
           264,
+          524,
           218,
           416,
           447,
           237,
           63,
+          58,
           611,
           113,
           371,
@@ -45888,7 +45931,7 @@
         "TYPE_NORMAL",
         "TYPE_NORMAL"
       ],
-      "bst": 550,
+      "bst": 240,
       "weight": 17.5,
       "moveLevels": [
         1,
@@ -75765,6 +75808,7 @@
           605,
           104,
           138,
+          412,
           263,
           148,
           374,
@@ -75816,6 +75860,7 @@
           605,
           104,
           138,
+          412,
           263,
           148,
           374,
@@ -81960,6 +82005,7 @@
           373,
           263,
           148,
+          430,
           218,
           416,
           237,
@@ -81971,6 +82017,7 @@
           244,
           473,
           240,
+          115,
           156,
           216,
           290,
@@ -81987,6 +82034,7 @@
           86,
           92,
           433,
+          521,
           111,
           38,
           203,
@@ -82006,6 +82054,7 @@
           373,
           263,
           148,
+          430,
           218,
           416,
           237,
@@ -82017,6 +82066,7 @@
           244,
           473,
           240,
+          115,
           156,
           216,
           290,
@@ -82032,7 +82082,8 @@
           85,
           86,
           92,
-          433
+          433,
+          521
         ],
         "tutor": [
           138,
@@ -141366,6 +141417,7 @@
       "teachable": {
         "all": [
           332,
+          213,
           280,
           263,
           206,
@@ -141375,21 +141427,29 @@
           231,
           398,
           182,
+          156,
+          514,
           216,
           249,
           290,
+          214,
           211,
           164,
+          241,
           14,
           369,
           34,
+          68,
           38,
           203,
+          210,
           102,
+          173,
           129
         ],
         "tmhm": [
           332,
+          213,
           280,
           263,
           206,
@@ -141399,21 +141459,29 @@
           231,
           398,
           182,
+          156,
+          514,
           216,
           249,
           290,
+          214,
           211,
           164,
+          241,
           14,
           369
         ],
         "tutor": [
+          214,
           164,
           14,
           34,
+          68,
           38,
           203,
+          210,
           102,
+          173,
           129
         ],
         "special": [
@@ -141498,11 +141566,14 @@
           59,
           280,
           347,
+          451,
           605,
+          138,
           412,
           263,
           374,
           411,
+          524,
           218,
           416,
           447,
@@ -141510,6 +141581,7 @@
           237,
           63,
           58,
+          611,
           113,
           371,
           182,
@@ -141527,11 +141599,13 @@
           76,
           164,
           241,
+          207,
           269,
           168,
           87,
           85,
           86,
+          259,
           433,
           34,
           203,
@@ -141541,18 +141615,22 @@
           5,
           118,
           102,
-          173
+          173,
+          9
         ],
         "tmhm": [
           213,
           59,
           280,
           347,
+          451,
           605,
+          138,
           412,
           263,
           374,
           411,
+          524,
           218,
           416,
           447,
@@ -141560,6 +141638,7 @@
           237,
           63,
           58,
+          611,
           113,
           371,
           182,
@@ -141577,16 +141656,20 @@
           76,
           164,
           241,
+          207,
           269,
           168,
           87,
           85,
           86,
+          259,
           433
         ],
         "tutor": [
+          138,
           214,
           164,
+          207,
           86,
           34,
           203,
@@ -141596,7 +141679,8 @@
           5,
           118,
           102,
-          173
+          173,
+          9
         ],
         "special": [
           218,
@@ -254188,8 +254272,8 @@
           ]
         }
       ],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 0,
       "pokemon": [
@@ -254288,8 +254372,8 @@
           ]
         }
       ],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 1,
       "pokemon": [
@@ -254372,8 +254456,8 @@
           ]
         }
       ],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 2,
       "pokemon": [
@@ -254400,8 +254484,8 @@
       "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 3,
       "pokemon": [
@@ -254428,8 +254512,8 @@
       "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 4,
       "pokemon": [
@@ -254456,8 +254540,8 @@
       "declaredAiFlags": [],
       "aiFlags": [],
       "aiFlagDetails": [],
-      "zone": "Route 103",
-      "map": "Route103",
+      "zone": "Oldale Town",
+      "map": "OldaleTown",
       "zoneOrder": 0,
       "contractOrder": 5,
       "pokemon": [
@@ -261222,7 +261306,12 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 7,
+        "min": 1
+      }
     },
     {
       "id": 761,
@@ -263853,7 +263942,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263861,7 +263950,7 @@
         {
           "speciesName": "Pelipper",
           "speciesId": 279,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263869,7 +263958,7 @@
         {
           "speciesName": "Ludicolo",
           "speciesId": 272,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263877,7 +263966,7 @@
         {
           "speciesName": "Combusken",
           "speciesId": 256,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263885,7 +263974,7 @@
         {
           "speciesName": "Combusken",
           "speciesId": 256,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263893,7 +263982,7 @@
         {
           "speciesName": "Combusken",
           "speciesId": 256,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263977,7 +264066,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263985,7 +264074,7 @@
         {
           "speciesName": "Ludicolo",
           "speciesId": 272,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -263993,7 +264082,7 @@
         {
           "speciesName": "Slugma",
           "speciesId": 218,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264001,7 +264090,7 @@
         {
           "speciesName": "Marshtomp",
           "speciesId": 259,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264009,7 +264098,7 @@
         {
           "speciesName": "Marshtomp",
           "speciesId": 259,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264017,7 +264106,7 @@
         {
           "speciesName": "Marshtomp",
           "speciesId": 259,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264101,7 +264190,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264109,7 +264198,7 @@
         {
           "speciesName": "Slugma",
           "speciesId": 218,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264117,7 +264206,7 @@
         {
           "speciesName": "Pelipper",
           "speciesId": 279,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264125,7 +264214,7 @@
         {
           "speciesName": "Grovyle",
           "speciesId": 253,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264133,7 +264222,7 @@
         {
           "speciesName": "Grovyle",
           "speciesId": 253,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264141,7 +264230,7 @@
         {
           "speciesName": "Grovyle",
           "speciesId": 253,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -264225,7 +264314,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 31,
+          "level": 29,
           "ability": "",
           "item": "",
           "moves": []
@@ -264233,7 +264322,7 @@
         {
           "speciesName": "Ludicolo",
           "speciesId": 272,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264241,7 +264330,7 @@
         {
           "speciesName": "Slugma",
           "speciesId": 218,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264249,7 +264338,7 @@
         {
           "speciesName": "Marshtomp",
           "speciesId": 259,
-          "level": 34,
+          "level": 32,
           "ability": "",
           "item": "",
           "moves": []
@@ -264333,7 +264422,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 31,
+          "level": 29,
           "ability": "",
           "item": "",
           "moves": []
@@ -264341,7 +264430,7 @@
         {
           "speciesName": "Slugma",
           "speciesId": 218,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264349,7 +264438,7 @@
         {
           "speciesName": "Pelipper",
           "speciesId": 279,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264357,7 +264446,7 @@
         {
           "speciesName": "Grovyle",
           "speciesId": 253,
-          "level": 34,
+          "level": 32,
           "ability": "",
           "item": "",
           "moves": []
@@ -264441,7 +264530,7 @@
         {
           "speciesName": "Tropius",
           "speciesId": 357,
-          "level": 31,
+          "level": 29,
           "ability": "",
           "item": "",
           "moves": []
@@ -264449,7 +264538,7 @@
         {
           "speciesName": "Pelipper",
           "speciesId": 279,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264457,7 +264546,7 @@
         {
           "speciesName": "Ludicolo",
           "speciesId": 272,
-          "level": 32,
+          "level": 30,
           "ability": "",
           "item": "",
           "moves": []
@@ -264465,7 +264554,7 @@
         {
           "speciesName": "Combusken",
           "speciesId": 256,
-          "level": 34,
+          "level": 32,
           "ability": "",
           "item": "",
           "moves": []
@@ -264911,7 +265000,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 61,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -264919,6 +265008,14 @@
         {
           "speciesName": "Crobat",
           "speciesId": 169,
+          "level": 60,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Camerupt",
+          "speciesId": 323,
           "level": 62,
           "ability": "",
           "item": "",
@@ -264927,7 +265024,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 64,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -264935,7 +265032,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 61,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -264943,15 +265040,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 61,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Camerupt",
-          "speciesId": 323,
-          "level": 61,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -266770,7 +266859,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 62,
+          "level": 60,
           "ability": "",
           "item": "",
           "moves": []
@@ -266778,7 +266867,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 63,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -266786,7 +266875,7 @@
         {
           "speciesName": "Golbat",
           "speciesId": 42,
-          "level": 64,
+          "level": 62,
           "ability": "",
           "item": "",
           "moves": []
@@ -266870,7 +266959,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 65,
+          "level": 63,
           "ability": "",
           "item": "",
           "moves": []
@@ -266878,7 +266967,7 @@
         {
           "speciesName": "Crobat",
           "speciesId": 169,
-          "level": 65,
+          "level": 63,
           "ability": "",
           "item": "",
           "moves": []
@@ -266886,7 +266975,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 67,
+          "level": 65,
           "ability": "",
           "item": "",
           "moves": []
@@ -269627,7 +269716,12 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 6,
+        "min": 1
+      }
     },
     {
       "id": 322,
@@ -269854,7 +269948,12 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 5,
+        "min": 1
+      }
     },
     {
       "id": 709,
@@ -269924,7 +270023,12 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLead",
+        "offset": 0,
+        "min": 1
+      }
     },
     {
       "id": 286,
@@ -269994,7 +270098,12 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 7,
+        "min": 1
+      }
     },
     {
       "id": 577,
@@ -270098,7 +270207,81 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 8,
+        "min": 1
+      }
+    },
+    {
+      "id": 857,
+      "idToken": "TRAINER_DIGLETT_MASTER",
+      "name": "DIGLETT",
+      "class": "Ruin Maniac",
+      "pic": "Ruin Maniac",
+      "gender": "Male",
+      "music": "Hiker",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
+      "zone": "Altering Cave",
+      "map": "AlteringCave",
+      "zoneOrder": 60,
+      "contractOrder": 276,
+      "pokemon": [
+        {
+          "speciesName": "Diglett",
+          "speciesId": 50,
+          "level": 5,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Diglett",
+          "speciesId": 50,
+          "level": 5,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Diglett",
+          "speciesId": 50,
+          "level": 5,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Diglett",
+          "speciesId": 50,
+          "level": 5,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 11,
+        "min": 1
+      }
     },
     {
       "id": 694,
@@ -270129,8 +270312,8 @@
       ],
       "zone": "Lilycove City Contest Hall",
       "map": "LilycoveCity_ContestHall",
-      "zoneOrder": 60,
-      "contractOrder": 276,
+      "zoneOrder": 61,
+      "contractOrder": 277,
       "pokemon": [
         {
           "speciesName": "Zigzagoon",
@@ -270164,15 +270347,20 @@
           "item": "",
           "moves": []
         }
-      ]
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 6,
+        "min": 1
+      }
     }
   ],
   "trainerSnapshot": {
-    "legalTrainerCount": 273,
-    "zoneCount": 61,
+    "legalTrainerCount": 274,
+    "zoneCount": 62,
     "zones": [
       {
-        "name": "Route 103",
+        "name": "Oldale Town",
         "order": 0
       },
       {
@@ -270412,8 +270600,12 @@
         "order": 59
       },
       {
-        "name": "Lilycove City Contest Hall",
+        "name": "Altering Cave",
         "order": 60
+      },
+      {
+        "name": "Lilycove City Contest Hall",
+        "order": 61
       }
     ]
   },

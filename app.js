@@ -434,12 +434,25 @@ function buildItemDetail(entry) {
 
 function buildTrainerDetail(entry) {
   const aiCards = buildAiFlagCards(entry);
+  const levelRule = entry.levelRule;
+  const dynamicLevelLabel =
+    levelRule?.kind === "playerLeadMinus"
+      ? `Player lead level - ${levelRule.offset} (minimum ${levelRule.min ?? 1})`
+      : levelRule?.kind === "playerLead"
+        ? `Player lead level (minimum ${levelRule.min ?? 1})`
+        : "";
+  const partyLevelLabel =
+    levelRule?.kind === "playerLeadMinus"
+      ? `Lv player - ${levelRule.offset} (min ${levelRule.min ?? 1})`
+      : levelRule?.kind === "playerLead"
+        ? `Lv player (min ${levelRule.min ?? 1})`
+        : "";
 
   const party = (entry.pokemon || [])
     .map(
       (mon) => `
         <div class="detail-card trainer-mon">
-          <h4>${mon.speciesId ? navButton("pokemon", mon.speciesId, mon.speciesName) : escapeHtml(mon.speciesName)}${mon.level ? ` • Lv ${mon.level}` : ""}</h4>
+          <h4>${mon.speciesId ? navButton("pokemon", mon.speciesId, mon.speciesName) : escapeHtml(mon.speciesName)}${partyLevelLabel ? ` • ${escapeHtml(partyLevelLabel)}` : mon.level ? ` • Lv ${mon.level}` : ""}</h4>
           <p>${escapeHtml([mon.ability, mon.item].filter(Boolean).join(" • ") || "No extra metadata")}</p>
           ${
             (mon.moves || []).length
@@ -475,6 +488,11 @@ function buildTrainerDetail(entry) {
       <div class="detail-box"><span class="muted">Gender</span><strong>${entry.gender || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Battle Type</span><strong>${entry.battleType || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Party Size</span><strong>${(entry.pokemon || []).length}</strong></div>
+      ${
+        dynamicLevelLabel
+          ? `<div class="detail-box"><span class="muted">Dynamic Level</span><strong>${escapeHtml(dynamicLevelLabel)}</strong></div>`
+          : ""
+      }
     </div>
     <div class="detail-section">
       <h3>AI</h3>

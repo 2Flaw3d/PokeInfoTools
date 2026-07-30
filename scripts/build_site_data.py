@@ -159,6 +159,7 @@ def parse_showdown_trainers(
     species_id_by_name: dict[str, int],
     trainer_id_by_token: dict[str, int],
     contract_by_trainer_id: dict[int, dict],
+    runtime_trainer_by_id: dict[int, dict],
     ai_flag_by_label: dict[str, dict],
     class_auto_ai_flags: dict[str, list[str]],
     trainer_auto_ai_flags: dict[str, list[str]],
@@ -244,6 +245,7 @@ def parse_showdown_trainers(
         contract = contract_by_trainer_id.get(trainer_id) if trainer_id is not None else None
         if contract is None:
             continue
+        runtime_trainer = runtime_trainer_by_id.get(trainer_id, {})
 
         declared_ai_flags = [
             part.strip()
@@ -265,27 +267,28 @@ def parse_showdown_trainers(
             for flag in ai_flags
         ]
 
-        trainers.append(
-            {
-                "id": trainer_id,
-                "idToken": id_token,
-                "name": trainer_meta.get("Name", ""),
-                "class": trainer_meta.get("Class", ""),
-                "pic": trainer_meta.get("Pic", ""),
-                "gender": trainer_meta.get("Gender", ""),
-                "music": trainer_meta.get("Music", ""),
-                "battleType": trainer_meta.get("Double Battle", "No"),
-                "items": [item.strip() for item in trainer_meta.get("Items", "").split("/") if item.strip()],
-                "declaredAiFlags": declared_ai_flags,
-                "aiFlags": ai_flags,
-                "aiFlagDetails": ai_flag_details,
-                "zone": contract["zone"],
-                "map": contract["map"],
-                "zoneOrder": contract["zoneOrder"],
-                "contractOrder": contract["firstOrder"],
-                "pokemon": pokemon_entries,
-            }
-        )
+        trainer_entry = {
+            "id": trainer_id,
+            "idToken": id_token,
+            "name": trainer_meta.get("Name", ""),
+            "class": trainer_meta.get("Class", ""),
+            "pic": trainer_meta.get("Pic", ""),
+            "gender": trainer_meta.get("Gender", ""),
+            "music": trainer_meta.get("Music", ""),
+            "battleType": trainer_meta.get("Double Battle", "No"),
+            "items": [item.strip() for item in trainer_meta.get("Items", "").split("/") if item.strip()],
+            "declaredAiFlags": declared_ai_flags,
+            "aiFlags": ai_flags,
+            "aiFlagDetails": ai_flag_details,
+            "zone": contract["zone"],
+            "map": contract["map"],
+            "zoneOrder": contract["zoneOrder"],
+            "contractOrder": contract["firstOrder"],
+            "pokemon": pokemon_entries,
+        }
+        if runtime_trainer.get("levelRule"):
+            trainer_entry["levelRule"] = runtime_trainer["levelRule"]
+        trainers.append(trainer_entry)
 
     trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["zone"], entry["contractOrder"], entry["id"]))
     return trainers
@@ -893,11 +896,16 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
     trainer_ai_contract_path = expansion_root / "include" / "data.h"
     class_auto_ai_flags = parse_class_auto_ai_flags(trainer_ai_contract_path)
     trainer_auto_ai_flags = parse_trainer_auto_ai_flags(trainer_ai_contract_path, trainer_id_by_token)
+    runtime_trainer_by_id = {
+        entry["id"]: entry
+        for entry in export_mod.build_trainer_party_export(expansion_root).get("entries", [])
+    }
     trainers = parse_showdown_trainers(
         expansion_root / "src" / "data" / "trainers.party",
         species_id_by_name,
         trainer_id_by_token,
         contract_by_trainer_id,
+        runtime_trainer_by_id,
         ai_flag_by_label,
         class_auto_ai_flags,
         trainer_auto_ai_flags,

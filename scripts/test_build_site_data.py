@@ -87,5 +87,51 @@ class TrainerAiContractTest(unittest.TestCase):
         )
 
 
+class TrainerRuntimeMetadataTest(unittest.TestCase):
+    def test_runtime_level_rule_is_attached_to_legal_trainer(self):
+        source = """
+=== TRAINER_DIGLETT_MASTER ===
+Name: DIGLETT
+Class: Ruin Maniac
+AI: Check Bad Move
+
+Diglett
+Level: 5
+"""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "trainers.party"
+            path.write_text(source, encoding="utf-8")
+            trainers = MODULE.parse_showdown_trainers(
+                path,
+                {"diglett": 50},
+                {"TRAINER_DIGLETT_MASTER": 857},
+                {
+                    857: {
+                        "zone": "Altering Cave",
+                        "map": "AlteringCave",
+                        "zoneOrder": 0,
+                        "firstOrder": 0,
+                    }
+                },
+                {
+                    857: {
+                        "levelRule": {
+                            "kind": "playerLeadMinus",
+                            "offset": 11,
+                            "min": 1,
+                        }
+                    }
+                },
+                {},
+                {},
+                {},
+            )
+
+        self.assertEqual(
+            trainers[0]["levelRule"],
+            {"kind": "playerLeadMinus", "offset": 11, "min": 1},
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
