@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-07-30T22:11:42+00:00",
+  "generatedAtUtc": "2026-08-01T11:54:25+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -61456,7 +61456,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -111841,7 +111841,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [
@@ -112015,7 +112015,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [
@@ -112196,7 +112196,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -134924,7 +134924,7 @@
         {
           "id": 236,
           "name": "Libero",
-          "description": "Changes type to move's."
+          "description": "Changes type to move's.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -135038,7 +135038,7 @@
         {
           "id": 236,
           "name": "Libero",
-          "description": "Changes type to move's."
+          "description": "Changes type to move's.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -135156,7 +135156,7 @@
         {
           "id": 236,
           "name": "Libero",
-          "description": "Changes type to move's."
+          "description": "Changes type to move's.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -148379,17 +148379,17 @@
         {
           "id": 185,
           "name": "Parental Bond",
-          "description": "Moves hit twice."
+          "description": "May add a second hit.\nChance: 15% to add a second hit."
         },
         {
           "id": 185,
           "name": "Parental Bond",
-          "description": "Moves hit twice."
+          "description": "May add a second hit.\nChance: 15% to add a second hit."
         },
         {
           "id": 185,
           "name": "Parental Bond",
-          "description": "Moves hit twice."
+          "description": "May add a second hit.\nChance: 15% to add a second hit."
         }
       ],
       "evolutions": [],
@@ -188916,7 +188916,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -189032,7 +189032,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -189154,7 +189154,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -212872,7 +212872,7 @@
         {
           "id": 236,
           "name": "Libero",
-          "description": "Changes type to move's."
+          "description": "Changes type to move's.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -218642,7 +218642,7 @@
         {
           "id": 168,
           "name": "Protean",
-          "description": "Changes type to used move."
+          "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle."
         }
       ],
       "evolutions": [],
@@ -242157,7 +242157,7 @@
     {
       "id": 168,
       "name": "Protean",
-      "description": "Changes type to used move.",
+      "description": "Changes type to used move.\nChance: 35% on the first eligible move after entering battle.",
       "speciesIds": [
         352,
         656,
@@ -242483,7 +242483,7 @@
     {
       "id": 185,
       "name": "Parental Bond",
-      "description": "Moves hit twice.",
+      "description": "May add a second hit.\nChance: 15% to add a second hit.",
       "speciesIds": [
         915,
         915,
@@ -243003,7 +243003,7 @@
     {
       "id": 236,
       "name": "Libero",
-      "description": "Changes type to move's.",
+      "description": "Changes type to move's.\nChance: 35% on the first eligible move after entering battle.",
       "speciesIds": [
         813,
         814,
@@ -254218,9 +254218,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -254234,34 +254232,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -254306,9 +254286,7 @@
         "Check Bad Move",
         "Try To Faint",
         "Force Setup First Turn",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -254334,34 +254312,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -254402,9 +254362,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -254418,34 +254376,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -255507,9 +255447,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -255523,34 +255461,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -255615,9 +255535,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -255631,34 +255549,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -255723,9 +255623,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -255739,34 +255637,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -255831,9 +255711,7 @@
       ],
       "aiFlags": [
         "Check Bad Move",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -255845,34 +255723,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -255921,9 +255781,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -255937,34 +255795,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -256013,9 +255853,7 @@
       ],
       "aiFlags": [
         "Check Bad Move",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -256027,34 +255865,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -256865,9 +256685,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -256881,34 +256699,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -256968,9 +256768,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -256984,34 +256782,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -257071,9 +256851,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -257087,34 +256865,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -257171,9 +256931,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -257187,34 +256945,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -257271,9 +257011,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -257287,34 +257025,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -257371,9 +257091,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -257387,34 +257105,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -259357,9 +259057,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -259373,34 +259071,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -259643,9 +259323,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -259659,34 +259337,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -261553,9 +261213,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -261569,34 +261227,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -261669,9 +261309,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -261685,34 +261323,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -261785,9 +261405,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -261801,34 +261419,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -261901,9 +261501,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -261917,34 +261515,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -262001,9 +261581,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -262017,34 +261595,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -262101,9 +261661,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -262117,34 +261675,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -262249,9 +261789,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -262265,34 +261803,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -263880,9 +263400,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -263896,34 +263414,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264004,9 +263504,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264020,34 +263518,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264128,9 +263608,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264144,34 +263622,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264252,9 +263712,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264268,34 +263726,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264360,9 +263800,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264376,34 +263814,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264468,9 +263888,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264484,34 +263902,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -264938,9 +264338,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -264954,34 +264352,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -265062,9 +264442,7 @@
       ],
       "aiFlags": [
         "Check Bad Move",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -265076,34 +264454,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -265634,9 +264994,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -265650,34 +265008,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -266799,9 +266139,7 @@
       ],
       "aiFlags": [
         "Check Bad Move",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -266813,34 +266151,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -266859,7 +266179,7 @@
         {
           "speciesName": "Camerupt",
           "speciesId": 323,
-          "level": 60,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -266867,7 +266187,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 61,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -266875,7 +266195,7 @@
         {
           "speciesName": "Golbat",
           "speciesId": 42,
-          "level": 62,
+          "level": 59,
           "ability": "",
           "item": "",
           "moves": []
@@ -266897,9 +266217,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -266913,34 +266231,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -267080,9 +266380,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -267096,34 +266394,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -267142,7 +266422,7 @@
         {
           "speciesName": "Mightyena",
           "speciesId": 262,
-          "level": 59,
+          "level": 60,
           "ability": "",
           "item": "",
           "moves": []
@@ -267150,7 +266430,7 @@
         {
           "speciesName": "Crobat",
           "speciesId": 169,
-          "level": 59,
+          "level": 61,
           "ability": "",
           "item": "",
           "moves": []
@@ -267158,7 +266438,7 @@
         {
           "speciesName": "Sharpedo",
           "speciesId": 319,
-          "level": 59,
+          "level": 62,
           "ability": "",
           "item": "",
           "moves": []
@@ -267396,9 +266676,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -267412,34 +266690,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -267539,9 +266799,7 @@
       ],
       "aiFlags": [
         "Basic Trainer",
-        "Smart Trainer",
-        "Prediction",
-        "Assumptions",
+        "Fair Smart Trainer",
         "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
@@ -267555,34 +266813,16 @@
           ]
         },
         {
-          "label": "Smart Trainer",
-          "macro": "AI_FLAG_SMART_TRAINER",
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
           "expandsTo": [
             "AI_FLAG_BASIC_TRAINER",
-            "AI_FLAG_OMNISCIENT",
             "AI_FLAG_SMART_SWITCHING",
             "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
             "AI_FLAG_PP_STALL_PREVENTION",
             "AI_FLAG_SMART_TERA",
             "AI_FLAG_RANDOMIZE_SWITCHIN"
-          ]
-        },
-        {
-          "label": "Prediction",
-          "macro": "AI_FLAG_PREDICTION",
-          "expandsTo": [
-            "AI_FLAG_PREDICT_SWITCH",
-            "AI_FLAG_PREDICT_INCOMING_MON",
-            "AI_FLAG_PREDICT_MOVE"
-          ]
-        },
-        {
-          "label": "Assumptions",
-          "macro": "AI_FLAG_ASSUMPTIONS",
-          "expandsTo": [
-            "AI_FLAG_ASSUME_STAB",
-            "AI_FLAG_ASSUME_STATUS_MOVES",
-            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
           ]
         },
         {
@@ -268706,17 +267946,19 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Check Bad Move"
+        "Basic Trainer"
       ],
       "aiFlags": [
-        "Check Bad Move"
+        "Basic Trainer"
       ],
       "aiFlagDetails": [
         {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
           ]
         }
       ],
@@ -270353,11 +269595,174 @@
         "offset": 6,
         "min": 1
       }
+    },
+    {
+      "id": 855,
+      "idToken": "TRAINER_HEAL_MASTER",
+      "name": "HEALMASTER",
+      "class": "Expert",
+      "pic": "Expert M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Sealed Chamber Inner Room",
+      "map": "SealedChamber_InnerRoom",
+      "zoneOrder": 62,
+      "contractOrder": 278,
+      "pokemon": [
+        {
+          "speciesName": "Blissey",
+          "speciesId": 242,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Milotic",
+          "speciesId": 350,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Audino",
+          "speciesId": 531,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Alomomola",
+          "speciesId": 594,
+          "level": 80,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "levelRule": {
+        "kind": "playerLeadMinus",
+        "offset": 5,
+        "min": 1
+      }
+    },
+    {
+      "id": 856,
+      "idToken": "TRAINER_MOVE_MASTER",
+      "name": "MOVEMASTER",
+      "class": "Expert",
+      "pic": "Expert M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        }
+      ],
+      "zone": "Desert Underpass",
+      "map": "DesertUnderpass",
+      "zoneOrder": 63,
+      "contractOrder": 279,
+      "pokemon": [
+        {
+          "speciesName": "Smeargle",
+          "speciesId": 235,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Mew",
+          "speciesId": 151,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "levelRule": {
+        "kind": "playerLeadByPartyIndex",
+        "default": {
+          "kind": "playerLead",
+          "offset": 0,
+          "min": 1
+        },
+        "overrides": [
+          {
+            "partyIndex": 0,
+            "kind": "playerLeadMinus",
+            "offset": 5,
+            "min": 1
+          }
+        ]
+      }
     }
   ],
   "trainerSnapshot": {
-    "legalTrainerCount": 274,
-    "zoneCount": 62,
+    "legalTrainerCount": 276,
+    "zoneCount": 64,
     "zones": [
       {
         "name": "Oldale Town",
@@ -270606,6 +270011,14 @@
       {
         "name": "Lilycove City Contest Hall",
         "order": 61
+      },
+      {
+        "name": "Sealed Chamber Inner Room",
+        "order": 62
+      },
+      {
+        "name": "Desert Underpass",
+        "order": 63
       }
     ]
   },

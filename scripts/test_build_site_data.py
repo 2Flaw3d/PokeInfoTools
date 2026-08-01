@@ -43,6 +43,38 @@ class TrainerAiContractTest(unittest.TestCase):
         )
         self.assertEqual(result, [])
 
+    def test_class_groups_can_have_distinct_effective_profiles(self):
+        source = """
+        static inline const u64 GetTrainerAIFlagsFromId(u16 trainerId)
+        {
+            u64 flags = 1;
+            enum TrainerClassID trainerClass = GetTrainerClassFromId(trainerId);
+            switch (trainerClass)
+            {
+            case TRAINER_CLASS_LEADER:
+            case TRAINER_CLASS_CHAMPION:
+                flags |= AI_FLAG_SMART_TRAINER | AI_FLAG_PREDICTION;
+                break;
+            case TRAINER_CLASS_RIVAL:
+            case TRAINER_CLASS_AQUA_ADMIN:
+                flags |= AI_FLAG_FAIR_SMART_TRAINER | AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE;
+                break;
+            default:
+                break;
+            }
+            return flags;
+        }
+        """
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "data.h"
+            path.write_text(source, encoding="utf-8")
+            result = MODULE.parse_class_auto_ai_flags(path)
+
+        self.assertEqual(result["leader"], ["Smart Trainer", "Prediction"])
+        self.assertEqual(result["champion"], ["Smart Trainer", "Prediction"])
+        self.assertEqual(result["rival"], ["Fair Smart Trainer", "Prefer Highest Damage Move"])
+        self.assertEqual(result["aqua admin"], ["Fair Smart Trainer", "Prefer Highest Damage Move"])
+
     def test_declared_and_class_flags_are_merged_without_duplicates(self):
         result = MODULE.merge_effective_ai_flags(
             ["Basic Trainer", "Prediction"],

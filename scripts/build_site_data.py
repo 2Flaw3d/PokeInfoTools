@@ -364,20 +364,27 @@ def parse_class_auto_ai_flags(path: Path) -> dict[str, list[str]]:
     if not match:
         raise RuntimeError("GetTrainerAIFlagsFromId body not found")
     body = match.group(1)
-    cases = re.findall(r"case\s+(TRAINER_CLASS_[A-Z0-9_]+)\s*:", body)
-    assignments = re.findall(r"flags\s*\|=\s*(.*?);", body, re.DOTALL)
-    if not cases or not assignments:
+    switch_match = re.search(r"switch\s*\([^\r\n]*\)\s*\{(.*?)\n\s*\}", body, re.DOTALL)
+    if not switch_match:
         raise RuntimeError("trainer class auto-AI contract is incomplete")
-    labels = [
-        humanize_token(token, "AI_FLAG_")
-        for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", assignments[-1])
-    ]
-    if not labels:
+
+    result: dict[str, list[str]] = {}
+    group_pattern = re.compile(
+        r"((?:\s*case\s+TRAINER_CLASS_[A-Z0-9_]+\s*:\s*)+)"
+        r"flags\s*\|=\s*(.*?);",
+        re.DOTALL,
+    )
+    for cases_source, expression in group_pattern.findall(switch_match.group(1)):
+        labels = [
+            humanize_token(token, "AI_FLAG_")
+            for token in re.findall(r"AI_FLAG_[A-Z0-9_]+", expression)
+        ]
+        for token in re.findall(r"TRAINER_CLASS_[A-Z0-9_]+", cases_source):
+            result[humanize_token(token, "TRAINER_CLASS_").lower()] = labels
+
+    if not result:
         raise RuntimeError("trainer class auto-AI flags not found")
-    return {
-        humanize_token(token, "TRAINER_CLASS_").lower(): labels
-        for token in cases
-    }
+    return result
 
 
 def build_contract_trainer_index(
