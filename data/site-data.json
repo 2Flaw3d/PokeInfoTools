@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-08-02T02:08:31+00:00",
+  "generatedAtUtc": "2026-08-06T21:52:32+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -259902,54 +259902,6 @@
       ]
     },
     {
-      "id": 743,
-      "idToken": "TRAINER_CELIA",
-      "name": "CELIA",
-      "class": "Picnicker",
-      "pic": "Picnicker",
-      "gender": "Female",
-      "music": "Girl",
-      "battleType": "No",
-      "items": [],
-      "declaredAiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlagDetails": [
-        {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
-          "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
-          ]
-        }
-      ],
-      "zone": "Route 111",
-      "map": "Route111",
-      "zoneOrder": 21,
-      "contractOrder": 106,
-      "pokemon": [
-        {
-          "speciesName": "Marill",
-          "speciesId": 183,
-          "level": 39,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Lombre",
-          "speciesId": 271,
-          "level": 39,
-          "ability": "",
-          "item": "",
-          "moves": []
-        }
-      ]
-    },
-    {
       "id": 745,
       "idToken": "TRAINER_BRANDEN",
       "name": "BRANDEN",
@@ -259998,46 +259950,6 @@
         {
           "speciesName": "Taillow",
           "speciesId": 276,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        }
-      ]
-    },
-    {
-      "id": 744,
-      "idToken": "TRAINER_BRYAN",
-      "name": "BRYAN",
-      "class": "Ruin Maniac",
-      "pic": "Ruin Maniac",
-      "gender": "Male",
-      "music": "Hiker",
-      "battleType": "No",
-      "items": [],
-      "declaredAiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlagDetails": [
-        {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
-          "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
-          ]
-        }
-      ],
-      "zone": "Route 111",
-      "map": "Route111",
-      "zoneOrder": 21,
-      "contractOrder": 108,
-      "pokemon": [
-        {
-          "speciesName": "Sandshrew",
-          "speciesId": 27,
           "level": 40,
           "ability": "",
           "item": "",
@@ -260174,138 +260086,6 @@
       ]
     },
     {
-      "id": 189,
-      "idToken": "TRAINER_DAISUKE",
-      "name": "DAISUKE",
-      "class": "Black Belt",
-      "pic": "Black Belt",
-      "gender": "Male",
-      "music": "Intense",
-      "battleType": "No",
-      "items": [],
-      "declaredAiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlags": [
-        "Check Bad Move"
-      ],
-      "aiFlagDetails": [
-        {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
-          "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
-          ]
-        }
-      ],
-      "zone": "Route 111",
-      "map": "Route111",
-      "zoneOrder": 21,
-      "contractOrder": 112,
-      "pokemon": [
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Machop",
-          "speciesId": 66,
-          "level": 40,
-          "ability": "",
-          "item": "",
-          "moves": []
-        }
-      ]
-    },
-    {
-      "id": 78,
-      "idToken": "TRAINER_WILTON_1",
-      "name": "WILTON",
-      "class": "Cooltrainer",
-      "pic": "Cooltrainer M",
-      "gender": "Male",
-      "music": "Cool",
-      "battleType": "No",
-      "items": [
-        "Super Potion"
-      ],
-      "declaredAiFlags": [
-        "Basic Trainer"
-      ],
-      "aiFlags": [
-        "Basic Trainer"
-      ],
-      "aiFlagDetails": [
-        {
-          "label": "Basic Trainer",
-          "macro": "AI_FLAG_BASIC_TRAINER",
-          "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE",
-            "AI_FLAG_TRY_TO_FAINT",
-            "AI_FLAG_CHECK_VIABILITY"
-          ]
-        }
-      ],
-      "zone": "Route 111",
-      "map": "Route111",
-      "zoneOrder": 21,
-      "contractOrder": 113,
-      "pokemon": [
-        {
-          "speciesName": "Electrike",
-          "speciesId": 309,
-          "level": 39,
-          "ability": "",
-          "item": "",
-          "moves": []
-        },
-        {
-          "speciesName": "Wailmer",
-          "speciesId": 320,
-          "level": 39,
-          "ability": "",
-          "item": "",
-          "moves": []
-        }
-      ]
-    },
-    {
       "id": 94,
       "idToken": "TRAINER_BROOKE_1",
       "name": "BROOKE",
@@ -260390,6 +260170,226 @@
       ]
     },
     {
+      "id": 743,
+      "idToken": "TRAINER_CELIA",
+      "name": "CELIA",
+      "class": "Picnicker",
+      "pic": "Picnicker",
+      "gender": "Female",
+      "music": "Girl",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
+      "zone": "Mirage Tower 2F",
+      "map": "MirageTower_2F",
+      "zoneOrder": 22,
+      "contractOrder": 106,
+      "pokemon": [
+        {
+          "speciesName": "Marill",
+          "speciesId": 183,
+          "level": 39,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Lombre",
+          "speciesId": 271,
+          "level": 39,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 744,
+      "idToken": "TRAINER_BRYAN",
+      "name": "BRYAN",
+      "class": "Ruin Maniac",
+      "pic": "Ruin Maniac",
+      "gender": "Male",
+      "music": "Hiker",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
+      "zone": "Mirage Tower 1F",
+      "map": "MirageTower_1F",
+      "zoneOrder": 23,
+      "contractOrder": 108,
+      "pokemon": [
+        {
+          "speciesName": "Sandshrew",
+          "speciesId": 27,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 189,
+      "idToken": "TRAINER_DAISUKE",
+      "name": "DAISUKE",
+      "class": "Black Belt",
+      "pic": "Black Belt",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlags": [
+        "Check Bad Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Check Bad Move",
+          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        }
+      ],
+      "zone": "Mirage Tower 4F",
+      "map": "MirageTower_4F",
+      "zoneOrder": 24,
+      "contractOrder": 112,
+      "pokemon": [
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Machop",
+          "speciesId": 66,
+          "level": 40,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "idToken": "TRAINER_WILTON_1",
+      "name": "WILTON",
+      "class": "Cooltrainer",
+      "pic": "Cooltrainer M",
+      "gender": "Male",
+      "music": "Cool",
+      "battleType": "No",
+      "items": [
+        "Super Potion"
+      ],
+      "declaredAiFlags": [
+        "Basic Trainer"
+      ],
+      "aiFlags": [
+        "Basic Trainer"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Basic Trainer",
+          "macro": "AI_FLAG_BASIC_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_CHECK_BAD_MOVE",
+            "AI_FLAG_TRY_TO_FAINT",
+            "AI_FLAG_CHECK_VIABILITY"
+          ]
+        }
+      ],
+      "zone": "Mirage Tower 3F",
+      "map": "MirageTower_3F",
+      "zoneOrder": 25,
+      "contractOrder": 113,
+      "pokemon": [
+        {
+          "speciesName": "Electrike",
+          "speciesId": 309,
+          "level": 39,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Wailmer",
+          "speciesId": 320,
+          "level": 39,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ]
+    },
+    {
       "id": 89,
       "idToken": "TRAINER_MARY",
       "name": "MARY",
@@ -260420,7 +260420,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 115,
       "pokemon": [
         {
@@ -260464,7 +260464,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 116,
       "pokemon": [
         {
@@ -260508,7 +260508,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 117,
       "pokemon": [
         {
@@ -260552,7 +260552,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 118,
       "pokemon": [
         {
@@ -260612,7 +260612,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 119,
       "pokemon": [
         {
@@ -260656,7 +260656,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 120,
       "pokemon": [
         {
@@ -260700,7 +260700,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 121,
       "pokemon": [
         {
@@ -260787,7 +260787,7 @@
       ],
       "zone": "Petalburg City Gym",
       "map": "PetalburgCity_Gym",
-      "zoneOrder": 22,
+      "zoneOrder": 26,
       "contractOrder": 122,
       "pokemon": [
         {
@@ -260915,7 +260915,7 @@
       ],
       "zone": "Terra Cave End",
       "map": "TerraCave_End",
-      "zoneOrder": 23,
+      "zoneOrder": 27,
       "contractOrder": 123,
       "pokemon": [
         {
@@ -261000,7 +261000,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 124,
       "pokemon": [
         {
@@ -261048,7 +261048,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 125,
       "pokemon": [
         {
@@ -261088,7 +261088,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 128,
       "pokemon": [
         {
@@ -261137,7 +261137,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 129,
       "pokemon": [
         {
@@ -261185,7 +261185,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 130,
       "pokemon": [
         {
@@ -261249,7 +261249,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 144,
       "pokemon": [
         {
@@ -261345,7 +261345,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 145,
       "pokemon": [
         {
@@ -261441,7 +261441,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 146,
       "pokemon": [
         {
@@ -261537,7 +261537,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 147,
       "pokemon": [
         {
@@ -261617,7 +261617,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 148,
       "pokemon": [
         {
@@ -261697,7 +261697,7 @@
       ],
       "zone": "Route 119",
       "map": "Route119",
-      "zoneOrder": 24,
+      "zoneOrder": 28,
       "contractOrder": 149,
       "pokemon": [
         {
@@ -261753,7 +261753,7 @@
       ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
-      "zoneOrder": 25,
+      "zoneOrder": 29,
       "contractOrder": 126,
       "pokemon": [
         {
@@ -261825,7 +261825,7 @@
       ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
-      "zoneOrder": 25,
+      "zoneOrder": 29,
       "contractOrder": 127,
       "pokemon": [
         {
@@ -261881,7 +261881,7 @@
       ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
-      "zoneOrder": 25,
+      "zoneOrder": 29,
       "contractOrder": 135,
       "pokemon": [
         {
@@ -261929,7 +261929,7 @@
       ],
       "zone": "Route 119 Weather Institute 2F",
       "map": "Route119_WeatherInstitute_2F",
-      "zoneOrder": 25,
+      "zoneOrder": 29,
       "contractOrder": 136,
       "pokemon": [
         {
@@ -261969,7 +261969,7 @@
       ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
-      "zoneOrder": 26,
+      "zoneOrder": 30,
       "contractOrder": 131,
       "pokemon": [
         {
@@ -262009,7 +262009,7 @@
       ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
-      "zoneOrder": 26,
+      "zoneOrder": 30,
       "contractOrder": 132,
       "pokemon": [
         {
@@ -262049,7 +262049,7 @@
       ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
-      "zoneOrder": 26,
+      "zoneOrder": 30,
       "contractOrder": 133,
       "pokemon": [
         {
@@ -262097,7 +262097,7 @@
       ],
       "zone": "Route 119 Weather Institute 1F",
       "map": "Route119_WeatherInstitute_1F",
-      "zoneOrder": 26,
+      "zoneOrder": 30,
       "contractOrder": 134,
       "pokemon": [
         {
@@ -262145,7 +262145,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 137,
       "pokemon": [
         {
@@ -262201,7 +262201,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 138,
       "pokemon": [
         {
@@ -262241,7 +262241,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 139,
       "pokemon": [
         {
@@ -262297,7 +262297,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 140,
       "pokemon": [
         {
@@ -262337,7 +262337,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 141,
       "pokemon": [
         {
@@ -262387,7 +262387,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 142,
       "pokemon": [
         {
@@ -262491,7 +262491,7 @@
       ],
       "zone": "Fortree City Gym",
       "map": "FortreeCity_Gym",
-      "zoneOrder": 27,
+      "zoneOrder": 31,
       "contractOrder": 143,
       "pokemon": [
         {
@@ -262580,7 +262580,7 @@
       ],
       "zone": "Route 120",
       "map": "Route120",
-      "zoneOrder": 28,
+      "zoneOrder": 32,
       "contractOrder": 150,
       "pokemon": [
         {
@@ -262628,7 +262628,7 @@
       ],
       "zone": "Route 120",
       "map": "Route120",
-      "zoneOrder": 28,
+      "zoneOrder": 32,
       "contractOrder": 155,
       "pokemon": [
         {
@@ -262676,7 +262676,7 @@
       ],
       "zone": "Route 120",
       "map": "Route120",
-      "zoneOrder": 28,
+      "zoneOrder": 32,
       "contractOrder": 156,
       "pokemon": [
         {
@@ -262724,7 +262724,7 @@
       ],
       "zone": "Route 120",
       "map": "Route120",
-      "zoneOrder": 28,
+      "zoneOrder": 32,
       "contractOrder": 157,
       "pokemon": [
         {
@@ -262772,7 +262772,7 @@
       ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
-      "zoneOrder": 29,
+      "zoneOrder": 33,
       "contractOrder": 151,
       "pokemon": [
         {
@@ -262820,7 +262820,7 @@
       ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
-      "zoneOrder": 29,
+      "zoneOrder": 33,
       "contractOrder": 152,
       "pokemon": [
         {
@@ -262860,7 +262860,7 @@
       ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
-      "zoneOrder": 29,
+      "zoneOrder": 33,
       "contractOrder": 153,
       "pokemon": [
         {
@@ -262908,7 +262908,7 @@
       ],
       "zone": "Mt Pyre Summit",
       "map": "MtPyre_Summit",
-      "zoneOrder": 29,
+      "zoneOrder": 33,
       "contractOrder": 154,
       "pokemon": [
         {
@@ -262952,7 +262952,7 @@
       ],
       "zone": "Mt Pyre Depths",
       "map": "MtPyre_Depths",
-      "zoneOrder": 30,
+      "zoneOrder": 34,
       "contractOrder": 158,
       "pokemon": [
         {
@@ -262992,7 +262992,7 @@
       ],
       "zone": "Mt Pyre Depths",
       "map": "MtPyre_Depths",
-      "zoneOrder": 30,
+      "zoneOrder": 34,
       "contractOrder": 159,
       "pokemon": [
         {
@@ -263040,7 +263040,7 @@
       ],
       "zone": "Mt Pyre Depths",
       "map": "MtPyre_Depths",
-      "zoneOrder": 30,
+      "zoneOrder": 34,
       "contractOrder": 163,
       "pokemon": [
         {
@@ -263135,7 +263135,7 @@
       ],
       "zone": "Mt Pyre Depths",
       "map": "MtPyre_Depths",
-      "zoneOrder": 30,
+      "zoneOrder": 34,
       "contractOrder": 166,
       "pokemon": [
         {
@@ -263207,7 +263207,7 @@
       ],
       "zone": "Route 121",
       "map": "Route121",
-      "zoneOrder": 31,
+      "zoneOrder": 35,
       "contractOrder": 160,
       "pokemon": [
         {
@@ -263255,7 +263255,7 @@
       ],
       "zone": "Route 121",
       "map": "Route121",
-      "zoneOrder": 31,
+      "zoneOrder": 35,
       "contractOrder": 161,
       "pokemon": [
         {
@@ -263335,7 +263335,7 @@
       ],
       "zone": "Mt Pyre Descent",
       "map": "MtPyre_Descent",
-      "zoneOrder": 32,
+      "zoneOrder": 36,
       "contractOrder": 162,
       "pokemon": [
         {
@@ -263375,7 +263375,7 @@
       ],
       "zone": "Mt Pyre Descent",
       "map": "MtPyre_Descent",
-      "zoneOrder": 32,
+      "zoneOrder": 36,
       "contractOrder": 164,
       "pokemon": [
         {
@@ -263459,7 +263459,7 @@
       ],
       "zone": "Mt Pyre Descent",
       "map": "MtPyre_Descent",
-      "zoneOrder": 32,
+      "zoneOrder": 36,
       "contractOrder": 165,
       "pokemon": [
         {
@@ -263523,7 +263523,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 167,
       "pokemon": [
         {
@@ -263627,7 +263627,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 168,
       "pokemon": [
         {
@@ -263731,7 +263731,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 169,
       "pokemon": [
         {
@@ -263835,7 +263835,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 170,
       "pokemon": [
         {
@@ -263923,7 +263923,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 171,
       "pokemon": [
         {
@@ -264011,7 +264011,7 @@
       ],
       "zone": "Lilycove City",
       "map": "LilycoveCity",
-      "zoneOrder": 33,
+      "zoneOrder": 37,
       "contractOrder": 172,
       "pokemon": [
         {
@@ -264075,7 +264075,7 @@
       ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
-      "zoneOrder": 34,
+      "zoneOrder": 38,
       "contractOrder": 173,
       "pokemon": [
         {
@@ -264115,7 +264115,7 @@
       ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
-      "zoneOrder": 34,
+      "zoneOrder": 38,
       "contractOrder": 174,
       "pokemon": [
         {
@@ -264155,7 +264155,7 @@
       ],
       "zone": "Magma Hideout 1F",
       "map": "MagmaHideout_1F",
-      "zoneOrder": 34,
+      "zoneOrder": 38,
       "contractOrder": 175,
       "pokemon": [
         {
@@ -264195,7 +264195,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 176,
       "pokemon": [
         {
@@ -264235,7 +264235,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 180,
       "pokemon": [
         {
@@ -264275,7 +264275,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 181,
       "pokemon": [
         {
@@ -264315,7 +264315,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 182,
       "pokemon": [
         {
@@ -264355,7 +264355,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 183,
       "pokemon": [
         {
@@ -264395,7 +264395,7 @@
       ],
       "zone": "Magma Hideout 2F 1R",
       "map": "MagmaHideout_2F_1R",
-      "zoneOrder": 35,
+      "zoneOrder": 39,
       "contractOrder": 184,
       "pokemon": [
         {
@@ -264461,7 +264461,7 @@
       ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
-      "zoneOrder": 36,
+      "zoneOrder": 40,
       "contractOrder": 177,
       "pokemon": [
         {
@@ -264563,7 +264563,7 @@
       ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
-      "zoneOrder": 36,
+      "zoneOrder": 40,
       "contractOrder": 178,
       "pokemon": [
         {
@@ -264627,7 +264627,7 @@
       ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
-      "zoneOrder": 36,
+      "zoneOrder": 40,
       "contractOrder": 179,
       "pokemon": [
         {
@@ -264675,7 +264675,7 @@
       ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
-      "zoneOrder": 36,
+      "zoneOrder": 40,
       "contractOrder": 187,
       "pokemon": [
         {
@@ -264715,7 +264715,7 @@
       ],
       "zone": "Magma Hideout 4F",
       "map": "MagmaHideout_4F",
-      "zoneOrder": 36,
+      "zoneOrder": 40,
       "contractOrder": 189,
       "pokemon": [
         {
@@ -264763,7 +264763,7 @@
       ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
-      "zoneOrder": 37,
+      "zoneOrder": 41,
       "contractOrder": 185,
       "pokemon": [
         {
@@ -264803,7 +264803,7 @@
       ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
-      "zoneOrder": 37,
+      "zoneOrder": 41,
       "contractOrder": 186,
       "pokemon": [
         {
@@ -264843,7 +264843,7 @@
       ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
-      "zoneOrder": 37,
+      "zoneOrder": 41,
       "contractOrder": 188,
       "pokemon": [
         {
@@ -264883,7 +264883,7 @@
       ],
       "zone": "Magma Hideout 3F 1R",
       "map": "MagmaHideout_3F_1R",
-      "zoneOrder": 37,
+      "zoneOrder": 41,
       "contractOrder": 190,
       "pokemon": [
         {
@@ -264923,7 +264923,7 @@
       ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
-      "zoneOrder": 38,
+      "zoneOrder": 42,
       "contractOrder": 191,
       "pokemon": [
         {
@@ -264963,7 +264963,7 @@
       ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
-      "zoneOrder": 38,
+      "zoneOrder": 42,
       "contractOrder": 192,
       "pokemon": [
         {
@@ -265003,7 +265003,7 @@
       ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
-      "zoneOrder": 38,
+      "zoneOrder": 42,
       "contractOrder": 193,
       "pokemon": [
         {
@@ -265043,7 +265043,7 @@
       ],
       "zone": "Aqua Hideout B1F",
       "map": "AquaHideout_B1F",
-      "zoneOrder": 38,
+      "zoneOrder": 42,
       "contractOrder": 195,
       "pokemon": [
         {
@@ -265117,7 +265117,7 @@
       ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
-      "zoneOrder": 39,
+      "zoneOrder": 43,
       "contractOrder": 194,
       "pokemon": [
         {
@@ -265173,7 +265173,7 @@
       ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
-      "zoneOrder": 39,
+      "zoneOrder": 43,
       "contractOrder": 197,
       "pokemon": [
         {
@@ -265213,7 +265213,7 @@
       ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
-      "zoneOrder": 39,
+      "zoneOrder": 43,
       "contractOrder": 198,
       "pokemon": [
         {
@@ -265261,7 +265261,7 @@
       ],
       "zone": "Aqua Hideout B2F",
       "map": "AquaHideout_B2F",
-      "zoneOrder": 39,
+      "zoneOrder": 43,
       "contractOrder": 199,
       "pokemon": [
         {
@@ -265309,7 +265309,7 @@
       ],
       "zone": "Aqua Hideout 1F",
       "map": "AquaHideout_1F",
-      "zoneOrder": 40,
+      "zoneOrder": 44,
       "contractOrder": 196,
       "pokemon": [
         {
@@ -265349,7 +265349,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 200,
       "pokemon": [
         {
@@ -265389,7 +265389,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 201,
       "pokemon": [
         {
@@ -265429,7 +265429,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 202,
       "pokemon": [
         {
@@ -265469,7 +265469,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 203,
       "pokemon": [
         {
@@ -265509,7 +265509,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 204,
       "pokemon": [
         {
@@ -265549,7 +265549,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 205,
       "pokemon": [
         {
@@ -265589,7 +265589,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 206,
       "pokemon": [
         {
@@ -265629,7 +265629,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 207,
       "pokemon": [
         {
@@ -265669,7 +265669,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 208,
       "pokemon": [
         {
@@ -265709,7 +265709,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 209,
       "pokemon": [
         {
@@ -265749,7 +265749,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 210,
       "pokemon": [
         {
@@ -265789,7 +265789,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 211,
       "pokemon": [
         {
@@ -265878,7 +265878,7 @@
       ],
       "zone": "Mossdeep City Gym",
       "map": "MossdeepCity_Gym",
-      "zoneOrder": 41,
+      "zoneOrder": 45,
       "contractOrder": 212,
       "pokemon": [
         {
@@ -265958,7 +265958,7 @@
       ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
-      "zoneOrder": 42,
+      "zoneOrder": 46,
       "contractOrder": 213,
       "pokemon": [
         {
@@ -265998,7 +265998,7 @@
       ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
-      "zoneOrder": 42,
+      "zoneOrder": 46,
       "contractOrder": 214,
       "pokemon": [
         {
@@ -266038,7 +266038,7 @@
       ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
-      "zoneOrder": 42,
+      "zoneOrder": 46,
       "contractOrder": 220,
       "pokemon": [
         {
@@ -266078,7 +266078,7 @@
       ],
       "zone": "Mossdeep City Space Center 1F",
       "map": "MossdeepCity_SpaceCenter_1F",
-      "zoneOrder": 42,
+      "zoneOrder": 46,
       "contractOrder": 221,
       "pokemon": [
         {
@@ -266118,7 +266118,7 @@
       ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
-      "zoneOrder": 43,
+      "zoneOrder": 47,
       "contractOrder": 215,
       "pokemon": [
         {
@@ -266158,7 +266158,7 @@
       ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
-      "zoneOrder": 43,
+      "zoneOrder": 47,
       "contractOrder": 216,
       "pokemon": [
         {
@@ -266198,7 +266198,7 @@
       ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
-      "zoneOrder": 43,
+      "zoneOrder": 47,
       "contractOrder": 217,
       "pokemon": [
         {
@@ -266260,7 +266260,7 @@
       ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
-      "zoneOrder": 43,
+      "zoneOrder": 47,
       "contractOrder": 218,
       "pokemon": [
         {
@@ -266340,7 +266340,7 @@
       ],
       "zone": "Mossdeep City Space Center 2F",
       "map": "MossdeepCity_SpaceCenter_2F",
-      "zoneOrder": 43,
+      "zoneOrder": 47,
       "contractOrder": 219,
       "pokemon": [
         {
@@ -266396,7 +266396,7 @@
       ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
-      "zoneOrder": 44,
+      "zoneOrder": 48,
       "contractOrder": 222,
       "pokemon": [
         {
@@ -266436,7 +266436,7 @@
       ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
-      "zoneOrder": 44,
+      "zoneOrder": 48,
       "contractOrder": 223,
       "pokemon": [
         {
@@ -266503,7 +266503,7 @@
       ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
-      "zoneOrder": 44,
+      "zoneOrder": 48,
       "contractOrder": 224,
       "pokemon": [
         {
@@ -266559,7 +266559,7 @@
       ],
       "zone": "Seafloor Cavern Room 9",
       "map": "SeafloorCavern_Room9",
-      "zoneOrder": 44,
+      "zoneOrder": 48,
       "contractOrder": 232,
       "pokemon": [
         {
@@ -266611,7 +266611,7 @@
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
-      "zoneOrder": 45,
+      "zoneOrder": 49,
       "contractOrder": 225,
       "pokemon": [
         {
@@ -266655,7 +266655,7 @@
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
-      "zoneOrder": 45,
+      "zoneOrder": 49,
       "contractOrder": 226,
       "pokemon": [
         {
@@ -266695,7 +266695,7 @@
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
-      "zoneOrder": 45,
+      "zoneOrder": 49,
       "contractOrder": 228,
       "pokemon": [
         {
@@ -266735,7 +266735,7 @@
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
-      "zoneOrder": 45,
+      "zoneOrder": 49,
       "contractOrder": 229,
       "pokemon": [
         {
@@ -266799,7 +266799,7 @@
       ],
       "zone": "Sky Pillar 3F",
       "map": "SkyPillar_3F",
-      "zoneOrder": 45,
+      "zoneOrder": 49,
       "contractOrder": 230,
       "pokemon": [
         {
@@ -266847,7 +266847,7 @@
       ],
       "zone": "Seafloor Cavern Room 1",
       "map": "SeafloorCavern_Room1",
-      "zoneOrder": 46,
+      "zoneOrder": 50,
       "contractOrder": 227,
       "pokemon": [
         {
@@ -266922,7 +266922,7 @@
       ],
       "zone": "Sky Pillar Top",
       "map": "SkyPillar_Top",
-      "zoneOrder": 47,
+      "zoneOrder": 51,
       "contractOrder": 231,
       "pokemon": [
         {
@@ -266978,7 +266978,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 233,
       "pokemon": [
         {
@@ -267018,7 +267018,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 234,
       "pokemon": [
         {
@@ -267066,7 +267066,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 235,
       "pokemon": [
         {
@@ -267108,7 +267108,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 236,
       "pokemon": [
         {
@@ -267156,7 +267156,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 237,
       "pokemon": [
         {
@@ -267206,7 +267206,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 238,
       "pokemon": [
         {
@@ -267246,7 +267246,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 239,
       "pokemon": [
         {
@@ -267294,7 +267294,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 240,
       "pokemon": [
         {
@@ -267334,7 +267334,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 241,
       "pokemon": [
         {
@@ -267390,7 +267390,7 @@
       ],
       "zone": "Sootopolis City Gym B1F",
       "map": "SootopolisCity_Gym_B1F",
-      "zoneOrder": 48,
+      "zoneOrder": 52,
       "contractOrder": 242,
       "pokemon": [
         {
@@ -267493,7 +267493,7 @@
       ],
       "zone": "Sootopolis City Gym 1F",
       "map": "SootopolisCity_Gym_1F",
-      "zoneOrder": 49,
+      "zoneOrder": 53,
       "contractOrder": 243,
       "pokemon": [
         {
@@ -267575,7 +267575,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 244,
       "pokemon": [
         {
@@ -267617,7 +267617,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 245,
       "pokemon": [
         {
@@ -267667,7 +267667,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 246,
       "pokemon": [
         {
@@ -267725,7 +267725,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 247,
       "pokemon": [
         {
@@ -267765,7 +267765,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 248,
       "pokemon": [
         {
@@ -267807,7 +267807,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 249,
       "pokemon": [
         {
@@ -267865,7 +267865,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 250,
       "pokemon": [
         {
@@ -267907,7 +267907,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 251,
       "pokemon": [
         {
@@ -267965,7 +267965,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 252,
       "pokemon": [
         {
@@ -268007,7 +268007,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 253,
       "pokemon": [
         {
@@ -268051,7 +268051,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 254,
       "pokemon": [
         {
@@ -268109,7 +268109,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 255,
       "pokemon": [
         {
@@ -268167,7 +268167,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 256,
       "pokemon": [
         {
@@ -268225,7 +268225,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 257,
       "pokemon": [
         {
@@ -268283,7 +268283,7 @@
       ],
       "zone": "Victory Road 1F",
       "map": "VictoryRoad_1F",
-      "zoneOrder": 50,
+      "zoneOrder": 54,
       "contractOrder": 258,
       "pokemon": [
         {
@@ -268387,7 +268387,7 @@
       ],
       "zone": "Ever Grande City Sidneys Room",
       "map": "EverGrandeCity_SidneysRoom",
-      "zoneOrder": 51,
+      "zoneOrder": 55,
       "contractOrder": 259,
       "pokemon": [
         {
@@ -268515,7 +268515,7 @@
       ],
       "zone": "Ever Grande City Phoebes Room",
       "map": "EverGrandeCity_PhoebesRoom",
-      "zoneOrder": 52,
+      "zoneOrder": 56,
       "contractOrder": 261,
       "pokemon": [
         {
@@ -268643,7 +268643,7 @@
       ],
       "zone": "Ever Grande City Glacias Room",
       "map": "EverGrandeCity_GlaciasRoom",
-      "zoneOrder": 53,
+      "zoneOrder": 57,
       "contractOrder": 263,
       "pokemon": [
         {
@@ -268771,7 +268771,7 @@
       ],
       "zone": "Ever Grande City Drakes Room",
       "map": "EverGrandeCity_DrakesRoom",
-      "zoneOrder": 54,
+      "zoneOrder": 58,
       "contractOrder": 265,
       "pokemon": [
         {
@@ -268899,7 +268899,7 @@
       ],
       "zone": "Ever Grande City Champions Room",
       "map": "EverGrandeCity_ChampionsRoom",
-      "zoneOrder": 55,
+      "zoneOrder": 59,
       "contractOrder": 267,
       "pokemon": [
         {
@@ -269010,7 +269010,7 @@
       ],
       "zone": "Island Cave",
       "map": "IslandCave",
-      "zoneOrder": 56,
+      "zoneOrder": 60,
       "contractOrder": 268,
       "pokemon": [
         {
@@ -269079,7 +269079,7 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 57,
+      "zoneOrder": 61,
       "contractOrder": 269,
       "pokemon": [
         {
@@ -269119,7 +269119,7 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 57,
+      "zoneOrder": 61,
       "contractOrder": 270,
       "pokemon": [
         {
@@ -269167,7 +269167,7 @@
       ],
       "zone": "Route 106",
       "map": "Route106",
-      "zoneOrder": 57,
+      "zoneOrder": 61,
       "contractOrder": 271,
       "pokemon": [
         {
@@ -269242,7 +269242,7 @@
       ],
       "zone": "New Mauville Inside",
       "map": "NewMauville_Inside",
-      "zoneOrder": 58,
+      "zoneOrder": 62,
       "contractOrder": 272,
       "pokemon": [
         {
@@ -269333,7 +269333,7 @@
       ],
       "zone": "Desert Ruins",
       "map": "DesertRuins",
-      "zoneOrder": 59,
+      "zoneOrder": 63,
       "contractOrder": 273,
       "pokemon": [
         {
@@ -269408,7 +269408,7 @@
       ],
       "zone": "Ancient Tomb",
       "map": "AncientTomb",
-      "zoneOrder": 60,
+      "zoneOrder": 64,
       "contractOrder": 275,
       "pokemon": [
         {
@@ -269493,7 +269493,7 @@
       ],
       "zone": "Marine Cave End",
       "map": "MarineCave_End",
-      "zoneOrder": 61,
+      "zoneOrder": 65,
       "contractOrder": 276,
       "pokemon": [
         {
@@ -269570,7 +269570,7 @@
       ],
       "zone": "Altering Cave",
       "map": "AlteringCave",
-      "zoneOrder": 62,
+      "zoneOrder": 66,
       "contractOrder": 277,
       "pokemon": [
         {
@@ -269641,7 +269641,7 @@
       ],
       "zone": "Lilycove City Contest Hall",
       "map": "LilycoveCity_ContestHall",
-      "zoneOrder": 63,
+      "zoneOrder": 67,
       "contractOrder": 278,
       "pokemon": [
         {
@@ -269725,7 +269725,7 @@
       ],
       "zone": "Sealed Chamber Inner Room",
       "map": "SealedChamber_InnerRoom",
-      "zoneOrder": 64,
+      "zoneOrder": 68,
       "contractOrder": 279,
       "pokemon": [
         {
@@ -269809,7 +269809,7 @@
       ],
       "zone": "Desert Underpass",
       "map": "DesertUnderpass",
-      "zoneOrder": 65,
+      "zoneOrder": 69,
       "contractOrder": 280,
       "pokemon": [
         {
@@ -269849,7 +269849,7 @@
   ],
   "trainerSnapshot": {
     "legalTrainerCount": 277,
-    "zoneCount": 66,
+    "zoneCount": 70,
     "zones": [
       {
         "name": "Oldale Town",
@@ -269940,180 +269940,196 @@
         "order": 21
       },
       {
-        "name": "Petalburg City Gym",
+        "name": "Mirage Tower 2F",
         "order": 22
       },
       {
-        "name": "Terra Cave End",
+        "name": "Mirage Tower 1F",
         "order": 23
       },
       {
-        "name": "Route 119",
+        "name": "Mirage Tower 4F",
         "order": 24
       },
       {
-        "name": "Route 119 Weather Institute 2F",
+        "name": "Mirage Tower 3F",
         "order": 25
       },
       {
-        "name": "Route 119 Weather Institute 1F",
+        "name": "Petalburg City Gym",
         "order": 26
       },
       {
-        "name": "Fortree City Gym",
+        "name": "Terra Cave End",
         "order": 27
       },
       {
-        "name": "Route 120",
+        "name": "Route 119",
         "order": 28
       },
       {
-        "name": "Mt Pyre Summit",
+        "name": "Route 119 Weather Institute 2F",
         "order": 29
       },
       {
-        "name": "Mt Pyre Depths",
+        "name": "Route 119 Weather Institute 1F",
         "order": 30
       },
       {
-        "name": "Route 121",
+        "name": "Fortree City Gym",
         "order": 31
       },
       {
-        "name": "Mt Pyre Descent",
+        "name": "Route 120",
         "order": 32
       },
       {
-        "name": "Lilycove City",
+        "name": "Mt Pyre Summit",
         "order": 33
       },
       {
-        "name": "Magma Hideout 1F",
+        "name": "Mt Pyre Depths",
         "order": 34
       },
       {
-        "name": "Magma Hideout 2F 1R",
+        "name": "Route 121",
         "order": 35
       },
       {
-        "name": "Magma Hideout 4F",
+        "name": "Mt Pyre Descent",
         "order": 36
       },
       {
-        "name": "Magma Hideout 3F 1R",
+        "name": "Lilycove City",
         "order": 37
       },
       {
-        "name": "Aqua Hideout B1F",
+        "name": "Magma Hideout 1F",
         "order": 38
       },
       {
-        "name": "Aqua Hideout B2F",
+        "name": "Magma Hideout 2F 1R",
         "order": 39
       },
       {
-        "name": "Aqua Hideout 1F",
+        "name": "Magma Hideout 4F",
         "order": 40
       },
       {
-        "name": "Mossdeep City Gym",
+        "name": "Magma Hideout 3F 1R",
         "order": 41
       },
       {
-        "name": "Mossdeep City Space Center 1F",
+        "name": "Aqua Hideout B1F",
         "order": 42
       },
       {
-        "name": "Mossdeep City Space Center 2F",
+        "name": "Aqua Hideout B2F",
         "order": 43
       },
       {
-        "name": "Seafloor Cavern Room 9",
+        "name": "Aqua Hideout 1F",
         "order": 44
       },
       {
-        "name": "Sky Pillar 3F",
+        "name": "Mossdeep City Gym",
         "order": 45
       },
       {
-        "name": "Seafloor Cavern Room 1",
+        "name": "Mossdeep City Space Center 1F",
         "order": 46
       },
       {
-        "name": "Sky Pillar Top",
+        "name": "Mossdeep City Space Center 2F",
         "order": 47
       },
       {
-        "name": "Sootopolis City Gym B1F",
+        "name": "Seafloor Cavern Room 9",
         "order": 48
       },
       {
-        "name": "Sootopolis City Gym 1F",
+        "name": "Sky Pillar 3F",
         "order": 49
       },
       {
-        "name": "Victory Road 1F",
+        "name": "Seafloor Cavern Room 1",
         "order": 50
       },
       {
-        "name": "Ever Grande City Sidneys Room",
+        "name": "Sky Pillar Top",
         "order": 51
       },
       {
-        "name": "Ever Grande City Phoebes Room",
+        "name": "Sootopolis City Gym B1F",
         "order": 52
       },
       {
-        "name": "Ever Grande City Glacias Room",
+        "name": "Sootopolis City Gym 1F",
         "order": 53
       },
       {
-        "name": "Ever Grande City Drakes Room",
+        "name": "Victory Road 1F",
         "order": 54
       },
       {
-        "name": "Ever Grande City Champions Room",
+        "name": "Ever Grande City Sidneys Room",
         "order": 55
       },
       {
-        "name": "Island Cave",
+        "name": "Ever Grande City Phoebes Room",
         "order": 56
       },
       {
-        "name": "Route 106",
+        "name": "Ever Grande City Glacias Room",
         "order": 57
       },
       {
-        "name": "New Mauville Inside",
+        "name": "Ever Grande City Drakes Room",
         "order": 58
       },
       {
-        "name": "Desert Ruins",
+        "name": "Ever Grande City Champions Room",
         "order": 59
       },
       {
-        "name": "Ancient Tomb",
+        "name": "Island Cave",
         "order": 60
       },
       {
-        "name": "Marine Cave End",
+        "name": "Route 106",
         "order": 61
       },
       {
-        "name": "Altering Cave",
+        "name": "New Mauville Inside",
         "order": 62
       },
       {
-        "name": "Lilycove City Contest Hall",
+        "name": "Desert Ruins",
         "order": 63
       },
       {
-        "name": "Sealed Chamber Inner Room",
+        "name": "Ancient Tomb",
         "order": 64
       },
       {
-        "name": "Desert Underpass",
+        "name": "Marine Cave End",
         "order": 65
+      },
+      {
+        "name": "Altering Cave",
+        "order": 66
+      },
+      {
+        "name": "Lilycove City Contest Hall",
+        "order": 67
+      },
+      {
+        "name": "Sealed Chamber Inner Room",
+        "order": 68
+      },
+      {
+        "name": "Desert Underpass",
+        "order": 69
       }
     ]
   },

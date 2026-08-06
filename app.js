@@ -31,7 +31,7 @@ const typeColors = {
 const MOBILE_BREAKPOINT = 1040;
 const LIST_BATCH_DESKTOP = 120;
 const LIST_BATCH_MOBILE = 48;
-const DATA_VERSION = "20260802-mt-pyre-trainer-locations";
+const DATA_VERSION = "20260806-route111-mirage-tower";
 
 const els = {
   tabs: document.getElementById("tabs"),
