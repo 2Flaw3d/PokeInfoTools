@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -163,6 +164,56 @@ Level: 5
             trainers[0]["levelRule"],
             {"kind": "playerLeadMinus", "offset": 11, "min": 1},
         )
+
+    def test_post_league_contract_adds_custom_flag_trainers_and_team_rule(self):
+        post_league = {
+            "trainerIdMin": 859,
+            "trainerFlagBaseId": 0x900,
+            "teamRule": {
+                "partySize": 6,
+                "level": 100,
+                "normalTargetBst": 3300,
+                "bossTargetBst": 3600,
+                "tolerance": 75,
+                "candidateCount": 128,
+                "uniqueSpecies": True,
+            },
+            "trials": [{
+                "key": "trial_a",
+                "label": "Trial A — Lava",
+                "zone": "Post-Lega · Trial A — Lava",
+                "trainers": [
+                    {
+                        "id": 865,
+                        "token": "TRAINER_POST_LEAGUE_A_BOSS",
+                        "map": "PostLeague_TrialA_Area2",
+                        "boss": True,
+                        "fixedSpecies": [{"slot": 2, "speciesId": 485, "speciesToken": "SPECIES_HEATRAN"}],
+                    }
+                ],
+            }],
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            contract_path = root / "contract.json"
+            locations_path = root / "locations.json"
+            post_path = root / "postLeague.json"
+            contract_path.write_text('{"segments": [], "floatingTrainers": []}', encoding="utf-8")
+            locations_path.write_text('{}', encoding="utf-8")
+            post_path.write_text(json.dumps(post_league), encoding="utf-8")
+
+            index, summary = MODULE.build_contract_trainer_index(
+                contract_path,
+                locations_path,
+                {"TRAINER_POST_LEAGUE_A_BOSS": 865},
+                post_path,
+            )
+
+        self.assertEqual(index[865]["flagId"], 0x906)
+        self.assertEqual(index[865]["postLeagueRule"]["targetBst"], 3600)
+        self.assertEqual(index[865]["postLeagueRule"]["fixedSpecies"][0]["speciesId"], 485)
+        self.assertEqual(summary["legalTrainerCount"], 1)
+        self.assertEqual(summary["zones"][0]["name"], "Post-Lega · Trial A — Lava")
 
 
 if __name__ == "__main__":

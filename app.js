@@ -31,7 +31,7 @@ const typeColors = {
 const MOBILE_BREAKPOINT = 1040;
 const LIST_BATCH_DESKTOP = 120;
 const LIST_BATCH_MOBILE = 48;
-const DATA_VERSION = "20260806-route111-mirage-tower";
+const DATA_VERSION = "20260828-post-league";
 
 const els = {
   tabs: document.getElementById("tabs"),
@@ -161,6 +161,9 @@ function getEntriesForTab() {
         ...(entry.aiFlags || []),
         ...(entry.aiFlagDetails || []).flatMap((flag) => [flag.macro, ...(flag.expandsTo || [])]),
         ...entry.pokemon.map((mon) => mon.speciesName),
+        ...(entry.postLeagueRule?.fixedSpecies || []).map((fixed) =>
+          state.data.speciesById.get(fixed.speciesId)?.name || fixed.speciesToken || "",
+        ),
       ].join(" ").toLowerCase().includes(query),
     );
   }
@@ -435,6 +438,7 @@ function buildItemDetail(entry) {
 function buildTrainerDetail(entry) {
   const aiCards = buildAiFlagCards(entry);
   const levelRule = entry.levelRule;
+  const postLeagueRule = entry.postLeagueRule;
   const dynamicLevelLabel =
     levelRule?.kind === "playerLeadMinus"
       ? `Player lead level - ${levelRule.offset} (minimum ${levelRule.min ?? 1})`
@@ -473,6 +477,31 @@ function buildTrainerDetail(entry) {
         .join("")
     : `<span class="chip">No trainer items</span>`;
 
+  const fixedSpecies = (postLeagueRule?.fixedSpecies || [])
+    .map((fixed) => {
+      const pokemon = state.data.speciesById.get(fixed.speciesId);
+      const label = pokemon?.name || fixed.speciesToken || `Species ${fixed.speciesId}`;
+      return pokemon
+        ? navButton("pokemon", pokemon.id, `${label} (slot ${fixed.slot + 1})`)
+        : `<span class="chip">${escapeHtml(label)} (slot ${fixed.slot + 1})</span>`;
+    })
+    .join("");
+
+  const partySection = postLeagueRule
+    ? `
+      <div class="detail-section">
+        <h3>Per-run Party Generation</h3>
+        <div class="detail-card">
+          <p>Six unique, fully evolved Pokemon are generated deterministically for this run. The ROM evaluates ${postLeagueRule.candidateCount} candidate teams and keeps the one closest to the target BST.</p>
+          ${fixedSpecies ? `<p><span class="muted">Fixed thematic species:</span></p><div class="chip-row">${fixedSpecies}</div>` : ""}
+        </div>
+      </div>`
+    : `
+      <div class="detail-section">
+        <h3>Party Snapshot</h3>
+        <div class="trainer-party">${party || `<div class="detail-card"><p>No party data available.</p></div>`}</div>
+      </div>`;
+
   return `
     <div class="detail-hero">
       <div class="detail-title">
@@ -487,7 +516,10 @@ function buildTrainerDetail(entry) {
       <div class="detail-box"><span class="muted">Pic</span><strong>${entry.pic || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Gender</span><strong>${entry.gender || "-"}</strong></div>
       <div class="detail-box"><span class="muted">Battle Type</span><strong>${entry.battleType || "-"}</strong></div>
-      <div class="detail-box"><span class="muted">Party Size</span><strong>${(entry.pokemon || []).length}</strong></div>
+      <div class="detail-box"><span class="muted">Party Size</span><strong>${postLeagueRule?.partySize ?? (entry.pokemon || []).length}</strong></div>
+      ${postLeagueRule ? `<div class="detail-box"><span class="muted">Level</span><strong>${postLeagueRule.level}</strong></div>` : ""}
+      ${postLeagueRule ? `<div class="detail-box"><span class="muted">Target Team BST</span><strong>${postLeagueRule.targetBst} (tolerance ±${postLeagueRule.tolerance})</strong></div>` : ""}
+      ${postLeagueRule ? `<div class="detail-box"><span class="muted">Generation</span><strong>Deterministic per run</strong></div>` : ""}
       ${
         dynamicLevelLabel
           ? `<div class="detail-box"><span class="muted">Dynamic Level</span><strong>${escapeHtml(dynamicLevelLabel)}</strong></div>`
@@ -502,10 +534,7 @@ function buildTrainerDetail(entry) {
       <h3>Trainer Items</h3>
       <div class="chip-row">${trainerItems}</div>
     </div>
-    <div class="detail-section">
-      <h3>Party Snapshot</h3>
-      <div class="trainer-party">${party || `<div class="detail-card"><p>No party data available.</p></div>`}</div>
-    </div>
+    ${partySection}
   `;
 }
 
@@ -614,7 +643,7 @@ function renderList(entries) {
       sub = [
         entry.zone || "",
         entry.class || "Trainer",
-        `${(entry.pokemon || []).length} mon`,
+        `${entry.postLeagueRule?.partySize ?? (entry.pokemon || []).length} mon`,
         formatAiFlagSummary(entry),
       ].filter(Boolean).join(" - ");
     }

@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-08-11T13:50:48+00:00",
+  "generatedAtUtc": "2026-08-28T15:52:36+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -228000,7 +228000,7 @@
       "power": 1,
       "accuracy": 0,
       "pp": 20,
-      "description": "The type of attack varies\ndepending on the location.",
+      "description": "Terrain calls Seed Bomb,\nEarthquake, Hydro Pump, etc.",
       "effect": "EFFECT_NATURE_POWER",
       "target": "TARGET_SELECTED",
       "priority": 0
@@ -254214,6 +254214,30 @@
       "machineNumber": null,
       "moveId": null,
       "moveName": null
+    },
+    {
+      "id": 878,
+      "token": "ITEM_VERDANT_EMBER",
+      "name": "Verdant Ember",
+      "description": "A green flame-seed\ndrawn to the Trial's\nverdant altar.",
+      "pocket": "POCKET_ITEMS",
+      "price": 0,
+      "machineType": null,
+      "machineNumber": null,
+      "moveId": null,
+      "moveName": null
+    },
+    {
+      "id": 879,
+      "token": "ITEM_ASHEN_EMBER",
+      "name": "Ashen Ember",
+      "description": "A grey flame-seed\ndrawn to the Trial's\nashen altar.",
+      "pocket": "POCKET_ITEMS",
+      "price": 0,
+      "machineType": null,
+      "machineNumber": null,
+      "moveId": null,
+      "moveName": null
     }
   ],
   "trainers": [
@@ -263111,7 +263135,7 @@
       "id": 858,
       "idToken": "TRAINER_GODLING_BRAXTON",
       "name": "BRAXTON",
-      "class": "Godling",
+      "class": "Cooltrainer",
       "pic": "Cooltrainer M",
       "gender": "Male",
       "music": "Cool",
@@ -264609,10 +264633,10 @@
     {
       "id": 727,
       "idToken": "TRAINER_GRUNT_MAGMA_HIDEOUT_12",
-      "name": "GRUNT",
-      "class": "Team Magma",
-      "pic": "Magma Grunt M",
-      "gender": "Male",
+      "name": "COURTNEY",
+      "class": "Magma Admin",
+      "pic": "Courtney",
+      "gender": "Female",
       "music": "Magma",
       "battleType": "No",
       "items": [],
@@ -264620,7 +264644,9 @@
         "Check Bad Move"
       ],
       "aiFlags": [
-        "Check Bad Move"
+        "Check Bad Move",
+        "Fair Smart Trainer",
+        "Prefer Highest Damage Move"
       ],
       "aiFlagDetails": [
         {
@@ -264628,6 +264654,26 @@
           "macro": "AI_FLAG_CHECK_BAD_MOVE",
           "expandsTo": [
             "AI_FLAG_CHECK_BAD_MOVE"
+          ]
+        },
+        {
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
           ]
         }
       ],
@@ -269293,7 +269339,7 @@
     {
       "id": 709,
       "idToken": "TRAINER_COBY",
-      "name": "MT MASTER",
+      "name": "TM MASTER",
       "class": "Pokemaniac",
       "pic": "Pokemaniac",
       "gender": "Male",
@@ -269851,11 +269897,3374 @@
           }
         ]
       }
+    },
+    {
+      "id": 859,
+      "idToken": "TRAINER_POST_LEAGUE_A_1",
+      "name": "LAVA I",
+      "class": "Hiker",
+      "pic": "Hiker",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 281,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 860,
+      "idToken": "TRAINER_POST_LEAGUE_A_2",
+      "name": "LAVA II",
+      "class": "Triathlete",
+      "pic": "Running Triathlete M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 282,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 861,
+      "idToken": "TRAINER_POST_LEAGUE_A_3",
+      "name": "LAVA III",
+      "class": "Expert",
+      "pic": "Expert F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 283,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 862,
+      "idToken": "TRAINER_POST_LEAGUE_A_4",
+      "name": "LAVA IV",
+      "class": "Dragon Tamer",
+      "pic": "Dragon Tamer",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 284,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 863,
+      "idToken": "TRAINER_POST_LEAGUE_A_5",
+      "name": "LAVA V",
+      "class": "Magma Admin",
+      "pic": "Magma Admin",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move",
+        "Fair Smart Trainer"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        },
+        {
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 285,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 864,
+      "idToken": "TRAINER_POST_LEAGUE_A_6",
+      "name": "LAVA VI",
+      "class": "Magma Admin",
+      "pic": "Magma Admin",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move",
+        "Fair Smart Trainer"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        },
+        {
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area1",
+      "zoneOrder": 70,
+      "contractOrder": 286,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 865,
+      "idToken": "TRAINER_POST_LEAGUE_A_BOSS",
+      "name": "IGNIS",
+      "class": "Magma Leader",
+      "pic": "Magma Leader Maxie",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move",
+        "Fair Smart Trainer"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        },
+        {
+          "label": "Fair Smart Trainer",
+          "macro": "AI_FLAG_FAIR_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial A \u2014 Lava",
+      "map": "PostLeague_TrialA_Area2",
+      "zoneOrder": 70,
+      "contractOrder": 287,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Heatran",
+          "speciesId": 485,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Groudon",
+          "speciesId": 383,
+          "level": 100,
+          "ability": "",
+          "item": "Red Orb",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial A \u2014 Lava",
+        "boss": true,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3600,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": [
+          {
+            "slot": 2,
+            "speciesId": 485,
+            "speciesToken": "SPECIES_HEATRAN"
+          },
+          {
+            "slot": 3,
+            "speciesId": 383,
+            "speciesToken": "SPECIES_GROUDON"
+          }
+        ]
+      }
+    },
+    {
+      "id": 866,
+      "idToken": "TRAINER_POST_LEAGUE_B_1",
+      "name": "ORBIT I",
+      "class": "Psychic",
+      "pic": "Psychic M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 288,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 867,
+      "idToken": "TRAINER_POST_LEAGUE_B_2",
+      "name": "ORBIT II",
+      "class": "Psychic",
+      "pic": "Psychic F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 289,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 868,
+      "idToken": "TRAINER_POST_LEAGUE_B_3",
+      "name": "ORBIT III",
+      "class": "Ruin Maniac",
+      "pic": "Ruin Maniac",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 290,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 869,
+      "idToken": "TRAINER_POST_LEAGUE_B_4",
+      "name": "ORBIT IV",
+      "class": "Hex Maniac",
+      "pic": "Hex Maniac",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 291,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 870,
+      "idToken": "TRAINER_POST_LEAGUE_B_5",
+      "name": "ORBIT V",
+      "class": "Expert",
+      "pic": "Expert M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 292,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 871,
+      "idToken": "TRAINER_POST_LEAGUE_B_6",
+      "name": "ORBIT VI",
+      "class": "Expert",
+      "pic": "Expert F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 293,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 872,
+      "idToken": "TRAINER_POST_LEAGUE_B_7",
+      "name": "ORBIT VII",
+      "class": "Dragon Tamer",
+      "pic": "Dragon Tamer",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area2",
+      "zoneOrder": 71,
+      "contractOrder": 294,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 873,
+      "idToken": "TRAINER_POST_LEAGUE_B_BOSS",
+      "name": "ASTRA",
+      "class": "Champion",
+      "pic": "Steven",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+      "map": "PostLeague_TrialB_Area1",
+      "zoneOrder": 71,
+      "contractOrder": 295,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Eternatus",
+          "speciesId": 890,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Deoxys",
+          "speciesId": 386,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial B \u2014 Spazio",
+        "boss": true,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3600,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": [
+          {
+            "slot": 2,
+            "speciesId": 890,
+            "speciesToken": "SPECIES_ETERNATUS"
+          },
+          {
+            "slot": 3,
+            "speciesId": 386,
+            "speciesToken": "SPECIES_DEOXYS"
+          }
+        ]
+      }
+    },
+    {
+      "id": 874,
+      "idToken": "TRAINER_POST_LEAGUE_C_GUARD_1",
+      "name": "WARDENS",
+      "class": "Expert",
+      "pic": "Expert M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area2",
+      "zoneOrder": 72,
+      "contractOrder": 296,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 875,
+      "idToken": "TRAINER_POST_LEAGUE_C_GUARD_2",
+      "name": "WARDEN II",
+      "class": "Expert",
+      "pic": "Expert F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area2",
+      "zoneOrder": 72,
+      "contractOrder": 297,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 876,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_1",
+      "name": "VERDANT I",
+      "class": "Aroma Lady",
+      "pic": "Aroma Lady",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 298,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 877,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_2",
+      "name": "VERDANT II",
+      "class": "Pkmn Ranger",
+      "pic": "Pokemon Ranger M",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 299,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 878,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_3",
+      "name": "VERDANT3",
+      "class": "Pkmn Ranger",
+      "pic": "Pokemon Ranger F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 300,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 879,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_4",
+      "name": "ASHEN I",
+      "class": "Hex Maniac",
+      "pic": "Hex Maniac",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 301,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 880,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_5",
+      "name": "ASHEN II",
+      "class": "Ruin Maniac",
+      "pic": "Ruin Maniac",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 302,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 881,
+      "idToken": "TRAINER_POST_LEAGUE_C_EMBER_6",
+      "name": "ASHEN III",
+      "class": "Expert",
+      "pic": "Expert F",
+      "gender": "Female",
+      "music": "Intense",
+      "battleType": "No",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 303,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Chimecho",
+          "speciesId": 358,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Banette",
+          "speciesId": 354,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": false,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3300,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": []
+      }
+    },
+    {
+      "id": 882,
+      "idToken": "TRAINER_POST_LEAGUE_C_BOSS",
+      "name": "AEON",
+      "class": "Champion",
+      "pic": "Champion Wallace",
+      "gender": "Male",
+      "music": "Intense",
+      "battleType": "Yes",
+      "items": [],
+      "declaredAiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlags": [
+        "Smart Trainer",
+        "HP Aware",
+        "Prediction",
+        "Assumptions",
+        "Prefer Highest Damage Move"
+      ],
+      "aiFlagDetails": [
+        {
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
+          "expandsTo": [
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
+          ]
+        },
+        {
+          "label": "HP Aware",
+          "macro": "AI_FLAG_HP_AWARE",
+          "expandsTo": [
+            "AI_FLAG_HP_AWARE"
+          ]
+        },
+        {
+          "label": "Prediction",
+          "macro": "AI_FLAG_PREDICTION",
+          "expandsTo": [
+            "AI_FLAG_PREDICT_SWITCH",
+            "AI_FLAG_PREDICT_INCOMING_MON",
+            "AI_FLAG_PREDICT_MOVE"
+          ]
+        },
+        {
+          "label": "Assumptions",
+          "macro": "AI_FLAG_ASSUMPTIONS",
+          "expandsTo": [
+            "AI_FLAG_ASSUME_STAB",
+            "AI_FLAG_ASSUME_STATUS_MOVES",
+            "AI_FLAG_WEIGH_ABILITY_PREDICTION"
+          ]
+        },
+        {
+          "label": "Prefer Highest Damage Move",
+          "macro": "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE",
+          "expandsTo": [
+            "AI_FLAG_PREFER_HIGHEST_DAMAGE_MOVE"
+          ]
+        }
+      ],
+      "zone": "Post-Lega \u00b7 Trial C \u2014 Altari",
+      "map": "PostLeague_TrialC_Area1",
+      "zoneOrder": 72,
+      "contractOrder": 304,
+      "pokemon": [
+        {
+          "speciesName": "Magikarp",
+          "speciesId": 129,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Tentacool",
+          "speciesId": 72,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Lugia",
+          "speciesId": 249,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Celebi",
+          "speciesId": 251,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Aron",
+          "speciesId": 304,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        },
+        {
+          "speciesName": "Kadabra",
+          "speciesId": 64,
+          "level": 100,
+          "ability": "",
+          "item": "",
+          "moves": []
+        }
+      ],
+      "postLeagueRule": {
+        "trial": "Trial C \u2014 Altari",
+        "boss": true,
+        "partySize": 6,
+        "level": 100,
+        "targetBst": 3600,
+        "tolerance": 75,
+        "candidateCount": 128,
+        "uniqueSpecies": true,
+        "fixedSpecies": [
+          {
+            "slot": 2,
+            "speciesId": 249,
+            "speciesToken": "SPECIES_LUGIA"
+          },
+          {
+            "slot": 3,
+            "speciesId": 251,
+            "speciesToken": "SPECIES_CELEBI"
+          }
+        ]
+      }
     }
   ],
   "trainerSnapshot": {
-    "legalTrainerCount": 277,
-    "zoneCount": 70,
+    "legalTrainerCount": 301,
+    "zoneCount": 73,
     "zones": [
       {
         "name": "Oldale Town",
@@ -270136,6 +273545,18 @@
       {
         "name": "Desert Underpass",
         "order": 69
+      },
+      {
+        "name": "Post-Lega \u00b7 Trial A \u2014 Lava",
+        "order": 70
+      },
+      {
+        "name": "Post-Lega \u00b7 Trial B \u2014 Spazio",
+        "order": 71
+      },
+      {
+        "name": "Post-Lega \u00b7 Trial C \u2014 Altari",
+        "order": 72
       }
     ]
   },

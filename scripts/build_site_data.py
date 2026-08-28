@@ -288,6 +288,8 @@ def parse_showdown_trainers(
         }
         if runtime_trainer.get("levelRule"):
             trainer_entry["levelRule"] = runtime_trainer["levelRule"]
+        if contract.get("postLeagueRule"):
+            trainer_entry["postLeagueRule"] = contract["postLeagueRule"]
         trainers.append(trainer_entry)
 
     trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["zone"], entry["contractOrder"], entry["id"]))
@@ -391,6 +393,7 @@ def build_contract_trainer_index(
     contract_path: Path,
     locations_path: Path,
     trainer_id_by_token: dict[str, int],
+    post_league_contract_path: Path | None = None,
 ) -> tuple[dict[int, dict], dict]:
     contract = json.loads(read_text(contract_path))
     locations = json.loads(read_text(locations_path))
@@ -472,6 +475,51 @@ def build_contract_trainer_index(
         }
         for flag_id in floating.get("flagIds", []):
             record(flag_id, "floating", source)
+
+    # Post-League trainers deliberately use custom 0x900+ flags, so they
+    # cannot be inferred through the normal 0x500+trainerId contract above.
+    # Consume the same shared contract used by the WebApp/API and validate
+    # every token against the ROM constants before exposing it in PokeInfo.
+    if post_league_contract_path is not None:
+        post_league = json.loads(read_text(post_league_contract_path))
+        team_rule = post_league.get("teamRule", {})
+        flag_base = int(post_league["trainerFlagBaseId"])
+        trainer_min = int(post_league["trainerIdMin"])
+        for trial in post_league.get("trials", []):
+            zone = str(trial["zone"])
+            if zone not in zone_order:
+                zone_order[zone] = len(zone_order)
+            for trainer in trial.get("trainers", []):
+                trainer_id = int(trainer["id"])
+                token = str(trainer["token"])
+                if trainer_id_by_token.get(token) != trainer_id:
+                    raise RuntimeError(
+                        f"Post-League contract mismatch for {token}: "
+                        f"contract={trainer_id}, ROM={trainer_id_by_token.get(token)}"
+                    )
+                is_boss = bool(trainer.get("boss"))
+                by_trainer_id[trainer_id] = {
+                    "trainerId": trainer_id,
+                    "zone": zone,
+                    "map": str(trainer.get("map", "")),
+                    "zoneOrder": zone_order[zone],
+                    "firstOrder": order,
+                    "flagId": flag_base + (trainer_id - trainer_min),
+                    "postLeagueRule": {
+                        "trial": str(trial.get("label", trial.get("key", ""))),
+                        "boss": is_boss,
+                        "partySize": int(team_rule["partySize"]),
+                        "level": int(team_rule["level"]),
+                        "targetBst": int(
+                            team_rule["bossTargetBst"] if is_boss else team_rule["normalTargetBst"]
+                        ),
+                        "tolerance": int(team_rule["tolerance"]),
+                        "candidateCount": int(team_rule["candidateCount"]),
+                        "uniqueSpecies": bool(team_rule["uniqueSpecies"]),
+                        "fixedSpecies": trainer.get("fixedSpecies", []),
+                    },
+                }
+                order += 1
 
     summary = {
         "legalTrainerCount": len(by_trainer_id),
@@ -898,6 +946,7 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
         webapp_root / "apps" / "api" / "src" / "lib" / "data" / "trainerSegmentContract.generated.json",
         webapp_root / "apps" / "api" / "src" / "lib" / "postRunLog" / "trainerLocations.generated.json",
         trainer_id_by_token,
+        webapp_root / "packages" / "shared" / "src" / "postLeagueContract.json",
     )
     ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
     trainer_ai_contract_path = expansion_root / "include" / "data.h"
