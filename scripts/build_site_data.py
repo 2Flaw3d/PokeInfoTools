@@ -292,7 +292,7 @@ def parse_showdown_trainers(
             trainer_entry["postLeagueRule"] = contract["postLeagueRule"]
         trainers.append(trainer_entry)
 
-    trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["zone"], entry["contractOrder"], entry["id"]))
+    trainers.sort(key=lambda entry: (entry["zoneOrder"], entry["contractOrder"], entry["id"]))
     return trainers
 
 
@@ -389,144 +389,32 @@ def parse_class_auto_ai_flags(path: Path) -> dict[str, list[str]]:
     return result
 
 
-def build_contract_trainer_index(
-    contract_path: Path,
-    locations_path: Path,
-    trainer_id_by_token: dict[str, int],
-    post_league_contract_path: Path | None = None,
-) -> tuple[dict[int, dict], dict]:
-    contract = json.loads(read_text(contract_path))
-    locations = json.loads(read_text(locations_path))
-    known_trainer_ids = set(trainer_id_by_token.values())
-
+def build_trainer_catalog_index(catalog_path: Path) -> tuple[dict[int, dict], dict]:
+    catalog = json.loads(read_text(catalog_path))
     by_trainer_id: dict[int, dict] = {}
-    zone_order: dict[str, int] = {}
-    order = 0
-
-    def record(flag_id: int, role: str, source: dict) -> None:
-        nonlocal order
-        if not isinstance(flag_id, int):
-            return
-        trainer_id = flag_id - TRAINER_FLAGS_START
-        # Same guard as apps/api/src/lib/postRunLog/contractTrainers.ts:
-        # story/milestone flags are part of the contract flagQuery, but only
-        # 0x500+id flags resolving to a known TRAINER_* token are trainer rows.
-        if trainer_id <= 0 or trainer_id not in known_trainer_ids:
-            return
-        location = locations.get(str(trainer_id), {})
-        zone = location.get("zone") or "Unknown"
-        map_name = location.get("map") or ""
-        if zone not in zone_order:
-            zone_order[zone] = len(zone_order)
-
-        entry = by_trainer_id.setdefault(
-            trainer_id,
-            {
-                "trainerId": trainer_id,
-                "zone": zone,
-                "map": map_name,
-                "zoneOrder": zone_order[zone],
-                "firstOrder": order,
-            },
-        )
-        entry["firstOrder"] = min(entry["firstOrder"], order)
-        order += 1
-
-    for segment in contract.get("segments", []):
-        base_source = {
-            "segmentId": segment.get("id", ""),
-            "fromAnchor": segment.get("fromAnchor", ""),
-            "toAnchor": segment.get("toAnchor", ""),
-            "notes": segment.get("notes", ""),
+    for trainer in catalog.get("trainers", []):
+        trainer_id = int(trainer["id"])
+        locations = trainer.get("locations", [])
+        by_trainer_id[trainer_id] = {
+            "trainerId": trainer_id,
+            "zone": str(trainer["zone"]),
+            "map": str(locations[0].get("map", "")) if locations else "",
+            "zoneOrder": int(trainer["zoneOrder"]),
+            "firstOrder": int(trainer["trainerOrder"]),
+            **(
+                {"postLeagueRule": trainer["postLeagueRule"]}
+                if trainer.get("postLeagueRule")
+                else {}
+            ),
         }
-        for flag_id in segment.get("requiredFlagIds", []):
-            record(flag_id, "required", base_source)
-        for flag_id in segment.get("optionalFlagIds", []):
-            record(flag_id, "optional", base_source)
-        for choice in segment.get("choiceGroups", []):
-            choice_source = {
-                **base_source,
-                "choiceGroupId": choice.get("id", ""),
-                "choiceRequired": choice.get("required"),
-                "choiceMinDefeated": choice.get("minDefeated"),
-                "choiceMaxDefeated": choice.get("maxDefeated"),
-            }
-            for flag_id in choice.get("flagIds", []):
-                record(flag_id, "choice", choice_source)
 
-        special_trainer_token = SPECIAL_CONTRACT_TRAINERS_BY_ANCHOR.get(segment.get("toAnchor"))
-        if special_trainer_token:
-            trainer_id = trainer_id_by_token.get(special_trainer_token)
-            if trainer_id is None:
-                raise RuntimeError(
-                    f"Contract boundary {segment.get('toAnchor')} references unknown trainer "
-                    f"{special_trainer_token}"
-                )
-            record(TRAINER_FLAGS_START + trainer_id, "boundary", base_source)
-
-    for floating in contract.get("floatingTrainers", []):
-        source = {
-            "segmentId": "*",
-            "fromAnchor": "",
-            "toAnchor": "",
-            "choiceGroupId": floating.get("id", ""),
-            "choiceRequired": floating.get("required"),
-            "notes": floating.get("notes", ""),
-        }
-        for flag_id in floating.get("flagIds", []):
-            record(flag_id, "floating", source)
-
-    # Post-League trainers deliberately use custom 0x900+ flags, so they
-    # cannot be inferred through the normal 0x500+trainerId contract above.
-    # Consume the same shared contract used by the WebApp/API and validate
-    # every token against the ROM constants before exposing it in PokeInfo.
-    if post_league_contract_path is not None:
-        post_league = json.loads(read_text(post_league_contract_path))
-        team_rule = post_league.get("teamRule", {})
-        flag_base = int(post_league["trainerFlagBaseId"])
-        trainer_min = int(post_league["trainerIdMin"])
-        for trial in post_league.get("trials", []):
-            zone = str(trial["zone"])
-            if zone not in zone_order:
-                zone_order[zone] = len(zone_order)
-            for trainer in trial.get("trainers", []):
-                trainer_id = int(trainer["id"])
-                token = str(trainer["token"])
-                if trainer_id_by_token.get(token) != trainer_id:
-                    raise RuntimeError(
-                        f"Post-League contract mismatch for {token}: "
-                        f"contract={trainer_id}, ROM={trainer_id_by_token.get(token)}"
-                    )
-                is_boss = bool(trainer.get("boss"))
-                by_trainer_id[trainer_id] = {
-                    "trainerId": trainer_id,
-                    "zone": zone,
-                    "map": str(trainer.get("map", "")),
-                    "zoneOrder": zone_order[zone],
-                    "firstOrder": order,
-                    "flagId": flag_base + (trainer_id - trainer_min),
-                    "postLeagueRule": {
-                        "trial": str(trial.get("label", trial.get("key", ""))),
-                        "boss": is_boss,
-                        "partySize": int(team_rule["partySize"]),
-                        "level": int(team_rule["level"]),
-                        "targetBst": int(
-                            team_rule["bossTargetBst"] if is_boss else team_rule["normalTargetBst"]
-                        ),
-                        "tolerance": int(team_rule["tolerance"]),
-                        "candidateCount": int(team_rule["candidateCount"]),
-                        "uniqueSpecies": bool(team_rule["uniqueSpecies"]),
-                        "fixedSpecies": trainer.get("fixedSpecies", []),
-                    },
-                }
-                order += 1
-
+    zones = catalog.get("zones", [])
     summary = {
         "legalTrainerCount": len(by_trainer_id),
-        "zoneCount": len(zone_order),
+        "zoneCount": len(zones),
         "zones": [
-            {"name": zone, "order": order}
-            for zone, order in sorted(zone_order.items(), key=lambda item: item[1])
+            {"name": str(zone["name"]), "order": int(zone["order"])}
+            for zone in zones
         ],
     }
     return by_trainer_id, summary
@@ -942,11 +830,8 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
         expansion_root / "include" / "constants" / "opponents.h",
         "TRAINER_",
     )
-    contract_by_trainer_id, trainer_contract_summary = build_contract_trainer_index(
-        webapp_root / "apps" / "api" / "src" / "lib" / "data" / "trainerSegmentContract.generated.json",
-        webapp_root / "apps" / "api" / "src" / "lib" / "postRunLog" / "trainerLocations.generated.json",
-        trainer_id_by_token,
-        webapp_root / "packages" / "shared" / "src" / "postLeagueContract.json",
+    contract_by_trainer_id, trainer_contract_summary = build_trainer_catalog_index(
+        webapp_root / "apps" / "api" / "src" / "lib" / "data" / "trainerCatalog.generated.json",
     )
     ai_flag_by_label = parse_ai_flag_details(expansion_root / "include" / "constants" / "battle_ai.h")
     trainer_ai_contract_path = expansion_root / "include" / "data.h"
