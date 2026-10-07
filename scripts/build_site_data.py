@@ -164,7 +164,8 @@ def parse_showdown_trainers(
     class_auto_ai_flags: dict[str, list[str]],
     trainer_auto_ai_flags: dict[str, list[str]],
 ) -> list[dict]:
-    content = read_text(path)
+    # trainerproc ignores /* */ blocks; one after a party would read as extra mons.
+    content = re.sub(r"/\*.*?\*/", "", read_text(path), flags=re.DOTALL)
     pattern = re.compile(r"^===\s+([A-Z0-9_]+)\s+===\s*$", re.MULTILINE)
     matches = list(pattern.finditer(content))
     trainers: list[dict] = []

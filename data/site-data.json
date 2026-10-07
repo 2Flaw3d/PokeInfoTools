@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-09-05T00:28:45+00:00",
+  "generatedAtUtc": "2026-10-07T17:51:03+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -93,10 +93,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 2,
           "targetName": "Ivysaur",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/1.png",
@@ -265,10 +265,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 30,
           "targetSpecies": 3,
           "targetName": "Venusaur",
-          "label": "Level 32"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/2.png",
@@ -582,10 +582,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 5,
           "targetName": "Charmeleon",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/4.png",
@@ -787,10 +787,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 6,
           "targetName": "Charizard",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/5.png",
@@ -1187,10 +1187,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 8,
           "targetName": "Wartortle",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/7.png",
@@ -1382,10 +1382,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 9,
           "targetName": "Blastoise",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/8.png",
@@ -2251,10 +2251,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 17,
           "targetName": "Pidgeotto",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/16.png",
@@ -2397,10 +2397,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 25,
           "targetSpecies": 18,
           "targetName": "Pidgeot",
-          "label": "Level 36"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/17.png",
@@ -2664,10 +2664,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 20,
           "targetName": "Raticate",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/19.png",
@@ -3012,10 +3012,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 22,
           "targetName": "Fearow",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/21.png",
@@ -3288,10 +3288,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 24,
           "targetName": "Arbok",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/23.png",
@@ -3983,10 +3983,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 16,
           "targetSpecies": 28,
           "targetName": "Sandslash",
-          "label": "Level 22"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/27.png",
@@ -4362,10 +4362,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 30,
           "targetName": "Nidorina",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/29.png",
@@ -4924,10 +4924,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 33,
           "targetName": "Nidorino",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/32.png",
@@ -6726,10 +6726,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 42,
           "targetName": "Golbat",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/41.png",
@@ -6889,10 +6889,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 169,
           "targetName": "Crobat",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/42.png",
@@ -7039,10 +7039,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 21,
+          "param": 18,
           "targetSpecies": 44,
           "targetName": "Gloom",
-          "label": "Level 21"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/43.png",
@@ -7489,10 +7489,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 24,
+          "param": 14,
           "targetSpecies": 47,
           "targetName": "Parasect",
-          "label": "Level 24"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/46.png",
@@ -7839,10 +7839,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 31,
+          "param": 14,
           "targetSpecies": 49,
           "targetName": "Venomoth",
-          "label": "Level 31"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/48.png",
@@ -8147,10 +8147,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 26,
+          "param": 14,
           "targetSpecies": 51,
           "targetName": "Dugtrio",
-          "label": "Level 26"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/50.png",
@@ -8467,10 +8467,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 14,
           "targetSpecies": 53,
           "targetName": "Persian",
-          "label": "Level 28"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/52.png",
@@ -8866,10 +8866,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 33,
+          "param": 20,
           "targetSpecies": 55,
           "targetName": "Golduck",
-          "label": "Level 33"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/54.png",
@@ -9281,10 +9281,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 16,
           "targetSpecies": 57,
           "targetName": "Primeape",
-          "label": "Level 28"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/56.png",
@@ -10041,10 +10041,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 18,
           "targetSpecies": 61,
           "targetName": "Poliwhirl",
-          "label": "Level 25"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/60.png",
@@ -10783,13 +10783,6 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 65,
-          "targetName": "Alakazam",
-          "label": "Trade"
-        },
-        {
           "method": "EVO_ITEM",
           "param": 796,
           "targetSpecies": 65,
@@ -11188,10 +11181,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 16,
           "targetSpecies": 67,
           "targetName": "Machoke",
-          "label": "Level 28"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/66.png",
@@ -11390,13 +11383,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 68,
-          "targetName": "Machamp",
-          "label": "Trade"
-        },
         {
           "method": "EVO_ITEM",
           "param": 796,
@@ -11763,10 +11749,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 21,
+          "param": 14,
           "targetSpecies": 70,
           "targetName": "Weepinbell",
-          "label": "Level 21"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/69.png",
@@ -12223,10 +12209,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 73,
           "targetName": "Tentacruel",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/72.png",
@@ -12563,10 +12549,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 14,
           "targetSpecies": 75,
           "targetName": "Graveler",
-          "label": "Level 25"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/74.png",
@@ -12756,13 +12742,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 76,
-          "targetName": "Golem",
-          "label": "Trade"
-        },
         {
           "method": "EVO_ITEM",
           "param": 796,
@@ -13137,10 +13116,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 30,
           "targetSpecies": 78,
           "targetName": "Rapidash",
-          "label": "Level 40"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/77.png",
@@ -13438,10 +13417,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 80,
           "targetName": "Slowbro",
-          "label": "Level 37"
+          "label": "Level 18"
         },
         {
           "method": "EVO_ITEM",
@@ -13875,10 +13854,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 18,
           "targetSpecies": 82,
           "targetName": "Magneton",
-          "label": "Level 30"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/81.png",
@@ -14035,13 +14014,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_LEVEL",
-          "param": 0,
-          "targetSpecies": 462,
-          "targetName": "Magnezone",
-          "label": "Level"
-        },
         {
           "method": "EVO_ITEM",
           "param": 213,
@@ -14375,10 +14347,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 31,
+          "param": 16,
           "targetSpecies": 85,
           "targetName": "Dodrio",
-          "label": "Level 31"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/84.png",
@@ -14671,10 +14643,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 20,
           "targetSpecies": 87,
           "targetName": "Dewgong",
-          "label": "Level 34"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/86.png",
@@ -14984,10 +14956,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 38,
+          "param": 18,
           "targetSpecies": 89,
           "targetName": "Muk",
-          "label": "Level 38"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/88.png",
@@ -15668,10 +15640,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 18,
           "targetSpecies": 93,
           "targetName": "Haunter",
-          "label": "Level 25"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/92.png",
@@ -15848,13 +15820,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 94,
-          "targetName": "Gengar",
-          "label": "Trade"
-        },
         {
           "method": "EVO_ITEM",
           "param": 796,
@@ -16429,10 +16394,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 26,
+          "param": 25,
           "targetSpecies": 97,
           "targetName": "Hypno",
-          "label": "Level 26"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/96.png",
@@ -16831,10 +16796,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 20,
           "targetSpecies": 99,
           "targetName": "Kingler",
-          "label": "Level 28"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/98.png",
@@ -17181,10 +17146,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 101,
           "targetName": "Electrode",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/100.png",
@@ -17822,10 +17787,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 18,
           "targetSpecies": 105,
           "targetName": "Marowak",
-          "label": "Level 28"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/104.png",
@@ -18580,10 +18545,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 25,
           "targetSpecies": 463,
           "targetName": "Lickilicky",
-          "label": "Level"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/108.png",
@@ -18801,10 +18766,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 25,
           "targetSpecies": 110,
           "targetName": "Weezing",
-          "label": "Level 35"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/109.png",
@@ -19123,10 +19088,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 42,
+          "param": 18,
           "targetSpecies": 112,
           "targetName": "Rhydon",
-          "label": "Level 42"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/111.png",
@@ -19545,10 +19510,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 242,
           "targetName": "Blissey",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/113.png",
@@ -19804,10 +19769,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 33,
           "targetSpecies": 465,
           "targetName": "Tangrowth",
-          "label": "Level"
+          "label": "Level 33"
         }
       ],
       "icon": "assets/icons/114.png",
@@ -20194,10 +20159,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 18,
           "targetSpecies": 117,
           "targetName": "Seadra",
-          "label": "Level 32"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/116.png",
@@ -20490,10 +20455,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 33,
+          "param": 20,
           "targetSpecies": 119,
           "targetName": "Seaking",
-          "label": "Level 33"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/118.png",
@@ -22432,10 +22397,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 10,
           "targetSpecies": 130,
           "targetName": "Gyarados",
-          "label": "Level 20"
+          "label": "Level 10"
         }
       ],
       "icon": "assets/icons/129.png",
@@ -22908,32 +22873,25 @@
           "label": "Use Fire Stone"
         },
         {
-          "method": "EVO_LEVEL",
-          "param": 0,
+          "method": "EVO_ITEM",
+          "param": 218,
           "targetSpecies": 700,
           "targetName": "Sylveon",
-          "label": "Level"
+          "label": "Use Shiny Stone"
         },
         {
-          "method": "EVO_LEVEL",
-          "param": 0,
+          "method": "EVO_ITEM",
+          "param": 216,
           "targetSpecies": 196,
           "targetName": "Espeon",
-          "label": "Level"
+          "label": "Use Sun Stone"
         },
         {
-          "method": "EVO_LEVEL",
-          "param": 0,
+          "method": "EVO_ITEM",
+          "param": 217,
           "targetSpecies": 197,
           "targetName": "Umbreon",
-          "label": "Level"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 0,
-          "targetSpecies": 470,
-          "targetName": "Leafeon",
-          "label": "Level"
+          "label": "Use Moon Stone"
         },
         {
           "method": "EVO_ITEM",
@@ -22941,13 +22899,6 @@
           "targetSpecies": 470,
           "targetName": "Leafeon",
           "label": "Use Leaf Stone"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 0,
-          "targetSpecies": 471,
-          "targetName": "Glaceon",
-          "label": "Level"
         },
         {
           "method": "EVO_ITEM",
@@ -23744,10 +23695,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 139,
           "targetName": "Omastar",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/138.png",
@@ -24070,10 +24021,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 141,
           "targetName": "Kabutops",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/140.png",
@@ -25281,10 +25232,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 20,
           "targetSpecies": 148,
           "targetName": "Dragonair",
-          "label": "Level 30"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/147.png",
@@ -25455,10 +25406,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 55,
+          "param": 35,
           "targetSpecies": 149,
           "targetName": "Dragonite",
-          "label": "Level 55"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/148.png",
@@ -26404,10 +26355,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 153,
           "targetName": "Bayleef",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/152.png",
@@ -26572,10 +26523,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 30,
           "targetSpecies": 154,
           "targetName": "Meganium",
-          "label": "Level 32"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/153.png",
@@ -27048,10 +26999,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 157,
           "targetName": "Typhlosion",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/156.png",
@@ -27399,10 +27350,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 159,
           "targetName": "Croconaw",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/158.png",
@@ -27984,10 +27935,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 15,
+          "param": 12,
           "targetSpecies": 162,
           "targetName": "Furret",
-          "label": "Level 15"
+          "label": "Level 12"
         }
       ],
       "icon": "assets/icons/161.png",
@@ -28378,10 +28329,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 164,
           "targetName": "Noctowl",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/163.png",
@@ -28694,10 +28645,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 166,
           "targetName": "Ledian",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/165.png",
@@ -29048,10 +28999,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 168,
           "targetName": "Ariados",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/167.png",
@@ -29509,10 +29460,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 27,
+          "param": 22,
           "targetSpecies": 171,
           "targetName": "Lanturn",
-          "label": "Level 27"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/170.png",
@@ -29818,10 +29769,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 25,
           "targetName": "Pikachu",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/172.png",
@@ -29997,10 +29948,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 35,
           "targetName": "Clefairy",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/173.png",
@@ -30201,10 +30152,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 39,
           "targetName": "Jigglypuff",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/174.png",
@@ -30407,10 +30358,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 176,
           "targetName": "Togetic",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/175.png",
@@ -30815,10 +30766,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 20,
           "targetSpecies": 178,
           "targetName": "Xatu",
-          "label": "Level 25"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/177.png",
@@ -31156,10 +31107,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 15,
+          "param": 16,
           "targetSpecies": 180,
           "targetName": "Flaaffy",
-          "label": "Level 15"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/179.png",
@@ -31320,10 +31271,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 27,
           "targetSpecies": 181,
           "targetName": "Ampharos",
-          "label": "Level 30"
+          "label": "Level 27"
         }
       ],
       "icon": "assets/icons/180.png",
@@ -31838,10 +31789,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 184,
           "targetName": "Azumarill",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/183.png",
@@ -32594,10 +32545,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 188,
           "targetName": "Skiploom",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/187.png",
@@ -32771,10 +32722,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 27,
+          "param": 22,
           "targetSpecies": 189,
           "targetName": "Jumpluff",
-          "label": "Level 27"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/188.png",
@@ -33087,10 +33038,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 25,
           "targetSpecies": 424,
           "targetName": "Ambipom",
-          "label": "Level"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/190.png",
@@ -33614,10 +33565,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 25,
           "targetSpecies": 469,
           "targetName": "Yanmega",
-          "label": "Level"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/193.png",
@@ -33771,10 +33722,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 195,
           "targetName": "Quagsire",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/194.png",
@@ -35378,10 +35329,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 31,
+          "param": 14,
           "targetSpecies": 205,
           "targetName": "Forretress",
-          "label": "Level 31"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/204.png",
@@ -36331,10 +36282,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 23,
+          "param": 18,
           "targetSpecies": 210,
           "targetName": "Granbull",
-          "label": "Level 23"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/209.png",
@@ -37706,10 +37657,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 20,
           "targetSpecies": 217,
           "targetName": "Ursaring",
-          "label": "Level 30"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/216.png",
@@ -38118,10 +38069,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 38,
+          "param": 14,
           "targetSpecies": 219,
           "targetName": "Magcargo",
-          "label": "Level 38"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/218.png",
@@ -38459,10 +38410,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 33,
+          "param": 14,
           "targetSpecies": 221,
           "targetName": "Piloswine",
-          "label": "Level 33"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/220.png",
@@ -38634,10 +38585,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 33,
           "targetSpecies": 473,
           "targetName": "Mamoswine",
-          "label": "Level"
+          "label": "Level 33"
         }
       ],
       "icon": "assets/icons/221.png",
@@ -38982,10 +38933,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 18,
           "targetSpecies": 224,
           "targetName": "Octillery",
-          "label": "Level 25"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/223.png",
@@ -39832,10 +39783,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 24,
+          "param": 22,
           "targetSpecies": 229,
           "targetName": "Houndoom",
-          "label": "Level 24"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/228.png",
@@ -40325,10 +40276,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 20,
           "targetSpecies": 232,
           "targetName": "Donphan",
-          "label": "Level 25"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/231.png",
@@ -41051,24 +41002,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 2,
           "targetSpecies": 107,
           "targetName": "Hitmonchan",
-          "label": "Level 20"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 20,
-          "targetSpecies": 106,
-          "targetName": "Hitmonlee",
-          "label": "Level 20"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 20,
-          "targetSpecies": 237,
-          "targetName": "Hitmontop",
-          "label": "Level 20"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/236.png",
@@ -41392,10 +41329,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 2,
           "targetSpecies": 124,
           "targetName": "Jynx",
-          "label": "Level 30"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/238.png",
@@ -41574,10 +41511,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 2,
           "targetSpecies": 125,
           "targetName": "Electabuzz",
-          "label": "Level 30"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/239.png",
@@ -41756,10 +41693,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 2,
           "targetSpecies": 126,
           "targetName": "Magmar",
-          "label": "Level 30"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/240.png",
@@ -42863,10 +42800,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 14,
           "targetSpecies": 247,
           "targetName": "Pupitar",
-          "label": "Level 30"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/246.png",
@@ -43031,10 +42968,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 55,
+          "param": 25,
           "targetSpecies": 248,
           "targetName": "Tyranitar",
-          "label": "Level 55"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/247.png",
@@ -43954,10 +43891,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 253,
           "targetName": "Grovyle",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/252.png",
@@ -44156,10 +44093,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 254,
           "targetName": "Sceptile",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/253.png",
@@ -44541,10 +44478,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 256,
           "targetName": "Combusken",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/255.png",
@@ -44715,10 +44652,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 257,
           "targetName": "Blaziken",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/256.png",
@@ -45092,10 +45029,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 259,
           "targetName": "Marshtomp",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/258.png",
@@ -45268,10 +45205,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 260,
           "targetName": "Swampert",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/259.png",
@@ -45637,10 +45574,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 262,
           "targetName": "Mightyena",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/261.png",
@@ -46320,13 +46257,6 @@
           "param": 7,
           "targetSpecies": 266,
           "targetName": "Silcoon",
-          "label": "Level 7"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 7,
-          "targetSpecies": 268,
-          "targetName": "Cascoon",
           "label": "Level 7"
         }
       ],
@@ -47848,10 +47778,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 277,
           "targetName": "Swellow",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/276.png",
@@ -48119,10 +48049,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 14,
           "targetSpecies": 279,
           "targetName": "Pelipper",
-          "label": "Level 25"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/278.png",
@@ -48442,10 +48372,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 18,
           "targetSpecies": 281,
           "targetName": "Kirlia",
-          "label": "Level 20"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/280.png",
@@ -48654,10 +48584,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 22,
           "targetSpecies": 282,
           "targetName": "Gardevoir",
-          "label": "Level 30"
+          "label": "Level 22"
         },
         {
           "method": "EVO_ITEM",
@@ -49052,10 +48982,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 284,
           "targetName": "Masquerain",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/283.png",
@@ -49377,10 +49307,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 23,
+          "param": 16,
           "targetSpecies": 286,
           "targetName": "Breloom",
-          "label": "Level 23"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/285.png",
@@ -49722,10 +49652,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 288,
           "targetName": "Vigoroth",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/287.png",
@@ -49927,10 +49857,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 289,
           "targetName": "Slaking",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/288.png",
@@ -50350,17 +50280,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 16,
           "targetSpecies": 291,
           "targetName": "Ninjask",
-          "label": "Level 20"
-        },
-        {
-          "method": "EVO_SPLIT_FROM_EVO",
-          "param": 291,
-          "targetSpecies": 292,
-          "targetName": "Shedinja",
-          "label": "Split From Evo"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/290.png",
@@ -50787,10 +50710,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 294,
           "targetName": "Loudred",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/293.png",
@@ -50968,10 +50891,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 295,
           "targetName": "Exploud",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/294.png",
@@ -51364,10 +51287,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 24,
+          "param": 14,
           "targetSpecies": 297,
           "targetName": "Hariyama",
-          "label": "Level 24"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/296.png",
@@ -51741,10 +51664,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 183,
           "targetName": "Marill",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/298.png",
@@ -51900,13 +51823,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_LEVEL",
-          "param": 0,
-          "targetSpecies": 476,
-          "targetName": "Probopass",
-          "label": "Level"
-        },
         {
           "method": "EVO_ITEM",
           "param": 213,
@@ -52935,10 +52851,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 22,
           "targetSpecies": 305,
           "targetName": "Lairon",
-          "label": "Level 32"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/304.png",
@@ -53117,10 +53033,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 42,
+          "param": 30,
           "targetSpecies": 306,
           "targetName": "Aggron",
-          "label": "Level 42"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/305.png",
@@ -53508,10 +53424,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 308,
           "targetName": "Medicham",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/307.png",
@@ -53924,10 +53840,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 26,
+          "param": 16,
           "targetSpecies": 310,
           "targetName": "Manectric",
-          "label": "Level 26"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/309.png",
@@ -55147,10 +55063,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 26,
+          "param": 16,
           "targetSpecies": 317,
           "targetName": "Swalot",
-          "label": "Level 26"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/316.png",
@@ -55527,10 +55443,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 18,
           "targetSpecies": 319,
           "targetName": "Sharpedo",
-          "label": "Level 30"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/318.png",
@@ -55858,10 +55774,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 30,
           "targetSpecies": 321,
           "targetName": "Wailord",
-          "label": "Level 40"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/320.png",
@@ -56179,10 +56095,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 33,
+          "param": 18,
           "targetSpecies": 323,
           "targetName": "Camerupt",
-          "label": "Level 33"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/322.png",
@@ -56696,10 +56612,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 22,
           "targetSpecies": 326,
           "targetName": "Grumpig",
-          "label": "Level 32"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/325.png",
@@ -57306,10 +57222,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 16,
           "targetSpecies": 329,
           "targetName": "Vibrava",
-          "label": "Level 35"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/328.png",
@@ -57470,10 +57386,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 45,
+          "param": 28,
           "targetSpecies": 330,
           "targetName": "Flygon",
-          "label": "Level 45"
+          "label": "Level 28"
         }
       ],
       "icon": "assets/icons/329.png",
@@ -57815,10 +57731,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 22,
           "targetSpecies": 332,
           "targetName": "Cacturne",
-          "label": "Level 32"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/331.png",
@@ -58203,10 +58119,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 18,
           "targetSpecies": 334,
           "targetName": "Altaria",
-          "label": "Level 35"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/333.png",
@@ -59311,10 +59227,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 16,
           "targetSpecies": 340,
           "targetName": "Whiscash",
-          "label": "Level 30"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/339.png",
@@ -59639,10 +59555,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 18,
           "targetSpecies": 342,
           "targetName": "Crawdaunt",
-          "label": "Level 30"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/341.png",
@@ -60012,10 +59928,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 18,
           "targetSpecies": 344,
           "targetName": "Claydol",
-          "label": "Level 36"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/343.png",
@@ -60355,10 +60271,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 346,
           "targetName": "Cradily",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/345.png",
@@ -60670,10 +60586,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 348,
           "targetName": "Armaldo",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/347.png",
@@ -60984,13 +60900,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_LEVEL",
-          "param": 0,
-          "targetSpecies": 350,
-          "targetName": "Milotic",
-          "label": "Level"
-        },
         {
           "method": "EVO_ITEM",
           "param": 234,
@@ -61694,10 +61603,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 354,
           "targetName": "Banette",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/353.png",
@@ -62062,10 +61971,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 356,
           "targetName": "Dusclops",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/355.png",
@@ -63033,10 +62942,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 15,
+          "param": 2,
           "targetSpecies": 202,
           "targetName": "Wobbuffet",
-          "label": "Level 15"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/360.png",
@@ -63104,10 +63013,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 42,
+          "param": 18,
           "targetSpecies": 362,
           "targetName": "Glalie",
-          "label": "Level 42"
+          "label": "Level 18"
         },
         {
           "method": "EVO_ITEM",
@@ -63422,10 +63331,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 18,
           "targetSpecies": 364,
           "targetName": "Sealeo",
-          "label": "Level 32"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/363.png",
@@ -63595,10 +63504,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 44,
+          "param": 30,
           "targetSpecies": 365,
           "targetName": "Walrein",
-          "label": "Level 44"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/364.png",
@@ -64647,10 +64556,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 20,
           "targetSpecies": 372,
           "targetName": "Shelgon",
-          "label": "Level 30"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/371.png",
@@ -64813,10 +64722,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 50,
+          "param": 35,
           "targetSpecies": 373,
           "targetName": "Salamence",
-          "label": "Level 50"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/372.png",
@@ -65191,10 +65100,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 45,
+          "param": 33,
           "targetSpecies": 376,
           "targetName": "Metagross",
-          "label": "Level 45"
+          "label": "Level 33"
         }
       ],
       "icon": "assets/icons/375.png",
@@ -67458,10 +67367,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 18,
+          "param": 14,
           "targetSpecies": 388,
           "targetName": "Grotle",
-          "label": "Level 18"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/387.png",
@@ -67625,10 +67534,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 30,
           "targetSpecies": 389,
           "targetName": "Torterra",
-          "label": "Level 32"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/388.png",
@@ -68139,10 +68048,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 392,
           "targetName": "Infernape",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/391.png",
@@ -68531,10 +68440,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 394,
           "targetName": "Prinplup",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/393.png",
@@ -68701,10 +68610,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 395,
           "targetName": "Empoleon",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/394.png",
@@ -69184,10 +69093,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 25,
           "targetSpecies": 398,
           "targetName": "Staraptor",
-          "label": "Level 34"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/397.png",
@@ -69458,10 +69367,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 15,
+          "param": 14,
           "targetSpecies": 400,
           "targetName": "Bibarel",
-          "label": "Level 15"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/399.png",
@@ -70020,10 +69929,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 15,
+          "param": 14,
           "targetSpecies": 404,
           "targetName": "Luxio",
-          "label": "Level 15"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/403.png",
@@ -70187,10 +70096,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 405,
           "targetName": "Luxray",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/404.png",
@@ -70485,10 +70394,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 315,
           "targetName": "Roselia",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/406.png",
@@ -70801,10 +70710,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 409,
           "targetName": "Rampardos",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/408.png",
@@ -71166,10 +71075,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 411,
           "targetName": "Bastiodon",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/410.png",
@@ -71501,17 +71410,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 413,
           "targetName": "Wormadam",
-          "label": "Level 20"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 20,
-          "targetSpecies": 414,
-          "targetName": "Mothim",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/412.png",
@@ -71765,10 +71667,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 21,
+          "param": 14,
           "targetSpecies": 416,
           "targetName": "Vespiquen",
-          "label": "Level 21"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/415.png",
@@ -72161,10 +72063,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 26,
+          "param": 20,
           "targetSpecies": 419,
           "targetName": "Floatzel",
-          "label": "Level 26"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/418.png",
@@ -72507,10 +72409,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 14,
           "targetSpecies": 421,
           "targetName": "Cherrim",
-          "label": "Level 25"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/420.png",
@@ -72787,10 +72689,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 20,
           "targetSpecies": 423,
           "targetName": "Gastrodon",
-          "label": "Level 30"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/422.png",
@@ -73304,10 +73206,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 28,
+          "param": 25,
           "targetSpecies": 426,
           "targetName": "Drifblim",
-          "label": "Level 28"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/425.png",
@@ -73673,10 +73575,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 428,
           "targetName": "Lopunny",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/427.png",
@@ -74395,10 +74297,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 38,
+          "param": 16,
           "targetSpecies": 432,
           "targetName": "Purugly",
-          "label": "Level 38"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/431.png",
@@ -74732,10 +74634,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 358,
           "targetName": "Chimecho",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/433.png",
@@ -74913,10 +74815,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 22,
           "targetSpecies": 435,
           "targetName": "Skuntank",
-          "label": "Level 34"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/434.png",
@@ -75271,10 +75173,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 33,
+          "param": 20,
           "targetSpecies": 437,
           "targetName": "Bronzong",
-          "label": "Level 33"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/436.png",
@@ -75618,10 +75520,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 185,
           "targetName": "Sudowoodo",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/438.png",
@@ -75791,10 +75693,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 122,
           "targetName": "Mr. Mime",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/439.png",
@@ -75978,11 +75880,11 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_ITEM",
-          "param": 237,
+          "method": "EVO_LEVEL",
+          "param": 2,
           "targetSpecies": 113,
           "targetName": "Chansey",
-          "label": "Use Oval Stone"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/440.png",
@@ -76470,10 +76372,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 24,
+          "param": 20,
           "targetSpecies": 444,
           "targetName": "Gabite",
-          "label": "Level 24"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/443.png",
@@ -76649,10 +76551,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 48,
+          "param": 35,
           "targetSpecies": 445,
           "targetName": "Garchomp",
-          "label": "Level 48"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/444.png",
@@ -77004,10 +76906,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 143,
           "targetName": "Snorlax",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/446.png",
@@ -77213,10 +77115,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 448,
           "targetName": "Lucario",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/447.png",
@@ -77604,10 +77506,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 20,
           "targetSpecies": 450,
           "targetName": "Hippowdon",
-          "label": "Level 34"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/449.png",
@@ -77901,10 +77803,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 20,
           "targetSpecies": 452,
           "targetName": "Drapion",
-          "label": "Level 40"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/451.png",
@@ -78274,10 +78176,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 454,
           "targetName": "Toxicroak",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/453.png",
@@ -78825,10 +78727,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 31,
+          "param": 20,
           "targetSpecies": 457,
           "targetName": "Lumineon",
-          "label": "Level 31"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/456.png",
@@ -79145,10 +79047,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 226,
           "targetName": "Mantine",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/458.png",
@@ -79300,10 +79202,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 22,
           "targetSpecies": 460,
           "targetName": "Abomasnow",
-          "label": "Level 40"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/459.png",
@@ -85480,10 +85382,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 17,
+          "param": 14,
           "targetSpecies": 496,
           "targetName": "Servine",
-          "label": "Level 17"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/495.png",
@@ -85646,10 +85548,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 497,
           "targetName": "Serperior",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/496.png",
@@ -85955,10 +85857,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 17,
+          "param": 14,
           "targetSpecies": 499,
           "targetName": "Pignite",
-          "label": "Level 17"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/498.png",
@@ -86126,10 +86028,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 500,
           "targetName": "Emboar",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/499.png",
@@ -86485,10 +86387,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 17,
+          "param": 14,
           "targetSpecies": 502,
           "targetName": "Dewott",
-          "label": "Level 17"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/501.png",
@@ -86657,10 +86559,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 503,
           "targetName": "Samurott",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/502.png",
@@ -86993,10 +86895,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 505,
           "targetName": "Watchog",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/504.png",
@@ -87321,10 +87223,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 507,
           "targetName": "Herdier",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/506.png",
@@ -87484,10 +87386,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 25,
           "targetSpecies": 508,
           "targetName": "Stoutland",
-          "label": "Level 32"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/507.png",
@@ -87790,10 +87692,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 510,
           "targetName": "Liepard",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/509.png",
@@ -89498,10 +89400,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 21,
+          "param": 14,
           "targetSpecies": 520,
           "targetName": "Tranquill",
-          "label": "Level 21"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/519.png",
@@ -89639,10 +89541,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 25,
           "targetSpecies": 521,
           "targetName": "Unfezant",
-          "label": "Level 32"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/520.png",
@@ -89897,10 +89799,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 27,
+          "param": 16,
           "targetSpecies": 523,
           "targetName": "Zebstrika",
-          "label": "Level 27"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/522.png",
@@ -90199,10 +90101,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 14,
           "targetSpecies": 525,
           "targetName": "Boldore",
-          "label": "Level 25"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/524.png",
@@ -90345,13 +90247,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 526,
-          "targetName": "Gigalith",
-          "label": "Trade"
-        },
         {
           "method": "EVO_ITEM",
           "param": 796,
@@ -90630,10 +90525,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 528,
           "targetName": "Swoobat",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/527.png",
@@ -90989,10 +90884,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 31,
+          "param": 20,
           "targetSpecies": 530,
           "targetName": "Excadrill",
-          "label": "Level 31"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/529.png",
@@ -91531,10 +91426,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 16,
           "targetSpecies": 533,
           "targetName": "Gurdurr",
-          "label": "Level 25"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/532.png",
@@ -91715,13 +91610,6 @@
         }
       ],
       "evolutions": [
-        {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 534,
-          "targetName": "Conkeldurr",
-          "label": "Trade"
-        },
         {
           "method": "EVO_ITEM",
           "param": 796,
@@ -92068,10 +91956,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 25,
+          "param": 16,
           "targetSpecies": 536,
           "targetName": "Palpitoad",
-          "label": "Level 25"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/535.png",
@@ -92211,10 +92099,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 25,
           "targetSpecies": 537,
           "targetName": "Seismitoad",
-          "label": "Level 36"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/536.png",
@@ -92850,10 +92738,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 16,
           "targetSpecies": 541,
           "targetName": "Swadloon",
-          "label": "Level 20"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/540.png",
@@ -92996,10 +92884,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 0,
+          "param": 2,
           "targetSpecies": 542,
           "targetName": "Leavanny",
-          "label": "Level"
+          "label": "Level 2"
         }
       ],
       "icon": "assets/icons/541.png",
@@ -93303,10 +93191,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 22,
+          "param": 14,
           "targetSpecies": 544,
           "targetName": "Whirlipede",
-          "label": "Level 22"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/543.png",
@@ -93456,10 +93344,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 25,
           "targetSpecies": 545,
           "targetName": "Scolipede",
-          "label": "Level 30"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/544.png",
@@ -94511,10 +94399,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 29,
+          "param": 16,
           "targetSpecies": 552,
           "targetName": "Krokorok",
-          "label": "Level 29"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/551.png",
@@ -94706,10 +94594,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 25,
           "targetSpecies": 553,
           "targetName": "Krookodile",
-          "label": "Level 40"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/552.png",
@@ -95091,10 +94979,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 18,
           "targetSpecies": 555,
           "targetName": "Darmanitan",
-          "label": "Level 35"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/554.png",
@@ -95597,10 +95485,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 20,
           "targetSpecies": 558,
           "targetName": "Crustle",
-          "label": "Level 34"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/557.png",
@@ -95926,10 +95814,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 22,
           "targetSpecies": 560,
           "targetName": "Scrafty",
-          "label": "Level 39"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/559.png",
@@ -96495,10 +96383,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 18,
           "targetSpecies": 563,
           "targetName": "Cofagrigus",
-          "label": "Level 34"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/562.png",
@@ -96832,10 +96720,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 25,
           "targetSpecies": 565,
           "targetName": "Carracosta",
-          "label": "Level 37"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/564.png",
@@ -97155,10 +97043,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 30,
           "targetSpecies": 567,
           "targetName": "Archeops",
-          "label": "Level 37"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/566.png",
@@ -97479,10 +97367,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 20,
           "targetSpecies": 569,
           "targetName": "Garbodor",
-          "label": "Level 36"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/568.png",
@@ -97774,10 +97662,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 20,
           "targetSpecies": 571,
           "targetName": "Zoroark",
-          "label": "Level 30"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/570.png",
@@ -98454,10 +98342,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 18,
           "targetSpecies": 575,
           "targetName": "Gothorita",
-          "label": "Level 32"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/574.png",
@@ -98643,10 +98531,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 41,
+          "param": 25,
           "targetSpecies": 576,
           "targetName": "Gothitelle",
-          "label": "Level 41"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/575.png",
@@ -99010,10 +98898,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 18,
           "targetSpecies": 578,
           "targetName": "Duosion",
-          "label": "Level 32"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/577.png",
@@ -99198,10 +99086,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 41,
+          "param": 25,
           "targetSpecies": 579,
           "targetName": "Reuniclus",
-          "label": "Level 41"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/578.png",
@@ -99571,10 +99459,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 18,
           "targetSpecies": 581,
           "targetName": "Swanna",
-          "label": "Level 35"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/580.png",
@@ -99855,10 +99743,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 18,
           "targetSpecies": 583,
           "targetName": "Vanillish",
-          "label": "Level 35"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/582.png",
@@ -99998,10 +99886,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 47,
+          "param": 27,
           "targetSpecies": 584,
           "targetName": "Vanilluxe",
-          "label": "Level 47"
+          "label": "Level 27"
         }
       ],
       "icon": "assets/icons/583.png",
@@ -100267,10 +100155,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 34,
+          "param": 22,
           "targetSpecies": 586,
           "targetName": "Sawsbuck",
-          "label": "Level 34"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/585.png",
@@ -100742,13 +100630,6 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 589,
-          "targetName": "Escavalier",
-          "label": "Trade"
-        },
-        {
           "method": "EVO_ITEM",
           "param": 796,
           "targetSpecies": 589,
@@ -101047,10 +100928,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 16,
           "targetSpecies": 591,
           "targetName": "Amoonguss",
-          "label": "Level 39"
+          "label": "Level 16"
         }
       ],
       "icon": "assets/icons/590.png",
@@ -101341,10 +101222,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 22,
           "targetSpecies": 593,
           "targetName": "Jellicent",
-          "label": "Level 40"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/592.png",
@@ -101838,10 +101719,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 20,
           "targetSpecies": 596,
           "targetName": "Galvantula",
-          "label": "Level 36"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/595.png",
@@ -102146,10 +102027,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 20,
           "targetSpecies": 598,
           "targetName": "Ferrothorn",
-          "label": "Level 40"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/597.png",
@@ -102472,10 +102353,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 38,
+          "param": 20,
           "targetSpecies": 600,
           "targetName": "Klang",
-          "label": "Level 38"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/599.png",
@@ -102609,10 +102490,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 49,
+          "param": 30,
           "targetSpecies": 601,
           "targetName": "Klinklang",
-          "label": "Level 49"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/600.png",
@@ -102860,10 +102741,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 14,
           "targetSpecies": 603,
           "targetName": "Eelektrik",
-          "label": "Level 39"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/602.png",
@@ -103257,10 +103138,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 42,
+          "param": 22,
           "targetSpecies": 606,
           "targetName": "Beheeyem",
-          "label": "Level 42"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/605.png",
@@ -103610,10 +103491,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 41,
+          "param": 20,
           "targetSpecies": 608,
           "targetName": "Lampent",
-          "label": "Level 41"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/607.png",
@@ -104097,10 +103978,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 38,
+          "param": 22,
           "targetSpecies": 611,
           "targetName": "Fraxure",
-          "label": "Level 38"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/610.png",
@@ -104288,10 +104169,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 48,
+          "param": 35,
           "targetSpecies": 612,
           "targetName": "Haxorus",
-          "label": "Level 48"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/611.png",
@@ -104646,10 +104527,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 614,
           "targetName": "Beartic",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/613.png",
@@ -105163,13 +105044,6 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 617,
-          "targetName": "Accelgor",
-          "label": "Trade"
-        },
-        {
           "method": "EVO_ITEM",
           "param": 796,
           "targetSpecies": 617,
@@ -105626,10 +105500,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 50,
+          "param": 25,
           "targetSpecies": 620,
           "targetName": "Mienshao",
-          "label": "Level 50"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/619.png",
@@ -106191,10 +106065,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 43,
+          "param": 20,
           "targetSpecies": 623,
           "targetName": "Golurk",
-          "label": "Level 43"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/622.png",
@@ -106587,10 +106461,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 52,
+          "param": 25,
           "targetSpecies": 625,
           "targetName": "Bisharp",
-          "label": "Level 52"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/624.png",
@@ -107115,10 +106989,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 54,
+          "param": 25,
           "targetSpecies": 628,
           "targetName": "Braviary",
-          "label": "Level 54"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/627.png",
@@ -107428,10 +107302,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 54,
+          "param": 25,
           "targetSpecies": 630,
           "targetName": "Mandibuzz",
-          "label": "Level 54"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/629.png",
@@ -108089,10 +107963,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 50,
+          "param": 20,
           "targetSpecies": 634,
           "targetName": "Zweilous",
-          "label": "Level 50"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/633.png",
@@ -108241,10 +108115,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 64,
+          "param": 35,
           "targetSpecies": 635,
           "targetName": "Hydreigon",
-          "label": "Level 64"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/634.png",
@@ -108555,10 +108429,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 59,
+          "param": 25,
           "targetSpecies": 637,
           "targetName": "Volcarona",
-          "label": "Level 59"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/636.png",
@@ -110754,10 +110628,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 651,
           "targetName": "Quilladin",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/650.png",
@@ -110951,10 +110825,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 652,
           "targetName": "Chesnaught",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/651.png",
@@ -111344,10 +111218,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 654,
           "targetName": "Braixen",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/653.png",
@@ -111511,10 +111385,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 655,
           "targetName": "Delphox",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/654.png",
@@ -111861,10 +111735,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 16,
+          "param": 14,
           "targetSpecies": 657,
           "targetName": "Frogadier",
-          "label": "Level 16"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/656.png",
@@ -112035,10 +111909,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 36,
+          "param": 30,
           "targetSpecies": 658,
           "targetName": "Greninja",
-          "label": "Level 36"
+          "label": "Level 30"
         }
       ],
       "icon": "assets/icons/657.png",
@@ -112396,10 +112270,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 20,
+          "param": 14,
           "targetSpecies": 660,
           "targetName": "Diggersby",
-          "label": "Level 20"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/659.png",
@@ -112753,10 +112627,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 17,
+          "param": 14,
           "targetSpecies": 662,
           "targetName": "Fletchinder",
-          "label": "Level 17"
+          "label": "Level 14"
         }
       ],
       "icon": "assets/icons/661.png",
@@ -112896,10 +112770,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 25,
           "targetSpecies": 663,
           "targetName": "Talonflame",
-          "label": "Level 35"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/662.png",
@@ -113185,10 +113059,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 9,
+          "param": 7,
           "targetSpecies": 665,
           "targetName": "Spewpa",
-          "label": "Level 9"
+          "label": "Level 7"
         }
       ],
       "icon": "assets/icons/664.png",
@@ -113233,10 +113107,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 12,
+          "param": 10,
           "targetSpecies": 666,
           "targetName": "Vivillon",
-          "label": "Level 12"
+          "label": "Level 10"
         }
       ],
       "icon": "assets/icons/665.png",
@@ -113358,10 +113232,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 25,
           "targetSpecies": 668,
           "targetName": "Pyroar",
-          "label": "Level 35"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/667.png",
@@ -113689,10 +113563,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 19,
+          "param": 18,
           "targetSpecies": 670,
           "targetName": "Floette",
-          "label": "Level 19"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/669.png",
@@ -113871,10 +113745,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 25,
           "targetSpecies": 673,
           "targetName": "Gogoat",
-          "label": "Level 32"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/672.png",
@@ -114206,10 +114080,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 32,
+          "param": 25,
           "targetSpecies": 675,
           "targetName": "Pangoro",
-          "label": "Level 32"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/674.png",
@@ -114990,10 +114864,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 35,
+          "param": 22,
           "targetSpecies": 680,
           "targetName": "Doublade",
-          "label": "Level 35"
+          "label": "Level 22"
         }
       ],
       "icon": "assets/icons/679.png",
@@ -116021,10 +115895,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 30,
+          "param": 18,
           "targetSpecies": 687,
           "targetName": "Malamar",
-          "label": "Level 30"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/686.png",
@@ -116368,10 +116242,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 18,
           "targetSpecies": 689,
           "targetName": "Barbaracle",
-          "label": "Level 39"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/688.png",
@@ -116777,10 +116651,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 48,
+          "param": 20,
           "targetSpecies": 691,
           "targetName": "Dragalge",
-          "label": "Level 48"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/690.png",
@@ -117074,10 +116948,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 20,
           "targetSpecies": 693,
           "targetName": "Clawitzer",
-          "label": "Level 37"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/692.png",
@@ -117734,10 +117608,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 28,
           "targetSpecies": 697,
           "targetName": "Tyrantrum",
-          "label": "Level 39"
+          "label": "Level 28"
         }
       ],
       "icon": "assets/icons/696.png",
@@ -118043,10 +117917,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 39,
+          "param": 25,
           "targetSpecies": 699,
           "targetName": "Aurorus",
-          "label": "Level 39"
+          "label": "Level 25"
         }
       ],
       "icon": "assets/icons/698.png",
@@ -119080,10 +118954,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 40,
+          "param": 20,
           "targetSpecies": 705,
           "targetName": "Sliggoo",
-          "label": "Level 40"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/704.png",
@@ -119221,17 +119095,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 50,
+          "param": 35,
           "targetSpecies": 706,
           "targetName": "Goodra",
-          "label": "Level 50"
-        },
-        {
-          "method": "EVO_LEVEL",
-          "param": 50,
-          "targetSpecies": 706,
-          "targetName": "Goodra",
-          "label": "Level 50"
+          "label": "Level 35"
         }
       ],
       "icon": "assets/icons/705.png",
@@ -119699,13 +119566,6 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 709,
-          "targetName": "Trevenant",
-          "label": "Trade"
-        },
-        {
           "method": "EVO_ITEM",
           "param": 796,
           "targetSpecies": 709,
@@ -120057,13 +119917,6 @@
       ],
       "evolutions": [
         {
-          "method": "EVO_TRADE",
-          "param": 0,
-          "targetSpecies": 711,
-          "targetName": "Gourgeist",
-          "label": "Trade"
-        },
-        {
           "method": "EVO_ITEM",
           "param": 796,
           "targetSpecies": 711,
@@ -120412,10 +120265,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 37,
+          "param": 18,
           "targetSpecies": 713,
           "targetName": "Avalugg",
-          "label": "Level 37"
+          "label": "Level 18"
         }
       ],
       "icon": "assets/icons/712.png",
@@ -120737,10 +120590,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 48,
+          "param": 20,
           "targetSpecies": 715,
           "targetName": "Noivern",
-          "label": "Level 48"
+          "label": "Level 20"
         }
       ],
       "icon": "assets/icons/714.png",
@@ -228356,7 +228209,7 @@
       "accuracy": 100,
       "pp": 20,
       "description": "An attack with effects\nthat vary by location.",
-      "effect": "EFFECT_HIT",
+      "effect": "EFFECT_SECRET_POWER",
       "target": "TARGET_SELECTED",
       "priority": 0
     },
@@ -234145,7 +233998,7 @@
       "power": 50,
       "accuracy": 100,
       "pp": 15,
-      "description": "Always moves first and lands\na critical hit. Raises Evasion.",
+      "description": "Strikes first with a critical\nhit. Raises Evasion.",
       "effect": "EFFECT_HIT",
       "target": "TARGET_SELECTED",
       "priority": 2
@@ -243754,6 +243607,12 @@
         1567,
         1567
       ]
+    },
+    {
+      "id": 319,
+      "name": "Chameleon",
+      "description": "Protean and Color Change.",
+      "speciesIds": []
     }
   ],
   "items": [
@@ -244073,7 +243932,7 @@
       "id": 27,
       "token": "ITEM_CHERISH_BALL",
       "name": "Scout Ball",
-      "description": "A scouting Ball with\nan almost impossible\ncapture chance.",
+      "description": "A scouting Ball.\nExtremely low\ncapture chance.",
       "pocket": "POCKET_POKE_BALLS",
       "price": 0,
       "machineType": null,
@@ -247266,7 +247125,7 @@
       "token": "ITEM_CHARIZARDITE_X",
       "name": "Charizardite X",
       "description": "This stone enables\nCharizard to Mega\nEvolve in battle.",
-      "pocket": "POCKET_KEY_ITEMS",
+      "pocket": "POCKET_ITEMS",
       "price": 0,
       "machineType": null,
       "machineNumber": null,
@@ -251333,7 +251192,7 @@
       "id": 632,
       "token": "ITEM_TM51",
       "name": "TM51",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251345,7 +251204,7 @@
       "id": 633,
       "token": "ITEM_TM52",
       "name": "TM52",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251357,7 +251216,7 @@
       "id": 634,
       "token": "ITEM_TM53",
       "name": "TM53",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251369,7 +251228,7 @@
       "id": 635,
       "token": "ITEM_TM54",
       "name": "TM54",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251381,7 +251240,7 @@
       "id": 636,
       "token": "ITEM_TM55",
       "name": "TM55",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251393,7 +251252,7 @@
       "id": 637,
       "token": "ITEM_TM56",
       "name": "TM56",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251405,7 +251264,7 @@
       "id": 638,
       "token": "ITEM_TM57",
       "name": "TM57",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251417,7 +251276,7 @@
       "id": 639,
       "token": "ITEM_TM58",
       "name": "TM58",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251429,7 +251288,7 @@
       "id": 640,
       "token": "ITEM_TM59",
       "name": "TM59",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251441,7 +251300,7 @@
       "id": 641,
       "token": "ITEM_TM60",
       "name": "TM60",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251453,7 +251312,7 @@
       "id": 642,
       "token": "ITEM_TM61",
       "name": "TM61",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251465,7 +251324,7 @@
       "id": 643,
       "token": "ITEM_TM62",
       "name": "TM62",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251477,7 +251336,7 @@
       "id": 644,
       "token": "ITEM_TM63",
       "name": "TM63",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251489,7 +251348,7 @@
       "id": 645,
       "token": "ITEM_TM64",
       "name": "TM64",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251501,7 +251360,7 @@
       "id": 646,
       "token": "ITEM_TM65",
       "name": "TM65",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251513,7 +251372,7 @@
       "id": 647,
       "token": "ITEM_TM66",
       "name": "TM66",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251525,7 +251384,7 @@
       "id": 648,
       "token": "ITEM_TM67",
       "name": "TM67",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251537,7 +251396,7 @@
       "id": 649,
       "token": "ITEM_TM68",
       "name": "TM68",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251549,7 +251408,7 @@
       "id": 650,
       "token": "ITEM_TM69",
       "name": "TM69",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251561,7 +251420,7 @@
       "id": 651,
       "token": "ITEM_TM70",
       "name": "TM70",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251573,7 +251432,7 @@
       "id": 652,
       "token": "ITEM_TM71",
       "name": "TM71",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251585,7 +251444,7 @@
       "id": 653,
       "token": "ITEM_TM72",
       "name": "TM72",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251597,7 +251456,7 @@
       "id": 654,
       "token": "ITEM_TM73",
       "name": "TM73",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251609,7 +251468,7 @@
       "id": 655,
       "token": "ITEM_TM74",
       "name": "TM74",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251621,7 +251480,7 @@
       "id": 656,
       "token": "ITEM_TM75",
       "name": "TM75",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251633,7 +251492,7 @@
       "id": 657,
       "token": "ITEM_TM76",
       "name": "TM76",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251645,7 +251504,7 @@
       "id": 658,
       "token": "ITEM_TM77",
       "name": "TM77",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251657,7 +251516,7 @@
       "id": 659,
       "token": "ITEM_TM78",
       "name": "TM78",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251669,7 +251528,7 @@
       "id": 660,
       "token": "ITEM_TM79",
       "name": "TM79",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251681,7 +251540,7 @@
       "id": 661,
       "token": "ITEM_TM80",
       "name": "TM80",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251693,7 +251552,7 @@
       "id": 662,
       "token": "ITEM_TM81",
       "name": "TM81",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251705,7 +251564,7 @@
       "id": 663,
       "token": "ITEM_TM82",
       "name": "TM82",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251717,7 +251576,7 @@
       "id": 664,
       "token": "ITEM_TM83",
       "name": "TM83",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251729,7 +251588,7 @@
       "id": 665,
       "token": "ITEM_TM84",
       "name": "TM84",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251741,7 +251600,7 @@
       "id": 666,
       "token": "ITEM_TM85",
       "name": "TM85",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251753,7 +251612,7 @@
       "id": 667,
       "token": "ITEM_TM86",
       "name": "TM86",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251765,7 +251624,7 @@
       "id": 668,
       "token": "ITEM_TM87",
       "name": "TM87",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251777,7 +251636,7 @@
       "id": 669,
       "token": "ITEM_TM88",
       "name": "TM88",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251789,7 +251648,7 @@
       "id": 670,
       "token": "ITEM_TM89",
       "name": "TM89",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251801,7 +251660,7 @@
       "id": 671,
       "token": "ITEM_TM90",
       "name": "TM90",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251813,7 +251672,7 @@
       "id": 672,
       "token": "ITEM_TM91",
       "name": "TM91",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251825,7 +251684,7 @@
       "id": 673,
       "token": "ITEM_TM92",
       "name": "TM92",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251837,7 +251696,7 @@
       "id": 674,
       "token": "ITEM_TM93",
       "name": "TM93",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251849,7 +251708,7 @@
       "id": 675,
       "token": "ITEM_TM94",
       "name": "TM94",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251861,7 +251720,7 @@
       "id": 676,
       "token": "ITEM_TM95",
       "name": "TM95",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251873,7 +251732,7 @@
       "id": 677,
       "token": "ITEM_TM96",
       "name": "TM96",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251885,7 +251744,7 @@
       "id": 678,
       "token": "ITEM_TM97",
       "name": "TM97",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251897,7 +251756,7 @@
       "id": 679,
       "token": "ITEM_TM98",
       "name": "TM98",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251909,7 +251768,7 @@
       "id": 680,
       "token": "ITEM_TM99",
       "name": "TM99",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -251921,7 +251780,7 @@
       "id": 681,
       "token": "ITEM_TM100",
       "name": "TM100",
-      "description": "Teaches a move to\na compatible Pok\u00e9mon.",
+      "description": "Teaches a move to\na compatible\nPok\u00e9mon.",
       "pocket": "POCKET_TM_HM",
       "price": 3000,
       "machineType": "TM",
@@ -252053,7 +251912,7 @@
       "id": 692,
       "token": "ITEM_CATCHING_CHARM",
       "name": "Wild Attract",
-      "description": "Toggle: forces wild\nencounters near your\nteam level.",
+      "description": "Toggle: wild foes\nappear near your\nteam level.",
       "pocket": "POCKET_KEY_ITEMS",
       "price": 0,
       "machineType": null,
@@ -254261,7 +254120,7 @@
       "id": 876,
       "token": "ITEM_KAIZO_STONE_MINI",
       "name": "Kaizo Stone Mini",
-      "description": "Evolves a Pokemon below\n470 BST if it has an\nitem evolution.",
+      "description": "Item evolution for\nPok\u00e9mon with less\nthan 470 BST.",
       "pocket": "POCKET_ITEMS",
       "price": 0,
       "machineType": null,
@@ -254273,7 +254132,7 @@
       "id": 877,
       "token": "ITEM_KAIZO_STONE_MAX",
       "name": "Kaizo Stone Max",
-      "description": "Evolves a Pokemon with\n470 BST or more if it\nhas an item evolution.",
+      "description": "Item evolution for\nPok\u00e9mon with at\nleast 470 BST.",
       "pocket": "POCKET_ITEMS",
       "price": 0,
       "machineType": null,
@@ -254309,7 +254168,7 @@
       "id": 880,
       "token": "ITEM_HOLY_CARD",
       "name": "Holy Card",
-      "description": "Adds one persistent\nholy shield, up to\na maximum of two.",
+      "description": "Adds a lasting\nholy shield.\nMaximum: two.",
       "pocket": "POCKET_ITEMS",
       "price": 0,
       "machineType": null,
@@ -265799,17 +265658,23 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Check Bad Move"
+        "Smart Trainer"
       ],
       "aiFlags": [
-        "Check Bad Move"
+        "Smart Trainer"
       ],
       "aiFlagDetails": [
         {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
           ]
         }
       ],
@@ -266115,17 +265980,23 @@
         "Full Restore"
       ],
       "declaredAiFlags": [
-        "Check Bad Move"
+        "Smart Trainer"
       ],
       "aiFlags": [
-        "Check Bad Move"
+        "Smart Trainer"
       ],
       "aiFlagDetails": [
         {
-          "label": "Check Bad Move",
-          "macro": "AI_FLAG_CHECK_BAD_MOVE",
+          "label": "Smart Trainer",
+          "macro": "AI_FLAG_SMART_TRAINER",
           "expandsTo": [
-            "AI_FLAG_CHECK_BAD_MOVE"
+            "AI_FLAG_BASIC_TRAINER",
+            "AI_FLAG_OMNISCIENT",
+            "AI_FLAG_SMART_SWITCHING",
+            "AI_FLAG_SMART_MON_CHOICES",
+            "AI_FLAG_PP_STALL_PREVENTION",
+            "AI_FLAG_SMART_TERA",
+            "AI_FLAG_RANDOMIZE_SWITCHIN"
           ]
         }
       ],
@@ -267118,7 +266989,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267255,7 +267127,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267392,7 +267265,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267529,7 +267403,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267680,7 +267555,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267831,7 +267707,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -267982,16 +267859,51 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": [
+        "fixedSpecies": [],
+        "bossSpeciesPool": [
           {
-            "slot": 2,
+            "speciesId": 383,
+            "speciesToken": "SPECIES_GROUDON"
+          },
+          {
             "speciesId": 485,
             "speciesToken": "SPECIES_HEATRAN"
           },
           {
-            "slot": 3,
-            "speciesId": 383,
-            "speciesToken": "SPECIES_GROUDON"
+            "speciesId": 250,
+            "speciesToken": "SPECIES_HO_OH"
+          },
+          {
+            "speciesId": 643,
+            "speciesToken": "SPECIES_RESHIRAM"
+          },
+          {
+            "speciesId": 791,
+            "speciesToken": "SPECIES_SOLGALEO"
+          },
+          {
+            "speciesId": 1400,
+            "speciesToken": "SPECIES_KORAIDON"
+          },
+          {
+            "speciesId": 494,
+            "speciesToken": "SPECIES_VICTINI"
+          },
+          {
+            "speciesId": 721,
+            "speciesToken": "SPECIES_VOLCANION"
+          },
+          {
+            "speciesId": 244,
+            "speciesToken": "SPECIES_ENTEI"
+          },
+          {
+            "speciesId": 806,
+            "speciesToken": "SPECIES_BLACEPHALON"
+          },
+          {
+            "speciesId": 1397,
+            "speciesToken": "SPECIES_CHI_YU"
           }
         ]
       }
@@ -268130,7 +268042,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268267,7 +268180,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268404,7 +268318,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268541,7 +268456,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268678,7 +268594,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268815,7 +268732,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -268952,7 +268870,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269089,16 +269008,47 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": [
+        "fixedSpecies": [],
+        "bossSpeciesPool": [
           {
-            "slot": 2,
             "speciesId": 890,
             "speciesToken": "SPECIES_ETERNATUS"
           },
           {
-            "slot": 3,
             "speciesId": 386,
             "speciesToken": "SPECIES_DEOXYS"
+          },
+          {
+            "speciesId": 150,
+            "speciesToken": "SPECIES_MEWTWO"
+          },
+          {
+            "speciesId": 384,
+            "speciesToken": "SPECIES_RAYQUAZA"
+          },
+          {
+            "speciesId": 800,
+            "speciesToken": "SPECIES_NECROZMA"
+          },
+          {
+            "speciesId": 487,
+            "speciesToken": "SPECIES_GIRATINA"
+          },
+          {
+            "speciesId": 792,
+            "speciesToken": "SPECIES_LUNALA"
+          },
+          {
+            "speciesId": 1401,
+            "speciesToken": "SPECIES_MIRAIDON"
+          },
+          {
+            "speciesId": 982,
+            "speciesToken": "SPECIES_ARTICUNO_GALAR"
+          },
+          {
+            "speciesId": 793,
+            "speciesToken": "SPECIES_NIHILEGO"
           }
         ]
       }
@@ -269237,7 +269187,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269374,7 +269325,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269511,7 +269463,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269648,7 +269601,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269785,7 +269739,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -269922,7 +269877,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -270059,7 +270015,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -270196,7 +270153,8 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": []
+        "fixedSpecies": [],
+        "bossSpeciesPool": []
       }
     },
     {
@@ -270333,16 +270291,47 @@
         "tolerance": 75,
         "candidateCount": 128,
         "uniqueSpecies": true,
-        "fixedSpecies": [
+        "fixedSpecies": [],
+        "bossSpeciesPool": [
           {
-            "slot": 2,
             "speciesId": 249,
             "speciesToken": "SPECIES_LUGIA"
           },
           {
-            "slot": 3,
             "speciesId": 251,
             "speciesToken": "SPECIES_CELEBI"
+          },
+          {
+            "speciesId": 493,
+            "speciesToken": "SPECIES_ARCEUS"
+          },
+          {
+            "speciesId": 491,
+            "speciesToken": "SPECIES_DARKRAI"
+          },
+          {
+            "speciesId": 488,
+            "speciesToken": "SPECIES_CRESSELIA"
+          },
+          {
+            "speciesId": 720,
+            "speciesToken": "SPECIES_HOOPA"
+          },
+          {
+            "speciesId": 151,
+            "speciesToken": "SPECIES_MEW"
+          },
+          {
+            "speciesId": 385,
+            "speciesToken": "SPECIES_JIRACHI"
+          },
+          {
+            "speciesId": 802,
+            "speciesToken": "SPECIES_MARSHADOW"
+          },
+          {
+            "speciesId": 647,
+            "speciesToken": "SPECIES_KELDEO"
           }
         ]
       }

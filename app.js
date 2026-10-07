@@ -161,7 +161,7 @@ function getEntriesForTab() {
         ...(entry.aiFlags || []),
         ...(entry.aiFlagDetails || []).flatMap((flag) => [flag.macro, ...(flag.expandsTo || [])]),
         ...entry.pokemon.map((mon) => mon.speciesName),
-        ...(entry.postLeagueRule?.fixedSpecies || []).map((fixed) =>
+        ...[...(entry.postLeagueRule?.fixedSpecies || []), ...(entry.postLeagueRule?.bossSpeciesPool || [])].map((fixed) =>
           state.data.speciesById.get(fixed.speciesId)?.name || fixed.speciesToken || "",
         ),
       ].join(" ").toLowerCase().includes(query),
@@ -487,6 +487,14 @@ function buildTrainerDetail(entry) {
     })
     .join("");
 
+  const bossSpeciesPool = (postLeagueRule?.bossSpeciesPool || [])
+    .map((entry) => {
+      const pokemon = state.data.speciesById.get(entry.speciesId);
+      const label = pokemon?.name || entry.speciesToken || `Species ${entry.speciesId}`;
+      return pokemon ? navButton("pokemon", pokemon.id, label) : `<span class="chip">${escapeHtml(label)}</span>`;
+    })
+    .join("");
+
   const partySection = postLeagueRule
     ? `
       <div class="detail-section">
@@ -494,6 +502,7 @@ function buildTrainerDetail(entry) {
         <div class="detail-card">
           <p>Six unique, fully evolved Pokemon are generated deterministically for this run. The ROM evaluates ${postLeagueRule.candidateCount} candidate teams and keeps the one closest to the target BST.</p>
           ${fixedSpecies ? `<p><span class="muted">Fixed thematic species:</span></p><div class="chip-row">${fixedSpecies}</div>` : ""}
+          ${bossSpeciesPool ? `<p><span class="muted">Slots 3 and 4: two different species drawn per run from this pool:</span></p><div class="chip-row">${bossSpeciesPool}</div>` : ""}
         </div>
       </div>`
     : `

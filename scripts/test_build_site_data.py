@@ -165,56 +165,61 @@ Level: 5
             {"kind": "playerLeadMinus", "offset": 11, "min": 1},
         )
 
-    def test_post_league_contract_adds_custom_flag_trainers_and_team_rule(self):
-        post_league = {
-            "trainerIdMin": 859,
-            "trainerFlagBaseId": 0x900,
-            "teamRule": {
-                "partySize": 6,
-                "level": 100,
-                "normalTargetBst": 3300,
-                "bossTargetBst": 3600,
-                "tolerance": 75,
-                "candidateCount": 128,
-                "uniqueSpecies": True,
-            },
-            "trials": [{
-                "key": "trial_a",
-                "label": "Trial A — Lava",
-                "zone": "Post-Lega · Trial A — Lava",
-                "trainers": [
-                    {
-                        "id": 865,
-                        "token": "TRAINER_POST_LEAGUE_A_BOSS",
-                        "map": "PostLeague_TrialA_Area2",
-                        "boss": True,
-                        "fixedSpecies": [{"slot": 2, "speciesId": 485, "speciesToken": "SPECIES_HEATRAN"}],
-                    }
-                ],
+    def test_comment_block_after_party_is_not_read_as_pokemon(self):
+        source = """
+=== TRAINER_DIGLETT_MASTER ===
+Name: DIGLETT
+Class: Ruin Maniac
+
+Diglett
+Level: 5
+
+/*
+Boss Rush virtual trainers.
+
+They own no party: "Copy Pool" makes trainerproc emit .overrideTrainer.
+*/
+"""
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "trainers.party"
+            path.write_text(source, encoding="utf-8")
+            trainers = MODULE.parse_showdown_trainers(
+                path,
+                {"diglett": 50},
+                {"TRAINER_DIGLETT_MASTER": 857},
+                {857: {"zone": "Altering Cave", "map": "AlteringCave", "zoneOrder": 0, "firstOrder": 0}},
+                {},
+                {},
+                {},
+                {},
+            )
+
+        self.assertEqual([mon["speciesName"] for mon in trainers[0]["pokemon"]], ["Diglett"])
+
+    def test_trainer_catalog_carries_post_league_rule_and_zones(self):
+        rule = {"trial": "Trial A — Lava", "boss": True, "partySize": 6, "level": 100, "targetBst": 3600,
+                "fixedSpecies": [], "bossSpeciesPool": [{"speciesId": 485, "speciesToken": "SPECIES_HEATRAN"}]}
+        catalog = {
+            "zones": [{"name": "Prove post-lega", "order": 41}],
+            "trainers": [{
+                "id": 865,
+                "zone": "Prove post-lega",
+                "zoneOrder": 41,
+                "trainerOrder": 10865,
+                "locations": [{"map": "PostLeague_TrialA_Area2"}],
+                "postLeagueRule": rule,
             }],
         }
         with tempfile.TemporaryDirectory() as directory:
-            root = Path(directory)
-            contract_path = root / "contract.json"
-            locations_path = root / "locations.json"
-            post_path = root / "postLeague.json"
-            contract_path.write_text('{"segments": [], "floatingTrainers": []}', encoding="utf-8")
-            locations_path.write_text('{}', encoding="utf-8")
-            post_path.write_text(json.dumps(post_league), encoding="utf-8")
+            path = Path(directory) / "trainerCatalog.json"
+            path.write_text(json.dumps(catalog), encoding="utf-8")
+            index, summary = MODULE.build_trainer_catalog_index(path)
 
-            index, summary = MODULE.build_contract_trainer_index(
-                contract_path,
-                locations_path,
-                {"TRAINER_POST_LEAGUE_A_BOSS": 865},
-                post_path,
-            )
-
-        self.assertEqual(index[865]["flagId"], 0x906)
-        self.assertEqual(index[865]["postLeagueRule"]["targetBst"], 3600)
-        self.assertEqual(index[865]["postLeagueRule"]["fixedSpecies"][0]["speciesId"], 485)
+        self.assertEqual(index[865]["map"], "PostLeague_TrialA_Area2")
+        self.assertEqual(index[865]["firstOrder"], 10865)
+        self.assertEqual(index[865]["postLeagueRule"], rule)
         self.assertEqual(summary["legalTrainerCount"], 1)
-        self.assertEqual(summary["zones"][0]["name"], "Post-Lega · Trial A — Lava")
-
+        self.assertEqual(summary["zones"], [{"name": "Prove post-lega", "order": 41}])
 
 if __name__ == "__main__":
     unittest.main()
