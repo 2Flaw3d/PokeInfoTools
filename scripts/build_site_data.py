@@ -743,7 +743,9 @@ def build_site_data(expansion_root: Path, webapp_root: Path) -> dict:
             method = evo.get("method", "")
             param = evo.get("param")
             label = humanize_token(method, "EVO_")
-            if method == "EVO_LEVEL" and param:
+            if export_mod.build_evolution_hint_from_entries([evo]) == "Friend":
+                label = "High friendship"
+            elif method == "EVO_LEVEL" and param:
                 label = f"Level {param}"
             elif method == "EVO_ITEM" and param:
                 label = f"Use {item_name_by_id.get(param, f'Item {param}')}"

@@ -1,5 +1,5 @@
 {
-  "generatedAtUtc": "2026-10-07T17:51:03+00:00",
+  "generatedAtUtc": "2026-10-11T11:12:12+00:00",
   "project": {
     "title": "Flawzo IronMon Rules Snapshot",
     "subtitle": "Prima snapshot web orientata al testing. Alcune sezioni, soprattutto trainer e dettagli custom, verranno rifinite piu avanti.",
@@ -6889,10 +6889,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 169,
           "targetName": "Crobat",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/42.png",
@@ -19510,10 +19510,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 242,
           "targetName": "Blissey",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/113.png",
@@ -29769,10 +29769,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 25,
           "targetName": "Pikachu",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/172.png",
@@ -29948,10 +29948,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 35,
           "targetName": "Clefairy",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/173.png",
@@ -30152,10 +30152,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 39,
           "targetName": "Jigglypuff",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/174.png",
@@ -30358,10 +30358,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 176,
           "targetName": "Togetic",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/175.png",
@@ -41002,10 +41002,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 107,
           "targetName": "Hitmonchan",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/236.png",
@@ -41329,10 +41329,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 124,
           "targetName": "Jynx",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/238.png",
@@ -41511,10 +41511,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 125,
           "targetName": "Electabuzz",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/239.png",
@@ -41693,10 +41693,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 126,
           "targetName": "Magmar",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/240.png",
@@ -51664,10 +51664,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 183,
           "targetName": "Marill",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/298.png",
@@ -62942,10 +62942,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 202,
           "targetName": "Wobbuffet",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/360.png",
@@ -70394,10 +70394,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 315,
           "targetName": "Roselia",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/406.png",
@@ -73575,10 +73575,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 428,
           "targetName": "Lopunny",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/427.png",
@@ -74634,10 +74634,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 358,
           "targetName": "Chimecho",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/433.png",
@@ -75520,10 +75520,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 185,
           "targetName": "Sudowoodo",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/438.png",
@@ -75693,10 +75693,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 122,
           "targetName": "Mr. Mime",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/439.png",
@@ -75881,10 +75881,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 113,
           "targetName": "Chansey",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/440.png",
@@ -76906,10 +76906,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 143,
           "targetName": "Snorlax",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/446.png",
@@ -77115,10 +77115,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 448,
           "targetName": "Lucario",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/447.png",
@@ -79047,10 +79047,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 226,
           "targetName": "Mantine",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/458.png",
@@ -90525,10 +90525,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 528,
           "targetName": "Swoobat",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/527.png",
@@ -92884,10 +92884,10 @@
       "evolutions": [
         {
           "method": "EVO_LEVEL",
-          "param": 2,
+          "param": 0,
           "targetSpecies": 542,
           "targetName": "Leavanny",
-          "label": "Level 2"
+          "label": "High friendship"
         }
       ],
       "icon": "assets/icons/541.png",
