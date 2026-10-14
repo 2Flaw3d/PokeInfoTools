@@ -515,7 +515,7 @@ function buildTrainerDetail(entry) {
     <div class="detail-hero">
       <div class="detail-title">
         <h2>${entry.name || entry.idToken}</h2>
-        <p>ID: ${entry.idToken} • ${entry.class || "Trainer"}</p>
+        <p>ID: ${entry.id} • ${entry.class || "Trainer"}</p>
       </div>
     </div>
     <div class="detail-grid">
